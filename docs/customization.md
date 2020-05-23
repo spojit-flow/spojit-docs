@@ -138,61 +138,6 @@ which are defined inside the templates and wrap specific features. To override a
 template block, create a `main.html` inside the `overrides` directory and define
 the block, e.g.:
 
-``` jinja
-{% extends "base.html" %}
-
-{% block htmltitle %}
-  <title>Lorem ipsum dolor sit amet</title>
-{% endblock %}
-```
-
-Material for MkDocs provides the following template blocks:
-
-| Block name   | Wrapped contents                                |
-| ------------ | ----------------------------------------------- |
-| `analytics`  | Wraps the Google Analytics integration          |
-| `announce`   | Wraps the Announcement bar                      |
-| `config`     | Wraps the JavaScript application config         |
-| `content`    | Wraps the main content                          |
-| `disqus`     | Wraps the disqus integration                    |
-| `extrahead`  | Empty block to define additional meta tags      |
-| `fonts`      | Wraps the webfont definitions                   |
-| `footer`     | Wraps the footer with navigation and copyright  |
-| `header`     | Wraps the fixed header bar                      |
-| `hero`       | Wraps the hero teaser (if available)            |
-| `htmltitle`  | Wraps the `<title>` tag                         |
-| `libs`       | Wraps the JavaScript libraries (header)         |
-| `scripts`    | Wraps the JavaScript application (footer)       |
-| `source`     | Wraps the linked source files                   |
-| `site_meta`  | Wraps the meta tags in the document head        |
-| `site_nav`   | Wraps the site navigation and table of contents |
-| `styles`     | Wraps the stylesheets (also extra sources)      |
-| `tabs`       | Wraps the tabs navigation (if available)        |
-
-For more on this topic refer to the [MkDocs documentation][4]
-
-  [4]: https://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks
-
-## Theme development
-
-Material for MkDocs uses [Webpack][5] as a build tool to leverage modern web
-technologies like [TypeScript][6] and [SASS][7]. If you want to make more
-fundamental changes, it may be necessary to make the adjustments directly in
-the source of the theme and recompile it. This is fairly easy.
-
-  [5]: https://webpack.js.org/
-  [6]: https://www.typescriptlang.org/
-  [7]: https://sass-lang.com
-
-### Environment setup
-
-In order to start development on Material for MkDocs, a [Node.js][8] version of
-at least 12 is required. First, clone the repository:
-
-``` sh
-git clone https://github.com/squidfunk/mkdocs-material
-```
-
 Next, all dependencies need to be installed, which is done with:
 
 ``` sh
