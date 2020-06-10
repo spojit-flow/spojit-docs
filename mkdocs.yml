@@ -120,6 +120,18 @@ markdown_extensions:
 # Page tree
 nav:
   - Introduction: index.md
+  - My Account:
+    - Account:
+      - Change password: my-account/account/change-password.md
+      - Reset password: my-account/account/reset-password.md
+      - Delete account: my-account/account/delete-account.md
+    - Billing:
+      - Change billing: my-account/billing/change-billing.md
+      - View invoices: my-account/billing/view-invoices.md
+    - Subscription:
+      - Create subscription: my-account/subscription/create-subscription.md
+      - Change subscription: my-account/subscription/change-subscription.md
+      - Cancel subscription: my-account/subscription/cancel-subscription.md
   - Getting started: getting-started.md
   - Extensions:
     - Admonition: extensions/admonition.md
