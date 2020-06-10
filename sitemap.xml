@@ -1,79 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://docs.spojit.com/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/account/change-password/</loc>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/account/reset-password/</loc>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/account/delete-account/</loc>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/billing/change-billing/</loc>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/billing/view-invoices/</loc>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/subscription/create-subscription/</loc>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/subscription/change-subscription/</loc>
+     <lastmod>2020-06-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.spojit.com/my-account/subscription/cancel-subscription/</loc>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/getting-started/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/extensions/admonition/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/extensions/codehilite/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/extensions/footnotes/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/extensions/metadata/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/extensions/permalinks/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/extensions/pymdown/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/plugins/search/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/plugins/minification/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/plugins/revision-date/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/plugins/awesome-pages/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/releases/5/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/releases/4/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/releases/changelog/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/customization/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/data-privacy/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/contributing/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.spojit.com/license/</loc>
-     <lastmod>2020-05-23</lastmod>
+     <lastmod>2020-06-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
