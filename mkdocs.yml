@@ -31,7 +31,7 @@ copyright: Copyright &copy; 2020 Spojit
 theme:
   name: material
   custom_dir: spojit
-  logo: images/logo.svg
+  logo: assets/logo.svg
 
   # 404 page
   static_templates:
@@ -52,10 +52,8 @@ theme:
     accent: indigo
   font:
     text: Roboto
-    code: Roboto Mono
-  icon:
-    logo: logo
-  favicon: assets/favicon.png
+    code: Roboto Mono  
+  favicon: assets/favicon.ico
 
 # Plugins
 plugins:
@@ -66,19 +64,13 @@ plugins:
 # Customization
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+    - icon: fontawesome/solid/globe
+      link: https://www.spojit.com
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCmrHMMPQCE7EaQR3_vPqXKw
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/squidfunk/
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/squidfunk
-
+      link: https://www.linkedin.com/company/spojit/
+    
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
@@ -152,27 +144,6 @@ nav:
     - Unleashed Software:
       - Unleashed Authorization: connectors/unleashed/unleashed-authorization.md
       - Unleashed Warehouse Code: connectors/unleashed/unleashed-warehouse-code.md
-  - Getting started: getting-started.md
-  - Extensions:
-    - Admonition: extensions/admonition.md
-    - CodeHilite: extensions/codehilite.md
-    - Footnotes: extensions/footnotes.md
-    - Metadata: extensions/metadata.md
-    - Permalinks: extensions/permalinks.md
-    - PyMdown: extensions/pymdown.md
-  - Plugins:
-    - Search: plugins/search.md
-    - Minification: plugins/minification.md
-    - Revision date: plugins/revision-date.md
-    - Awesome pages: plugins/awesome-pages.md
-  - Releases:
-    - Upgrading to 5.x: releases/5.md
-    - Upgrading to 4.x: releases/4.md
-    - Changelog: releases/changelog.md
-  - Customization: customization.md
-  - Data privacy: data-privacy.md
-  - Contributing: contributing.md
-  - License: license.md
 
 # Google Analytics
 google_analytics:
