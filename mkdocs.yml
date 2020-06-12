@@ -143,9 +143,15 @@ nav:
         - Logs: integration/edit/logs.md
       - Run now: integration/run-now.md
       - Delete integration: integration/delete-integration.md
-  - Library:
-    - Index: library/index.md
-    - Unleashed to WooCommerce Stock Updater: library/unleashed-to-woocommerce-stock-updater.md
+  - Library: library/index.md
+  - Connectors:
+    - WooCommerce:
+      - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
+      - WooCommerce Legacy API: connectors/woocommerce/woocommerce-legacy-api.md
+      - WooCommerce Webhooks: connectors/woocommerce/woocommerce-webhooks.md
+    - Unleashed Software:
+      - Unleashed Authorization: connectors/unleashed/unleashed-authorization.md
+      - Unleashed Warehouse Code: connectors/unleashed/unleashed-warehouse-code.md
   - Getting started: getting-started.md
   - Extensions:
     - Admonition: extensions/admonition.md
