@@ -48,8 +48,8 @@ theme:
     #- instant
   palette:
     scheme: default
-    primary: blue grey
-    accent: indigo
+    primary: deep orange
+    accent: deep orange
   font:
     text: Roboto
     code: Roboto Mono
