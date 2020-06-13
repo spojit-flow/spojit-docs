@@ -10,7 +10,7 @@ template: overrides/main.html
 
     Run Now functionality refers to running an integration manually (without schedule set).
 
-    The settings of ‘Run Now’ differs from integration to integration. Some integrations require you to set options such as start date or end date, others do not require options. It all depends on the integration itself and what given integration does. If in doubt, refer to your specific integration in our [Library](../../library/index.md) section.
+    The settings of ‘Run Now’ differs from integration to integration. Some integrations require you to set options such as start date or end date, others do not require options. It all depends on the integration itself and what given integration does. If in doubt, refer to your specific integration in our [Library](/library/) section.
 
 
 ## Instructions
@@ -28,7 +28,7 @@ template: overrides/main.html
 
 ### 4. Enter all required options if any, and confirm to ‘Run Now’.
 
-  Click on the 'play' icon to initiate the manual run. If given integration requires additional configuration you will be presented with a form where you can enter values for each option (ie. last updated date). Enter all required options if any, and confirm to ‘Run Now’. When you confirm, the integration is queued. You can access the logs of the manual run from Edit integration page. Refer to [Logs](edit/logs.md) for more details.
+  Click on the 'play' icon to initiate the manual run. If given integration requires additional configuration you will be presented with a form where you can enter values for each option (ie. last updated date). Enter all required options if any, and confirm to ‘Run Now’. When you confirm, the integration is queued. You can access the logs of the manual run from Edit integration page. Refer to [Logs](/user-guide/integration/edit/logs) for more details.
 
 
 ![Integration - Run Now](/assets/images/run-now.gif "Integration - Run Now")

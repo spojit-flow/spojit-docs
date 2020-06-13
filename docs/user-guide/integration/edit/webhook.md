@@ -4,7 +4,7 @@ template: overrides/main.html
 
 !!! warning "Not all integrations require webhook (ie. scheduled / polling integrations)."
 
-    Webhook tab is accessible only for integrations which require or support webhooks. On scheduled integrations where webhooks are not supported you may find the ‘Webhook’ tab disabled, in which case please refer to the specific integration template in our [Library](../../library/index.md) section (you may be required to enable and configure schedule instead).
+    Webhook tab is accessible only for integrations which require or support webhooks. On scheduled integrations where webhooks are not supported you may find the ‘Webhook’ tab disabled, in which case please refer to the specific integration template in our [Library](/library) section (you may be required to enable and configure schedule instead).
 
 
 !!! info "Webhooks - what are they? https://en.wikipedia.org/wiki/Webhook"

@@ -4,7 +4,7 @@ template: overrides/main.html
 
 !!! info "Relates to specific integration template"
 
-    The configuration section of Edit integration screen allows you to edit the necessary configuration options related to your integration which you have initially entered when completing the integration setup wizard. As such, these options are specific to given integration template and can vary based on the chosen template.  The following example shows configuration options for Unleashed > WooCommerce Stock Update integration template. For more information on your specific integration refer to our [Library](../../library/index.md) section.
+    The configuration section of Edit integration screen allows you to edit the necessary configuration options related to your integration which you have initially entered when completing the integration setup wizard. As such, these options are specific to given integration template and can vary based on the chosen template.  The following example shows configuration options for Unleashed > WooCommerce Stock Update integration template. For more information on your specific integration refer to our [Library](/library/) section.
 
 ## Instructions
 ### 1. Log in to your account

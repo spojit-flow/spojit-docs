@@ -4,7 +4,7 @@
 
 #### 1. Obtain webhook URL from your Spojit integration
 
-  Log in to your Spojit account and follow our [Webhook](../../integration/edit/webhook.md) guide to obtain your unique webhook URL.
+  Log in to your Spojit account and follow our [Webhook](/user-guide/integration/edit/webhook) guide to obtain your unique webhook URL.
 
 #### 2. Log in to your WooCommerce admin panel
 

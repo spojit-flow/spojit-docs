@@ -52,7 +52,7 @@ theme:
     accent: indigo
   font:
     text: Roboto
-    code: Roboto Mono  
+    code: Roboto Mono
   favicon: assets/favicon.ico
 
 # Plugins
@@ -66,6 +66,8 @@ extra:
   social:
     - icon: fontawesome/solid/globe
       link: https://www.spojit.com
+    - icon: fontawesome/solid/id-card
+      link: https://app.spojit.com
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCmrHMMPQCE7EaQR3_vPqXKw
     - icon: fontawesome/brands/linkedin
@@ -115,28 +117,27 @@ nav:
   - User Guide:
     - My Account:
       - Account:
-        - Change password: my-account/account/change-password.md
-        - Reset password: my-account/account/reset-password.md
-        - Delete account: my-account/account/delete-account.md
+        - Change password: user-guide/my-account/account/change-password.md
+        - Reset password: user-guide/my-account/account/reset-password.md
+        - Delete account: user-guide/my-account/account/delete-account.md
       - Billing:
-        - Change billing: my-account/billing/change-billing.md
-        - View invoices: my-account/billing/view-invoices.md
+        - Change billing: user-guide/my-account/billing/change-billing.md
+        - View invoices: user-guide/my-account/billing/view-invoices.md
       - Subscription:
-        - Create subscription: my-account/subscription/create-subscription.md
-        - Change subscription: my-account/subscription/change-subscription.md
-        - Cancel subscription: my-account/subscription/cancel-subscription.md
+        - Create subscription: user-guide/my-account/subscription/create-subscription.md
+        - Change subscription: user-guide/my-account/subscription/change-subscription.md
+        - Cancel subscription: user-guide/my-account/subscription/cancel-subscription.md
     - Integration:
-      - Create integration: integration/create-integration.md
+      - Create integration: user-guide/integration/create-integration.md
       - Edit integration:
-        - Basic info: integration/edit/basic-info.md
-        - Configuration: integration/edit/configuration.md
-        - Schedule: integration/edit/schedule.md
-        - Webhook: integration/edit/webhook.md
-        - Logs: integration/edit/logs.md
-      - Run now: integration/run-now.md
-      - Delete integration: integration/delete-integration.md
-  - Library: library/index.md
-  - Connectors:
+        - Basic info: user-guide/integration/edit/basic-info.md
+        - Configuration: user-guide/integration/edit/configuration.md
+        - Schedule: user-guide/integration/edit/schedule.md
+        - Webhook: user-guide/integration/edit/webhook.md
+        - Logs: user-guide/integration/edit/logs.md
+      - Run now: user-guide/integration/run-now.md
+      - Delete integration: user-guide/integration/delete-integration.md
+  - Connectors Guide:
     - WooCommerce:
       - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
       - WooCommerce Legacy API: connectors/woocommerce/woocommerce-legacy-api.md
@@ -144,6 +145,7 @@ nav:
     - Unleashed Software:
       - Unleashed Authorization: connectors/unleashed/unleashed-authorization.md
       - Unleashed Warehouse Code: connectors/unleashed/unleashed-warehouse-code.md
+  - Library: library/index.md
 
 # Google Analytics
 google_analytics:

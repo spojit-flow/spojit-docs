@@ -19,5 +19,5 @@ template: overrides/main.html
 
 ### 4. Complete the setup
 
-  To complete the setup, please see specific how-to article about the integration of your choice in our [Library](../library/index.md) help section.
+  To complete the setup, please see specific how-to article about the integration of your choice in our [Library](/library/) help section.
 

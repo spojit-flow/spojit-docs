@@ -39,4 +39,4 @@ You stay in control of the integration link and have the ability to change the s
   
 #### 5. Set Schedule
 
-  Set a schedule to run this integration.  Find out more in the [Schedule](../integration/edit/schedule.md)  section.
+  Set a schedule to run this integration.  Find out more in the [Schedule](/user-guide/integration/edit/schedule)  section.

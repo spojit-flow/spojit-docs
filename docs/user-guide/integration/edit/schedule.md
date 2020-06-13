@@ -3,7 +3,7 @@ template: overrides/main.html
 ---
 !!! warning "Not all integrations require schedule (ie. webhook / near real-time integrations)."
 
-    Schedule tab is accessible only for integrations which require scheduling. On near real-time integration you may find the ‘Schedule’ tab is disabled, in which case please refer to the specific integration template in our [Library](../../library/index.md) section (you may be required to enable and configure a webhook instead).
+    Schedule tab is accessible only for integrations which require scheduling. On near real-time integration you may find the ‘Schedule’ tab is disabled, in which case please refer to the specific integration template in our [Library](/library) section (you may be required to enable and configure a webhook instead).
 
 !!! info "Schedule info"
 
