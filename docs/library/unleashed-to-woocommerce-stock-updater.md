@@ -9,7 +9,7 @@ After a simple step-by-step wizard guiding you through the initial configuration
 
 You stay in control of the integration link and have the ability to change the schedule as you see fit. Spojit gives you detailed logs each time the integration starts, giving you insight into the integration’s performance.
 
-## What to expect
+<!-- ## What to expect -->
 
 ## Instructions
 #### 1. Introduction

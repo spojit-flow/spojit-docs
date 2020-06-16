@@ -8,7 +8,7 @@ template: overrides/main.html
 ## Instructions
 ### 1. Access the Reset Password page
 
-  Click [here](https://lite.spojit.com/account/forgotpass) to access the reset password page.
+  Click [here](https://app.spojit.com/account/forgotpass) to access the reset password page.
 
 ### 2. Enter your Spojit account email address
 
