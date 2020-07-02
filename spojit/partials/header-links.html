@@ -1,0 +1,19 @@
+{% if config.header_links.display %}
+<div class="md-header-nav">
+    <a href="{{ config.header_links.signup.url }}" title="{{ config.header_links.signup.title }}"
+        class="md-header-nav__button" aria-label="{{ config.header_links.signup.title }}" target="_blank"
+        rel="noopener noreferrer">
+        <label class="md-typeset">{{ config.header_links.signup.title }}</label>
+    </a>
+    <a href="{{ config.header_links.pricing.url }}" title="{{ config.header_links.pricing.title }}"
+        class="md-header-nav__button" aria-label="{{ config.header_links.pricing.title }}" target="_blank"
+        rel="noopener noreferrer">
+        <label class="md-typeset">{{ config.header_links.pricing.title }}</label>
+    </a>
+    <a href="{{ config.header_links.contact.url }}" title="{{ config.header_links.contact.title }}"
+        class="md-header-nav__button" aria-label="{{ config.header_links.contact.title }}" target="_blank"
+        rel="noopener noreferrer">
+        <label class="md-typeset">{{ config.header_links.contact.title }}</label>
+    </a>
+</div>
+{% endif %}

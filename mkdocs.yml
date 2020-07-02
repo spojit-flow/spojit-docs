@@ -24,6 +24,19 @@ site_url: https://docs.spojit.com/
 site_author: Spojit
 site_description: >-
 
+# Header Links
+header_links:
+  display: true
+  contact:
+    url: https://www.spojit.com/contact.html
+    title: Contact Us
+  pricing:
+    url: https://www.spojit.com/pricing.html
+    title: Pricing
+  signup:
+    url: https://app.spojit.com/register/
+    title: Free Trial
+
 # Copyright
 copyright: Copyright &copy; 2020 Spojit
 
