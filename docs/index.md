@@ -1,6 +1,6 @@
 ---
 template: overrides/main.html
-title: Spojit Introduction
+title: Spojit Documentation
 ---
 
 # Spojit Introduction
