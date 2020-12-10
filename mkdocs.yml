@@ -150,6 +150,12 @@ nav:
         - Logs: user-guide/integration/edit/logs.md
       - Run now: user-guide/integration/run-now.md
       - Delete integration: user-guide/integration/delete-integration.md
+    - Workflow:
+      - Introduction: user-guide/workflow/introduction.md
+      - Create workflow: user-guide/workflow/create-workflow.md
+      - Add service: user-guide/workflow/add-service.md
+      - Connect services: user-guide/workflow/connect-services.md
+      - Run workflow: user-guide/workflow/run-workflow.md
   - Connectors Guide:
     - WooCommerce:
       - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
