@@ -156,6 +156,11 @@ nav:
       - Add service: user-guide/workflow/add-service.md
       - Connect services: user-guide/workflow/connect-services.md
       - Run workflow: user-guide/workflow/run-workflow.md
+    - Mapper:
+      - Functions:
+        - String Functions: user-guide/mapper/functions/string.md
+        - Array Functions: user-guide/mapper/functions/array.md
+        - Datetime Functions: user-guide/mapper/functions/datetime.md
   - Connectors Guide:
     - WooCommerce:
       - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md

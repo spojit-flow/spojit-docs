@@ -18,7 +18,3 @@ template: overrides/main.html
   Services requiring configuration will present a Configuration screen before allowing you to add a service onto the canvas, however, completing the configuration is not mandatory. You can add such service from the Configuration screen by clicking the 'Save and Add' button at the top of that screen. Configuration can be completed later from the service settings accessible from the canvas.
 
   ![Service Configuration Screen](/assets/images/workflow/service-config-screen.png "Service Configuration Screen")
-
-  
-  
-  
