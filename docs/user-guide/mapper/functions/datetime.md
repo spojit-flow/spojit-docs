@@ -25,7 +25,7 @@ datetime_current(string $timezone, string $format, [string $modification]):strin
 | l | A full textual representation of the day of the week | Saturday |
 | N | ISO-8601 numeric representation of the day of the week | 1 (for Monday) through 7 (for Sunday)  |
 | h | 12-hour format of an hour with leading zeros | 01 through 12 |
-| H | Hour in 24 hour format with leading zero | 06 or 18 }
+| H | Hour in 24 hour format with leading zero | 06 or 18 |
 | i | Minutes with leading zeros | 00 to 59  |
 | s | Seconds with leading zeros | 00 to 59 |
 | u | Microseconds | 654321 |
@@ -81,7 +81,7 @@ datetime_modify(string $value, string $inputTimezone, string $inputFormat, strin
 | l | A full textual representation of the day of the week | Saturday |
 | N | ISO-8601 numeric representation of the day of the week | 1 (for Monday) through 7 (for Sunday)  |
 | h | 12-hour format of an hour with leading zeros | 01 through 12 |
-| H | Hour in 24 hour format with leading zero | 06 or 18 }
+| H | Hour in 24 hour format with leading zero | 06 or 18 |
 | i | Minutes with leading zeros | 00 to 59  |
 | s | Seconds with leading zeros | 00 to 59 |
 | u | Microseconds | 654321 |
