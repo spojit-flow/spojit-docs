@@ -83,3 +83,39 @@ arr_filter(array $collection, array $conditions):array
   $conditions = [{$field = "name", $value = "Flynn"}, {$field = "id", $value = "1"}]
   arr_filter($collection, $conditions) => [{"id": 1, "name": "John", "contact": {"email": "john@email.com"}},{"id": 3, "name": "Flynn", "contact": {"email": "flynn@email.com"}}]
 ```
+___
+#### Array Map
+```
+arr_map(array $collection, string $field):array
+```
+  Searches input __\$collection__ (array of objects) for values matching the provided __\$field__. Returns a new collection of values matching that __\$field__.
+
+  __\$field__: the name of the object field (ie. 'id', or 'order_id').
+  
+
+  For a __\$collection__ of person objects where each person has a 'name' and a field where __\$field = 'name'__ this function will return a new array containing all persons names.
+
+  Returns an empty array [ ] if no matching items are found.
+  
+```
+  Given the following $collection:
+
+  [
+    {"id": 1, "name": "John", "contact": {"email": "john@email.com"}},
+    {"id": 2, "name": "Mary", "contact": {"email": "mary@email.com"}},
+    {"id": 3, "name": "Flynn", "contact": {"email": "flynn@email.com"}},
+    {"id": 4, "name": "Brad", "contact": {"email": "brad@email.com"}}
+  ]
+
+  //Find all values where field equals name
+  $field = "name"
+  arr_map($collection, $field) => ["John", "Mary", "Flynn", "Brad"]
+
+  //Find all values where field equals id
+  $field = "id"
+  arr_map($collection, $field) => [1, 2, 3, 4]
+
+  //Find all values where field equals contact
+  $field = "contact"
+  arr_map($collection, $field) => [{"email": "john@email.com"}, {"email": "mary@email.com"}, {"email": "flynn@email.com"}, {"email": "brad@email.com"}]
+```
