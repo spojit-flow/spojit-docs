@@ -162,6 +162,8 @@ nav:
         - Array Functions: user-guide/mapper/functions/array.md
         - Datetime Functions: user-guide/mapper/functions/datetime.md
         - Math Functions: user-guide/mapper/functions/math.md
+    - Services:
+      - CSV Parser: user-guide/services/csv-parser.md
   - Connectors Guide:
     - WooCommerce:
       - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
