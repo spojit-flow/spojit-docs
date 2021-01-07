@@ -1,68 +1,131 @@
 ---
 template: overrides/main.html
 ---
-Write a CSV file from source data or read the data from a CSV file to create output data.
+This service can either write a CSV file from source data or read the data from a CSV file to create output data.
 ___
-#### Write Configuration
-```
-csv_parse(string $method, array $headers, boolean $alwaysQuote, string $fieldDelimiter, string $recordDelimiter):string
-```
-  Will write a CSV file from mapped data and configuration options.
+### Creating a CSV
 
-  * __\$method__ set "write" to write a CSV file
-  * __\$headers__ array of header objects to be written to the CSV file
-    * __\$headerKey__ the key of the header in the mapped data
-    * __\$headerValue__ the value of the column header in the output file
-  * __\$alwaysQuote__ always encapsulate column data in quote. Either TRUE or FALSE. *Default: FALSE*
-  * __\$fieldDelimiter__ value of delimiter between column values. *Default: ","*
-  * __\$recordDelimiter__ value of delimiter between rows. Either LF (Linux) or CRLF (Windows). *Default: "LF"*
+When the write configuration is selected the service will write a CSV file from mapped data and configuration options.
 
-```
-  mapped_data => [{ id: "1", job: "Scuba Diver" }, { id: "2", job: "Plumber" }]
-  csv_parse("write", [{ headerKey: "id", headerValue: "ID" }, { headerKey: "job", headerValue: "Job" }], TRUE, ",", "CRLF") => '"ID","Job"\r\n"1","Scuba Diver"\r\n"2","Plumber"\r\n'
-```
+| Option | Description | Default | Required |
+| ----------- | ----------- | ----------- | ----------- |
+| Method | Select "write" to write a CSV file. | - | TRUE |
+| Headers | The CSV headers are not required as a file will generate without them with all the data; however, if they are specified only matching columns will be generated.  If added the Header Key and Header Value is required for each. | - | FALSE |
+| Header Key | The field in the data that the column corresponds to. | - | TRUE |
+| Header Value | The name of the column header in the CSV file. | - | TRUE |
+| Always Quote | Always encapsulate column data in quotes in the CSV file? Either TRUE or FALSE. | `FALSE` | FALSE |
+| Field Delimiter | String value of delimiter between column values. | `,` | TRUE |
+| Record Delimiter | String value of delimiter between rows. Either LF (Linux) or CRLF (Windows). | `LF` | TRUE |
 
-??? info "Mapped data"
-    Mapped data must be contained within the ARRAY data type and with fields matching the desired header columns.
-    ___
-    ![CSV Parser Write Mapping](/assets/images/services/csv-parser-write-mapping.png "CSV Parser Write Mapping")
+!!! warning "Important"
 
-??? info "Output data"
-    ```json
-    {
-      "data": ""ID","Job"\r\n"1","Scuba Diver"\r\n"2","Plumber"\r\n",
-      "metadata": {}
-    }
-    ```
-___
-#### Read Configuration
-```
-csv_parse(string $method, string $rawData):array
-```
-  Will read the raw data from a CSV file to create an array of output data.
+    Mapped service data must be contained with an ARRAY where the fields match the desired header columns.  The parser does not generate the file itself rather the raw data that can be used by other services to generate a file (i.e SFTP/Email).
 
-  * __\$method__ set "read" for reading a csv file
-  * __\$rawData__ array of header objects to be written to the CSV file
+??? spojit-example "Example configuration and mapping"
 
-```
-  csv_parse("read", "ID,Job\n1,Scuba Diver\n2,Plumber\n") => [{ ID: "1", Job: "Scuba Diver" }, { ID: "2", Job: "Plumber" }]
-```
+    === "1. Configuration"
 
-??? info "Output data"
-    ```json
-    {
-      "data": [
+        The following example shows you how to configure the CSV Parser to create a two column CSV file from an array of data.  The configuration is set up to create two headers for the columns with a comma as a field delimiter and using the LF record delimiter.
+
+        ![CSV Parser Write Configuration](/assets/images/services/csv-parser/write-configuration.png "CSV Parser Write Configuration")
+
+    === "2. Service data setup"
+
+        After the configuration is setup we can then create a schema for the output CSV. Each field within the array can be a column (depending on how headers are setup) and each index of the array consists of a row in the CSV.  For this example we are going to switch to the ARRAY schema and add __id__ and __job__ as fields to that ARRAY:
+
+        ![CSV Parser Write Schema](/assets/images/services/csv-parser/write-schema.png "CSV Parser Write Schema")
+
+        Given the following source data from another service:
+
+        ```json
         {
-          "ID": "1",
-          "Job": "Scuba Diver"
-        },
-        {
-          "ID": "2",
-          "Job": "Plumber"
+          "data": [
+            {
+              "id_number": "1",
+              "job_name": "Scuba Diver"
+            },
+            {
+              "id_number": "2",
+              "job_name": "Plumber"
+            }
+          ]
         }
-      ],
-      "metadata": {
+        ```
         
-      }
-    }
-    ```
+        Next we can map the __data__ array on the array in the field mapping with the __id_number__ and __job_name__ on __id__ and __job__ respectively as fields within the array:
+     
+        ![CSV Parser Write Mapping](/assets/images/services/csv-parser/write-mapping.png "CSV Parser Write Mapping")
+    
+    === "3. Output Data"
+
+        In this example the following output will be generated by this service after it is run:
+
+        ```json
+        {
+          "data": "ID,Job\n1,Scuba Diver\n2,Plumber\n",
+          "metadata": {}
+        }
+        ```
+
+        This output data can be used to create a CSV file like this:
+
+        ![CSV Parser Write Output CSV](/assets/images/services/csv-parser/write-output-csv.png "CSV Parser Write Output CSV")
+
+___
+### Reading a CSV
+
+  When the read configuration is selected the service will read the raw data from a CSV file to create an array of output data.  The array can then be used by other services.
+
+  | Option | Description | Default | Required |
+| ----------- | ----------- | ----------- | ----------- |
+| Method | Select "read" to read a CSV file | - | TRUE |
+| Raw Data | The raw data of the CSV file that will be parsed | - | TRUE |
+
+!!! info "Info"
+
+    There is no need to configure the service data that is read. The CSV data will be read with output fields and headers automatically created.
+
+??? spojit-example "Example configuration and mapping"
+
+    === "1. Configuration"
+
+        The following example shows you how to configure the CSV Parser to read a two column CSV file and create an array of data from that. 
+        
+        Given the following source data from another service:
+
+        ```json
+        {
+          "data": "ID,Job\n1,Scuba Diver\n2,Plumber\n",
+          "metadata": {}
+        }
+        ```
+        
+        The location of the raw CSV data needs to be specified in the configuration:
+
+        ![CSV Parser Read Configuration](/assets/images/services/csv-parser/read-configuration.png "CSV Parser Read Configuration")
+
+    === "2. Service data setup"
+
+        The CSV reader doesn't require any service data setup.
+    
+    === "3. Output Data"
+
+        In this example the following output will be generated by this service after it is run:
+
+        ```json
+        {
+          "data": [
+            {
+              "ID": "1",
+              "Job": "Scuba Diver"
+            },
+            {
+              "ID": "2",
+              "Job": "Plumber"
+            }
+          ],
+          "metadata": {
+            
+          }
+        }
+        ```

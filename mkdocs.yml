@@ -85,6 +85,9 @@ extra:
       link: https://www.youtube.com/channel/UCmrHMMPQCE7EaQR3_vPqXKw
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/spojit/
+
+extra_css:
+  - stylesheets/extra.css
     
 # Extensions
 markdown_extensions:
