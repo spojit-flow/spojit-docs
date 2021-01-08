@@ -44,7 +44,9 @@ When the GET configuration is selected the service will retrieve a resource from
                 "title": "delectus aut autem",
                 "completed": false
             },
-            "metadata": []
+            "metadata": {
+                "statusCode": 200
+            }
         }
         ```
 
@@ -104,7 +106,9 @@ When the POST configuration is selected the service will create a resource at a 
                 "title": "delectus aut autem",
                 "completed": false
             },
-            "metadata": []
+            "metadata": {
+                "statusCode": 201
+            }
         }
         ```
 
@@ -164,7 +168,9 @@ When the PUT configuration is selected the service will update a resource at a g
                 "title": "delectus aut autem",
                 "completed": false
             },
-            "metadata": []
+            "metadata": {
+                "statusCode": 200
+            }
         }
         ```
 
@@ -205,6 +211,8 @@ When the DELETE configuration is selected the service will delete a resource fro
                 "title": "delectus aut autem",
                 "completed": false
             },
-            "metadata": []
+            "metadata": {
+                "statusCode": 204
+            }
         }
         ```
