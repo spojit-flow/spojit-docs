@@ -86,6 +86,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/spojit/
 
+# Extra CSS stylesheet
 extra_css:
   - stylesheets/extra.css
     
@@ -167,6 +168,7 @@ nav:
         - Math Functions: user-guide/mapper/functions/math.md
     - Services:
       - CSV Parser: user-guide/services/csv-parser.md
+      - REST Service: user-guide/services/rest-service.md
   - Connectors Guide:
     - WooCommerce:
       - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
