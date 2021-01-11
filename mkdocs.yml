@@ -168,6 +168,7 @@ nav:
         - Math Functions: user-guide/mapper/functions/math.md
     - Services:
       - CSV Parser: user-guide/services/csv-parser.md
+      - JSON Parser: user-guide/services/json-parser.md
       - Mapper Service: user-guide/services/mapper-service.md
       - REST Service: user-guide/services/rest-service.md
   - Connectors Guide:
