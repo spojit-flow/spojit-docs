@@ -173,6 +173,7 @@ nav:
       - Mapper Service: user-guide/services/mapper-service.md
       - REST Service: user-guide/services/rest-service.md
       - Start Service: user-guide/services/start-service.md
+      - XLSX Writer: user-guide/services/xlsx-writer.md
   - Connectors Guide:
     - WooCommerce:
       - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
