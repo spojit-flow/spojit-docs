@@ -78,8 +78,8 @@ ___
 
   | Option | Description | Default | Required |
 | ----------- | ----------- | ----------- | ----------- |
-| Method | Select "read" to read a CSV file | - | TRUE |
-| Raw Data | The raw data of the CSV file that will be parsed | - | TRUE |
+| Method | Select "read" to read a CSV file. | - | TRUE |
+| Raw Data | The raw data of the CSV file that will be parsed. | - | TRUE |
 
 !!! info "Info"
 
