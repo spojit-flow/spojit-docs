@@ -169,6 +169,7 @@ nav:
     - Services:
       - CSV Parser: user-guide/services/csv-parser.md
       - JSON Parser: user-guide/services/json-parser.md
+      - Mailer: user-guide/services/mailer.md
       - Mapper Service: user-guide/services/mapper-service.md
       - REST Service: user-guide/services/rest-service.md
   - Connectors Guide:
