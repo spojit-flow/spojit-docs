@@ -168,6 +168,7 @@ nav:
         - Math Functions: user-guide/mapper/functions/math.md
     - Services:
       - CSV Parser: user-guide/services/csv-parser.md
+      - FTP Service: user-guide/services/ftp-service.md
       - JSON Parser: user-guide/services/json-parser.md
       - Mailer: user-guide/services/mailer.md
       - Mapper Service: user-guide/services/mapper-service.md
