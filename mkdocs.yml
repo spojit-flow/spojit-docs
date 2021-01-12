@@ -173,6 +173,7 @@ nav:
       - Mailer: user-guide/services/mailer.md
       - Mapper Service: user-guide/services/mapper-service.md
       - REST Service: user-guide/services/rest-service.md
+      - SFTP Service: user-guide/services/sftp-service.md
       - Start Service: user-guide/services/start-service.md
       - XLSX Writer: user-guide/services/xlsx-writer.md
   - Connectors Guide:
