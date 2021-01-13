@@ -71,8 +71,9 @@ theme:
 # Plugins
 plugins:
   - search
-  - minify:
-      minify_html: true
+  - mermaid2
+  # - minify:
+  #     minify_html: true
 
 # Customization
 extra:
@@ -122,7 +123,11 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.snippets:
       check_paths: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -172,6 +177,7 @@ nav:
       - JSON Parser: user-guide/services/json-parser.md
       - Mailer: user-guide/services/mailer.md
       - Mapper Service: user-guide/services/mapper-service.md
+      - Parallel Gateway: user-guide/services/parallel-gateway.md
       - REST Service: user-guide/services/rest-service.md
       - SFTP Service: user-guide/services/sftp-service.md
       - Start Service: user-guide/services/start-service.md

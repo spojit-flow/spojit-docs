@@ -1,4 +1,7 @@
 # Spojit documentation
+
+## Build the base image
+docker build -t squidfunk/mkdocs-material .
 ## Run Locally
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
 ## Build
