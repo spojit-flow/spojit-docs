@@ -20,10 +20,14 @@ graph LR
   E --> F
   F{JOIN} --> G[End]
 ```
+___
+### Configuration
+
+When added to the canvas the `fork` parallel gateway service will be automatic and not require any further configuration.
 
 !!! tip "Tip"
 
-    The parallel gateway does not specifically need a `join` in order to work and will finish without any issues.  The `join` makes a synchronous workflow outside of parallel processing by waiting until all parallel routes are complete before continuing (similar to async/await in JS). Omitting the join will lead to an asynchronous workflow where routes could continue in any order.
+    The parallel gateway does not specifically need a `join` in order to work and will finish without any issues.  The `join` makes a synchronous workflow outside of parallel processing by waiting until all parallel routes are complete before continuing (similar to async/await in JS). Omitting the `join` will lead to an asynchronous workflow where routes could continue in any order.
 
 ??? spojit-example "Example configuration and mapping"
 
