@@ -5,11 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.spojit.com/user-guide/integration/delete-integration/" rel="canonical"/>
+<link href="https://docs.spojit.com/user-guide/services/sftp-service/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../../assets/favicon.ico" rel="shortcut icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-5.2.0" name="generator"/>
-<title>Delete integration - Spojit Documentation</title>
+<title>SFTP Service - Spojit Documentation</title>
 <link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
 <meta content="#ff7043" name="theme-color"/>
@@ -21,9 +21,9 @@
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
 <meta content="website" property="og:type"/>
-<meta content="Spojit Documentation - Delete integration" property="og:title"/>
+<meta content="Spojit Documentation - SFTP Service" property="og:title"/>
 <meta content="" property="og:description"/>
-<meta content="https://docs.spojit.com/user-guide/integration/delete-integration/" property="og:url"/>
+<meta content="https://docs.spojit.com/user-guide/services/sftp-service/" property="og:url"/>
 <meta content="https://docs.spojit.com/assets/images/banner.png" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
 <meta content="1200" property="og:image:width"/>
@@ -31,7 +31,7 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="@squidfunk" name="twitter:site"/>
 <meta content="@squidfunk" name="twitter:creator"/>
-<meta content="Spojit Documentation - Delete integration" name="twitter:title"/>
+<meta content="Spojit Documentation - SFTP Service" name="twitter:title"/>
 <meta content="" name="twitter:description"/>
 <meta content="https://docs.spojit.com/assets/images/banner.png" name="twitter:image"/>
 </head>
@@ -40,7 +40,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#instructions">
+<a class="md-skip" href="#authorization">
           Skip to content
         </a>
 </div>
@@ -59,7 +59,7 @@
         </span>
 <span class="md-header-nav__topic md-ellipsis">
           
-          Delete integration
+          SFTP Service
           
         </span>
 </div>
@@ -264,8 +264,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" id="nav-2-2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" id="nav-2-2" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-2">
       Integration
       <span class="md-nav__icon md-icon">
@@ -281,7 +281,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../create-integration/" title="Create integration">
+<a class="md-nav__link" href="../../integration/create-integration/" title="Create integration">
       Create integration
     </a>
 </li>
@@ -302,27 +302,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../edit/basic-info/" title="Basic info">
+<a class="md-nav__link" href="../../integration/edit/basic-info/" title="Basic info">
       Basic info
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../edit/configuration/" title="Configuration">
+<a class="md-nav__link" href="../../integration/edit/configuration/" title="Configuration">
       Configuration
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../edit/schedule/" title="Schedule">
+<a class="md-nav__link" href="../../integration/edit/schedule/" title="Schedule">
       Schedule
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../edit/webhook/" title="Webhook">
+<a class="md-nav__link" href="../../integration/edit/webhook/" title="Webhook">
       Webhook
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../edit/logs/" title="Logs">
+<a class="md-nav__link" href="../../integration/edit/logs/" title="Logs">
       Logs
     </a>
 </li>
@@ -330,55 +330,14 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../run-now/" title="Run now">
+<a class="md-nav__link" href="../../integration/run-now/" title="Run now">
       Run now
     </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        Delete integration
-        <span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
-</span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Delete integration">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../integration/delete-integration/" title="Delete integration">
       Delete integration
     </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#instructions">
-    Instructions
-  </a>
-<nav aria-label="Instructions" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-log-in-to-your-account">
-    1. Log in to your account
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-access-my-integrations-page">
-    2. Access 'My Integrations' page
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-click-the-delete-button-and-confirm-the-action">
-    3. Click the 'Delete' button and confirm the action
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -485,8 +444,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-5">
       Services
       <span class="md-nav__icon md-icon">
@@ -502,52 +461,119 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/csv-parser/" title="CSV Parser">
+<a class="md-nav__link" href="../csv-parser/" title="CSV Parser">
       CSV Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/ftp-service/" title="FTP Service">
+<a class="md-nav__link" href="../ftp-service/" title="FTP Service">
       FTP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/json-parser/" title="JSON Parser">
+<a class="md-nav__link" href="../json-parser/" title="JSON Parser">
       JSON Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/mailer/" title="Mailer">
+<a class="md-nav__link" href="../mailer/" title="Mailer">
       Mailer
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/mapper-service/" title="Mapper Service">
+<a class="md-nav__link" href="../mapper-service/" title="Mapper Service">
       Mapper Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/parallel-gateway/" title="Parallel Gateway">
+<a class="md-nav__link" href="../parallel-gateway/" title="Parallel Gateway">
       Parallel Gateway
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/rest-service/" title="REST Service">
+<a class="md-nav__link" href="../rest-service/" title="REST Service">
       REST Service
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../services/sftp-service/" title="SFTP Service">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        SFTP Service
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="SFTP Service">
       SFTP Service
     </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#authorization">
+    Authorization
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/start-service/" title="Start Service">
+<a class="md-nav__link" href="#creating-a-file">
+    Creating a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#updating-a-file">
+    Updating a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upserting-a-file">
+    Upserting a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#downloading-a-file">
+    Downloading a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deleting-a-file">
+    Deleting a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-if-a-file-or-directory-exists">
+    Check if a file or directory exists
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get-list-of-files-and-directories">
+    Get list of files and directories
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-directory">
+    Creating a directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deleting-a-directory">
+    Deleting a directory
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../start-service/" title="Start Service">
       Start Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/xlsx-writer/" title="XLSX Writer">
+<a class="md-nav__link" href="../xlsx-writer/" title="XLSX Writer">
       XLSX Writer
     </a>
 </li>
@@ -661,28 +687,54 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#instructions">
-    Instructions
-  </a>
-<nav aria-label="Instructions" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-log-in-to-your-account">
-    1. Log in to your account
+<a class="md-nav__link" href="#authorization">
+    Authorization
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2-access-my-integrations-page">
-    2. Access 'My Integrations' page
+<a class="md-nav__link" href="#creating-a-file">
+    Creating a file
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#3-click-the-delete-button-and-confirm-the-action">
-    3. Click the 'Delete' button and confirm the action
+<a class="md-nav__link" href="#updating-a-file">
+    Updating a file
   </a>
 </li>
-</ul>
-</nav>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upserting-a-file">
+    Upserting a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#downloading-a-file">
+    Downloading a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deleting-a-file">
+    Deleting a file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-if-a-file-or-directory-exists">
+    Check if a file or directory exists
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get-list-of-files-and-directories">
+    Get list of files and directories
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-directory">
+    Creating a directory
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deleting-a-directory">
+    Deleting a directory
+  </a>
 </li>
 </ul>
 </nav>
@@ -691,18 +743,513 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>Delete integration</h1>
+<h1>SFTP Service</h1>
+<p>This service can facilitate the transfer of computer files between a client and server via the Secure File Transfer Protocol (SFTP).</p>
+<hr/>
+<h3 id="authorization">Authorization<a class="headerlink" href="#authorization" title="Permanent link">¶</a></h3>
+<p>The following authorization configuration needs to filled out in order to connect to the SFTP server:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>The address of the FTP server (i.e. ftp.dlptest.com).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>The port of the SFTP server.</td>
+<td>22</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>The username to log in to the SFTP server.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>The password to log in to the SFTP server.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<p>The following example configuration shows you how to configure the test SFTP server at <a href="https://test.rebex.net/" target="_blank">Test.Rebex.Net</a> (this server only allows files to be downloaded).</p>
+<p><img alt="SFTP Authorization Configuration" src="/assets/images/services/sftp-service/authorization-configuration.png" title="SFTP Authorization Configuration"/></p>
 <div class="admonition warning">
-<p class="admonition-title">Deleting an integration is a destructive action which cannot be undone. The integration and all associated data will be removed.</p>
+<p class="admonition-title">Important</p>
+<p>The host address does not require the protocol as it will default to SFTP.</p>
 </div>
-<h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">¶</a></h2>
-<h3 id="1-log-in-to-your-account">1. Log in to your account<a class="headerlink" href="#1-log-in-to-your-account" title="Permanent link">¶</a></h3>
-<h3 id="2-access-my-integrations-page">2. Access 'My Integrations' page<a class="headerlink" href="#2-access-my-integrations-page" title="Permanent link">¶</a></h3>
-<p>You can access the page via the main menu by expanding  the 'Integrations' menu item and selecting 'My Integrations'. You should see a table listing all your integrations here.</p>
-<p><img alt="Access My Integrations Page" src="/assets/images/access-library.png" title="Access My Integrations Page"/></p>
-<h3 id="3-click-the-delete-button-and-confirm-the-action">3. Click the 'Delete' button and confirm the action<a class="headerlink" href="#3-click-the-delete-button-and-confirm-the-action" title="Permanent link">¶</a></h3>
-<p>Find and click the red ‘bucket’ icon button in the integration table row next to the integration you wish to delete, you will be prompted to confirm the action. When you confirm, the integration and all associated data is removed.</p>
-<p><img alt="Delete Integration" src="/assets/images/delete-integration.png" title="Delete Integration"/></p>
+<hr/>
+<h3 id="creating-a-file">Creating a file<a class="headerlink" href="#creating-a-file" title="Permanent link">¶</a></h3>
+<p>Creating (or writing) a file will send the raw data output from another service(s) to a location.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "write" to transfer a file.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location to write the file to (including the filename).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Raw Data</td>
+<td>The raw data of the file that will be sent.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
+</div>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to transfer a file to a location.</p>
+<p><img alt="Write Configuration" src="/assets/images/services/file-system/write-configuration.png" title="Write Configuration"/></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will not provide any output data.</p>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="updating-a-file">Updating a file<a class="headerlink" href="#updating-a-file" title="Permanent link">¶</a></h3>
+<p>Updating a file will send the raw data output from another service(s) to a location if it exists.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "update" to update a file.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location to update the file to (including the filename).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Raw Data</td>
+<td>The raw data of the file that will be sent.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This option will only update the file it if already exists on the server.  If there is a possibility that the file will not exist use the Upsert (PUT) option instead.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
+</div>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to update a file.</p>
+<p><img alt="Update Configuration" src="/assets/images/services/file-system/update-configuration.png" title="Update Configuration"/></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio"><label for="__tabbed_2_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio"><label for="__tabbed_2_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will not provide any output data.</p>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="upserting-a-file">Upserting a file<a class="headerlink" href="#upserting-a-file" title="Permanent link">¶</a></h3>
+<p>Upserting (or putting) a file will send the raw data output from another service(s) to a location. If it exists it will be overwritten and if it does not exist it will be created.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "put" to upsert a file.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location to upsert the file to (including the filename).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Raw Data</td>
+<td>The raw data of the file that will be sent.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This option will create a file if it does not exist and update it if it already exists.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
+</div>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><label for="__tabbed_3_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to upsert a file.</p>
+<p><img alt="PUT Configuration" src="/assets/images/services/file-system/put-configuration.png" title="PUT Configuration"/></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio"><label for="__tabbed_3_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio"><label for="__tabbed_3_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will not provide any output data.</p>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="downloading-a-file">Downloading a file<a class="headerlink" href="#downloading-a-file" title="Permanent link">¶</a></h3>
+<p>Downloading (or reading) a file will transer the raw data from the location to be used as output for other service(s).</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "read" to download a file.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location of the file to download (including the filename).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
+</div>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><label for="__tabbed_4_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to read a file.</p>
+<p><img alt="Read Configuration" src="/assets/images/services/file-system/read-configuration.png" title="Read Configuration"/></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio"><label for="__tabbed_4_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio"><label for="__tabbed_4_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will produce the following raw data if the file transfered successfully:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="deleting-a-file">Deleting a file<a class="headerlink" href="#deleting-a-file" title="Permanent link">¶</a></h3>
+<p>Deleting a file will remove a file from a location if it exists.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "delete" to remove a file.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location of the file to delete (including the filename).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
+</div>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><label for="__tabbed_5_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to delete a file.</p>
+<p><img alt="Delete Configuration" src="/assets/images/services/file-system/delete-configuration.png" title="Delete Configuration"/></p>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio"><label for="__tabbed_5_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio"><label for="__tabbed_5_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will not provide any output data.</p>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="check-if-a-file-or-directory-exists">Check if a file or directory exists<a class="headerlink" href="#check-if-a-file-or-directory-exists" title="Permanent link">¶</a></h3>
+<p>This option will check to see if a file exists at a given location.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "has" to check if it exists.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location to check if it exists.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This method can check if directories exist as well.</p>
+</div>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><label for="__tabbed_6_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to delete a file.</p>
+<p><img alt="Has Configuration" src="/assets/images/services/file-system/has-configuration.png" title="Has Configuration"/></p>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio"><label for="__tabbed_6_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio"><label for="__tabbed_6_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will produce the following boolean data (<code>true</code> if it exists, <code>false</code> if it does not exist):</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="get-list-of-files-and-directories">Get list of files and directories<a class="headerlink" href="#get-list-of-files-and-directories" title="Permanent link">¶</a></h3>
+<p>This option will get a list of files and folders in a specified directory.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "list" to get a list of files.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location to get the list from.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Recursive</td>
+<td>Whether is it recursive or not.</td>
+<td>FALSE</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio"/><label for="__tabbed_7_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to retrieve a list of files and directories:</p>
+<p><img alt="List Configuration" src="/assets/images/services/file-system/list-configuration.png" title="List Configuration"/></p>
+</div>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio"/><label for="__tabbed_7_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_7_3" name="__tabbed_7" type="radio"/><label for="__tabbed_7_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will produce the following array of files and directories:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"file"</span><span class="p">,</span>
+        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"357a3948-e3ad-4cb5-856b-1cde09c37b55.txt"</span><span class="p">,</span>
+        <span class="nt">"visibility"</span><span class="p">:</span> <span class="s2">"public"</span><span class="p">,</span>
+        <span class="nt">"size"</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"357a3948-e3ad-4cb5-856b-1cde09c37b55.txt"</span><span class="p">,</span>
+        <span class="nt">"extension"</span><span class="p">:</span> <span class="s2">"txt"</span><span class="p">,</span>
+        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"357a3948-e3ad-4cb5-856b-1cde09c37b55"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"file"</span><span class="p">,</span>
+        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"59430d5e-ce73-4691-9fd7-705ab97cd792.txt"</span><span class="p">,</span>
+        <span class="nt">"visibility"</span><span class="p">:</span> <span class="s2">"public"</span><span class="p">,</span>
+        <span class="nt">"size"</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"59430d5e-ce73-4691-9fd7-705ab97cd792.txt"</span><span class="p">,</span>
+        <span class="nt">"extension"</span><span class="p">:</span> <span class="s2">"txt"</span><span class="p">,</span>
+        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"59430d5e-ce73-4691-9fd7-705ab97cd792"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"file"</span><span class="p">,</span>
+        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"dea44f29-c9e3-441b-b02c-0d923112698d.txt"</span><span class="p">,</span>
+        <span class="nt">"visibility"</span><span class="p">:</span> <span class="s2">"public"</span><span class="p">,</span>
+        <span class="nt">"size"</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"dea44f29-c9e3-441b-b02c-0d923112698d.txt"</span><span class="p">,</span>
+        <span class="nt">"extension"</span><span class="p">:</span> <span class="s2">"txt"</span><span class="p">,</span>
+        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"dea44f29-c9e3-441b-b02c-0d923112698d"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"dir"</span><span class="p">,</span>
+        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"Testing"</span><span class="p">,</span>
+        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"Testing"</span><span class="p">,</span>
+        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"Testing"</span>
+    <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</details>
+<hr/>
+<h3 id="creating-a-directory">Creating a directory<a class="headerlink" href="#creating-a-directory" title="Permanent link">¶</a></h3>
+<p>Create a directory will create a directory in a location if it doesn't exist.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "createDir" to create a directory.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location of the directory to create.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio"/><label for="__tabbed_8_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to create a directory.</p>
+<p><img alt="Create Directory Configuration" src="/assets/images/services/file-system/createdir-configuration.png" title="Create Directory Configuration"/></p>
+</div>
+<input id="__tabbed_8_2" name="__tabbed_8" type="radio"/><label for="__tabbed_8_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_8_3" name="__tabbed_8" type="radio"/><label for="__tabbed_8_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will not provide any output data.</p>
+</div>
+</div>
+</details>
+<hr/>
+<h3 id="deleting-a-directory">Deleting a directory<a class="headerlink" href="#deleting-a-directory" title="Permanent link">¶</a></h3>
+<p>Deleting a directory will remove a directory from a location if it exists.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "deleteDir" to remove a directory.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The location of the directory to delete.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio"/><label for="__tabbed_9_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure a file system service to delete a directory.</p>
+<p><img alt="Delete Directory Configuration" src="/assets/images/services/file-system/deletedir-configuration.png" title="Delete Directory Configuration"/></p>
+</div>
+<input id="__tabbed_9_2" name="__tabbed_9" type="radio"/><label for="__tabbed_9_2">2. Service data setup</label><div class="tabbed-content">
+<p>This service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_9_3" name="__tabbed_9" type="radio"/><label for="__tabbed_9_3">3. Output Data</label><div class="tabbed-content">
+<p>This service will not provide any output data.</p>
+</div>
+</div>
+</details>
 </article>
 </div>
 </div>
@@ -710,7 +1257,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../run-now/" rel="prev" title="Run now">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../rest-service/" rel="prev" title="REST Service">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -719,17 +1266,17 @@
 <span class="md-footer-nav__direction">
               Previous
             </span>
-            Run now
+            REST Service
           </div>
 </div>
 </a>
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../../workflow/introduction/" rel="next" title="Introduction">
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../start-service/" rel="next" title="Start Service">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
               Next
             </span>
-            Introduction
+            Start Service
           </div>
 </div>
 <div class="md-footer-nav__button md-icon">
