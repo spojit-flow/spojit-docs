@@ -466,6 +466,11 @@
     </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../deputy-service/" title="Deputy">
+      Deputy
+    </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../ftp-service/" title="FTP Service">
       FTP Service
     </a>
@@ -523,6 +528,11 @@
     </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../revel-service/" title="Revel Systems">
+      Revel Systems
+    </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../sftp-service/" title="SFTP Service">
       SFTP Service
     </a>
@@ -530,6 +540,16 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../start-service/" title="Start Service">
       Start Service
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../unleashed-service/" title="Unleashed Software">
+      Unleashed Software
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../woocommerce-service/" title="WooCommerce">
+      WooCommerce
     </a>
 </li>
 <li class="md-nav__item">
@@ -659,6 +679,11 @@
 <div class="md-content">
 <article class="md-content__inner md-typeset">
 <h1>Iterator</h1>
+<div class="admonition note">
+<p class="admonition-title">Before you begin</p>
+<p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
+</div>
+<hr/>
 <p>This service can facilitate the parallel processing of a collection of items.  The service itself can consist of two separate services within the application: <code>fork</code> and <code>join</code>.</p>
 <p>A scenario where this could be useful is if you receive a list of products from a webhook and need to retrieve the SKU of each product.  We could use the iterator to go through the collection of product and retreive the SKU information before continuing. </p>
 <p>In order to get this scenario to work you would add an iterator <code>fork</code> on to the canvas.  The <code>fork</code> would be split the collection and process each route in parallel. A service would be set up on the route for the task to request the SKU for each product.  We would then add an iterator <code>join</code> before continuing with the workflow.</p>

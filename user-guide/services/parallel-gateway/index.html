@@ -466,6 +466,11 @@
     </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../deputy-service/" title="Deputy">
+      Deputy
+    </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../ftp-service/" title="FTP Service">
       FTP Service
     </a>
@@ -523,6 +528,11 @@
     </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../revel-service/" title="Revel Systems">
+      Revel Systems
+    </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../sftp-service/" title="SFTP Service">
       SFTP Service
     </a>
@@ -530,6 +540,16 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../start-service/" title="Start Service">
       Start Service
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../unleashed-service/" title="Unleashed Software">
+      Unleashed Software
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../woocommerce-service/" title="WooCommerce">
+      WooCommerce
     </a>
 </li>
 <li class="md-nav__item">
@@ -659,6 +679,11 @@
 <div class="md-content">
 <article class="md-content__inner md-typeset">
 <h1>Parallel Gateway</h1>
+<div class="admonition note">
+<p class="admonition-title">Before you begin</p>
+<p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
+</div>
+<hr/>
 <p>This service can facilitate the parallel processing of multiple routes.  The service itself can consist of two separate services within the application: <code>fork</code> and <code>join</code>.</p>
 <p>A scenario where this could be useful is if you receive an online order from a webhook and you need to send the order and tracking information to a dropshipper.  In the webhook itself there is no customer or product information which is needed and a tracking number has not been generated.  We could use the parallel gateway to retreive the product and customer information and send the request to get a new tracking number at the same time before sending the information to the dropshipper. </p>
 <p>In order to get this scenario to work you would add a parallel gateway <code>fork</code> and three HTTP request services on to the canvas.  The <code>fork</code> would be joined to prior services and would have three routes (one to each HTTP service). The services would be set up for the relevant task (getting product information, getting customer information, creating a tracking number).  We would then add a parallel gateway <code>join</code> and add a route from each service to it before continuing with the workflow.</p>
