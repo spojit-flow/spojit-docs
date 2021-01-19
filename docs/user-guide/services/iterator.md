@@ -1,6 +1,11 @@
 ---
 template: overrides/main.html
 ---
+!!! note "Before you begin" 
+
+    In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the [pricing](https://www.spojit.com/pricing.html "Spojit Pricing"){target="_blank"} and [register here](https://app.spojit.com/register "Spojit Registration"){target="_blank"}.  If you already have an account you can [login here](https://app.spojit.com/login "Spojit Login"){target="_blank"}.
+___
+   
 This service can facilitate the parallel processing of a collection of items.  The service itself can consist of two separate services within the application: `fork` and `join`.
 
 A scenario where this could be useful is if you receive a list of products from a webhook and need to retrieve the SKU of each product.  We could use the iterator to go through the collection of product and retreive the SKU information before continuing. 

@@ -173,6 +173,7 @@ nav:
         - Math Functions: user-guide/mapper/functions/math.md
     - Services:
       - CSV Parser: user-guide/services/csv-parser.md
+      - Deputy: user-guide/services/deputy-service.md
       - FTP Service: user-guide/services/ftp-service.md
       - Iterator: user-guide/services/iterator.md
       - JSON Parser: user-guide/services/json-parser.md
@@ -180,8 +181,11 @@ nav:
       - Mapper Service: user-guide/services/mapper-service.md
       - Parallel Gateway: user-guide/services/parallel-gateway.md
       - REST Service: user-guide/services/rest-service.md
+      - Revel Systems: user-guide/services/revel-service.md
       - SFTP Service: user-guide/services/sftp-service.md
       - Start Service: user-guide/services/start-service.md
+      - Unleashed Software: user-guide/services/unleashed-service.md
+      - WooCommerce: user-guide/services/woocommerce-service.md
       - XLSX Writer: user-guide/services/xlsx-writer.md
   - Connectors Guide:
     - WooCommerce:

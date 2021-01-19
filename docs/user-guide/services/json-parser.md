@@ -1,6 +1,11 @@
 ---
 template: overrides/main.html
 ---
+!!! note "Before you begin" 
+
+    In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the [pricing](https://www.spojit.com/pricing.html "Spojit Pricing"){target="_blank"} and [register here](https://app.spojit.com/register "Spojit Registration"){target="_blank"}.  If you already have an account you can [login here](https://app.spojit.com/login "Spojit Login"){target="_blank"}.
+___
+   
 This service can write a JSON file from source data which could be used that to create a file on a FTP or make a request in the JSON format. It can also read the data from a JSON file which would create data output.
 ___
 ### Writing a JSON file

@@ -1,16 +1,8 @@
----
-template: overrides/main.html
----
-!!! note "Before you begin" 
-
-    In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the [pricing](https://www.spojit.com/pricing.html "Spojit Pricing"){target="_blank"} and [register here](https://app.spojit.com/register "Spojit Registration"){target="_blank"}.  If you already have an account you can [login here](https://app.spojit.com/login "Spojit Login"){target="_blank"}.
 ___
-   
-This is a simple RESTful service that sends HTTP requests using GET, POST, PUT and DELETE methods in JSON format.
+!!! danger "Important"
 
-!!! warning "Important"
-
-    This service has a built in JSON parser and will not work with other formats. Requests will automatically contain `Content-Type: application/json` and `Accept: application/json` headers.
+    * This service has a built in JSON parser and will automatically convert to the proper format. Requests will automatically contain required headers and authorization configuration so they do not need to be added.  
+    * The following (below) is a general guide on how to use the methods for this service.  The examples use the [JSONPlaceholder](https://jsonplaceholder.typicode.com/ "JSONPlaceholder"){target="_blank"} fake online REST API. Please refer to the system documentation above for full path and schema information.
 
 ___
 ### GET
@@ -31,7 +23,7 @@ When the GET configuration is selected the service will retrieve a resource from
 
         The following example shows you how to configure the Rest Service to get data from a resource.  It also contains an example header for an OAuth authorization bearer token.
 
-        ![Rest Service GET Configuration](/assets/images/services/rest-service/get-configuration.png "Rest Service GET Configuration")
+        ![Rest Service GET Configuration](/assets/images/services/default-connector/get-configuration.png "Rest Service GET Configuration")
 
     === "2. Service data setup"
 
@@ -74,13 +66,13 @@ When the POST configuration is selected the service will create a resource at a 
 
         The following example shows you how to configure the Rest Service to create a resource.
 
-        ![Rest Service POST Configuration](/assets/images/services/rest-service/post-configuration.png "Rest Service POST Configuration")
+        ![Rest Service POST Configuration](/assets/images/services/default-connector/post-configuration.png "Rest Service POST Configuration")
 
     === "2. Service data setup"
 
         The schema can be whatever the resource excepts and for this example we are going to create an OBJECT schema with the specified fields:
 
-        ![Rest Service POST Schema](/assets/images/services/rest-service/post-schema.png "Rest Service POST Schema")
+        ![Rest Service POST Schema](/assets/images/services/default-connector/post-schema.png "Rest Service POST Schema")
 
         Given the following source data from another service:
 
@@ -97,7 +89,7 @@ When the POST configuration is selected the service will create a resource at a 
 
         We can map the applicable fields with the schema object:
      
-        ![Rest Service POST Mapping](/assets/images/services/rest-service/post-mapping.png "Rest Service POST Mapping")
+        ![Rest Service POST Mapping](/assets/images/services/default-connector/post-mapping.png "Rest Service POST Mapping")
     
     === "3. Output Data"
 
@@ -136,13 +128,13 @@ When the PUT configuration is selected the service will update a resource at a g
 
         The following example shows you how to configure the Rest Service to update a resource.
 
-        ![Rest Service PUT Configuration](/assets/images/services/rest-service/put-configuration.png "Rest Service PUT Configuration")
+        ![Rest Service PUT Configuration](/assets/images/services/default-connector/put-configuration.png "Rest Service PUT Configuration")
 
     === "2. Service data setup"
 
         The schema can be whatever the resource excepts and for this example we are going to create an OBJECT schema with the specified fields:
 
-        ![Rest Service PUT Schema](/assets/images/services/rest-service/put-schema.png "Rest Service PUT Schema")
+        ![Rest Service PUT Schema](/assets/images/services/default-connector/put-schema.png "Rest Service PUT Schema")
 
         Given the following source data from another service:
 
@@ -159,7 +151,7 @@ When the PUT configuration is selected the service will update a resource at a g
 
         We can map the applicable fields with the schema object:
      
-        ![Rest Service PUT Mapping](/assets/images/services/rest-service/put-mapping.png "Rest Service PUT Mapping")
+        ![Rest Service PUT Mapping](/assets/images/services/default-connector/put-mapping.png "Rest Service PUT Mapping")
     
     === "3. Output Data"
 
@@ -198,7 +190,7 @@ When the DELETE configuration is selected the service will delete a resource fro
 
         The following example shows you how to configure the Rest Service to delete a resource:
 
-        ![Rest Service DELETE Configuration](/assets/images/services/rest-service/delete-configuration.png "Rest Service DELETE Configuration")
+        ![Rest Service DELETE Configuration](/assets/images/services/default-connector/delete-configuration.png "Rest Service DELETE Configuration")
 
     === "2. Service data setup"
 

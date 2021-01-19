@@ -1,6 +1,11 @@
 ---
 template: overrides/main.html
 ---
+!!! note "Before you begin" 
+
+    In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the [pricing](https://www.spojit.com/pricing.html "Spojit Pricing"){target="_blank"} and [register here](https://app.spojit.com/register "Spojit Registration"){target="_blank"}.  If you already have an account you can [login here](https://app.spojit.com/login "Spojit Login"){target="_blank"}.
+___
+ 
 This service can facilitate the parallel processing of multiple routes.  The service itself can consist of two separate services within the application: `fork` and `join`.
 
 A scenario where this could be useful is if you receive an online order from a webhook and you need to send the order and tracking information to a dropshipper.  In the webhook itself there is no customer or product information which is needed and a tracking number has not been generated.  We could use the parallel gateway to retreive the product and customer information and send the request to get a new tracking number at the same time before sending the information to the dropshipper. 

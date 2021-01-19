@@ -1,6 +1,11 @@
 ---
 template: overrides/main.html
 ---
+!!! note "Before you begin" 
+
+    In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the [pricing](https://www.spojit.com/pricing.html "Spojit Pricing"){target="_blank"} and [register here](https://app.spojit.com/register "Spojit Registration"){target="_blank"}.  If you already have an account you can [login here](https://app.spojit.com/login "Spojit Login"){target="_blank"}.
+___
+  
 The start service is the starting point for incoming webhooks and realtime requests.  When provided the service will take any incoming data and create a new output object.
 
 ??? spojit-example "Example configuration and mapping"
