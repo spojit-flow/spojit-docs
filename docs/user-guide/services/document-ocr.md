@@ -6,7 +6,7 @@ template: overrides/main.html
     In order to use the features in this section you need to have an active Spojit account with an Enterprise plan. If you don't have an account you can checkout out the [pricing](https://www.spojit.com/pricing.html "Spojit Pricing"){target="_blank"} and [register here](https://app.spojit.com/register "Spojit Registration"){target="_blank"}.  If you already have an account you can [login here](https://app.spojit.com/login "Spojit Login"){target="_blank"}.
 ___
  
-The Document OCR (Optical Character Recognition) service allows you to read text and tables in PDF documents which could be used to make an API request or create an Excel or CSV file.
+The Document OCR (Optical Character Recognition) service allows you to read text and tables in documents (such as PDFs) which could be used to make an API request or create an Excel or CSV file.
 
 !!! warning "Important"
 
@@ -84,7 +84,7 @@ Finally click "Done" to finish configuring the OCR
 ___
 ### Output Data
 
-The following data will be output from the OCR from the above example. Please note that the empty lines within the table are in the output. Use available functions to remove empty lines or pick specific fields.
+The following data will be output from the OCR from the above example. Please note that the empty lines within the table are also in the output. Use available functions to remove empty lines or pick specific fields.
 
 ```json
 {
