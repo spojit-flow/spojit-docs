@@ -74,7 +74,7 @@ Select "Simple Section" as the type, add a name for it, and then click create:
 
 #### Adding a tabular section
 
-Hold the ALT key and select a section for a column (like in the Simple section). Select "Tabular data" as the type, choose the corresponding column, add a name for it and finally click on "create":
+Hold the ALT key and select a section for a column (like in the Simple section). Select "Tabular data" as the type, choose the corresponding column and finally click on "create":
 
 ![Document OCR Tabular Section](/assets/images/services/document-ocr/document-ocr-tabular-section.png "Document OCR Tabular Section")
 
