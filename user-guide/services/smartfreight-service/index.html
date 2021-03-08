@@ -5,11 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.spojit.com/user-guide/services/ftp-service/" rel="canonical"/>
+<link href="https://docs.spojit.com/user-guide/services/smartfreight-service/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../../assets/favicon.ico" rel="shortcut icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-5.2.0" name="generator"/>
-<title>FTP Service - Spojit Documentation</title>
+<title>SmartFreight Service - Spojit Documentation</title>
 <link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
 <meta content="#ff7043" name="theme-color"/>
@@ -21,9 +21,9 @@
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
 <meta content="website" property="og:type"/>
-<meta content="Spojit Documentation - FTP Service" property="og:title"/>
+<meta content="Spojit Documentation - SmartFreight Service" property="og:title"/>
 <meta content="" property="og:description"/>
-<meta content="https://docs.spojit.com/user-guide/services/ftp-service/" property="og:url"/>
+<meta content="https://docs.spojit.com/user-guide/services/smartfreight-service/" property="og:url"/>
 <meta content="https://docs.spojit.com/assets/images/banner.png" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
 <meta content="1200" property="og:image:width"/>
@@ -31,7 +31,7 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="@squidfunk" name="twitter:site"/>
 <meta content="@squidfunk" name="twitter:creator"/>
-<meta content="Spojit Documentation - FTP Service" name="twitter:title"/>
+<meta content="Spojit Documentation - SmartFreight Service" name="twitter:title"/>
 <meta content="" name="twitter:description"/>
 <meta content="https://docs.spojit.com/assets/images/banner.png" name="twitter:image"/>
 </head>
@@ -40,7 +40,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#authorization">
+<a class="md-skip" href="#smartfreight-authorization">
           Skip to content
         </a>
 </div>
@@ -59,7 +59,7 @@
         </span>
 <span class="md-header-nav__topic md-ellipsis">
           
-          FTP Service
+          SmartFreight Service
           
         </span>
 </div>
@@ -475,77 +475,10 @@
       Document OCR
     </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        FTP Service
-        <span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
-</span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./" title="FTP Service">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ftp-service/" title="FTP Service">
       FTP Service
     </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#authorization">
-    Authorization
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#creating-a-file">
-    Creating a file
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#updating-a-file">
-    Updating a file
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#upserting-a-file">
-    Upserting a file
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#downloading-a-file">
-    Downloading a file
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#deleting-a-file">
-    Deleting a file
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#check-if-a-file-or-directory-exists">
-    Check if a file or directory exists
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get-list-of-files-and-directories">
-    Get list of files and directories
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#creating-a-directory">
-    Creating a directory
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#deleting-a-directory">
-    Deleting a directory
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../iterator/" title="Iterator">
@@ -587,10 +520,72 @@
       SFTP Service
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../smartfreight-service/" title="SmartFreight Service">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        SmartFreight Service
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="SmartFreight Service">
       SmartFreight Service
     </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#smartfreight-authorization">
+    SmartFreight Authorization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#calculaterate">
+    CalculateRate
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getdeliveryoptions">
+    GetDeliveryOptions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#costcomparison">
+    CostComparison
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#import">
+    Import
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#findcon">
+    FindCon
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#enquiry">
+    Enquiry
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deletecon">
+    DeleteCon
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trackingevents">
+    TrackingEvents
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../start-service/" title="Start Service">
@@ -722,53 +717,48 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#authorization">
-    Authorization
+<a class="md-nav__link" href="#smartfreight-authorization">
+    SmartFreight Authorization
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#creating-a-file">
-    Creating a file
+<a class="md-nav__link" href="#calculaterate">
+    CalculateRate
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#updating-a-file">
-    Updating a file
+<a class="md-nav__link" href="#getdeliveryoptions">
+    GetDeliveryOptions
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#upserting-a-file">
-    Upserting a file
+<a class="md-nav__link" href="#costcomparison">
+    CostComparison
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#downloading-a-file">
-    Downloading a file
+<a class="md-nav__link" href="#import">
+    Import
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#deleting-a-file">
-    Deleting a file
+<a class="md-nav__link" href="#findcon">
+    FindCon
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#check-if-a-file-or-directory-exists">
-    Check if a file or directory exists
+<a class="md-nav__link" href="#enquiry">
+    Enquiry
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#get-list-of-files-and-directories">
-    Get list of files and directories
+<a class="md-nav__link" href="#deletecon">
+    DeleteCon
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#creating-a-directory">
-    Creating a directory
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#deleting-a-directory">
-    Deleting a directory
+<a class="md-nav__link" href="#trackingevents">
+    TrackingEvents
   </a>
 </li>
 </ul>
@@ -778,16 +768,20 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>FTP Service</h1>
+<h1>SmartFreight Service</h1>
 <div class="admonition note">
 <p class="admonition-title">Before you begin</p>
 <p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
 </div>
 <hr/>
-<p>This service can facilitate the transfer of computer files between a client and server via the File Transfer Protocol (FTP).</p>
+<p>SmartFreight® puts you in front of hundreds of transport providers and routes at your fingertips, offering you effective freight solutions.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Full documentation of SmartFreight resources and configuration is available at <a href="http://balmoral.ifsconnect.net/smartfreight/" target="_blank" title="SmartFreight API Documentation">SmartFreight API Documentation</a>.</p>
+</div>
 <hr/>
-<h3 id="authorization">Authorization<a class="headerlink" href="#authorization" title="Permanent link">¶</a></h3>
-<p>The following authorization configuration needs to filled out in order to connect to the FTP server:</p>
+<h3 id="smartfreight-authorization">SmartFreight Authorization<a class="headerlink" href="#smartfreight-authorization" title="Permanent link">¶</a></h3>
+<p>The following authorization configuration needs to filled out in order to connect with WooCommerce:</p>
 <table>
 <thead>
 <tr>
@@ -799,261 +793,162 @@
 </thead>
 <tbody>
 <tr>
-<td>Host</td>
-<td>The address of the FTP server (i.e. ftp.dlptest.com).</td>
+<td>WSDL</td>
+<td>The SmartFreight WSDL.</td>
 <td>-</td>
 <td>TRUE</td>
 </tr>
 <tr>
-<td>Port</td>
-<td>The port of the FTP server.</td>
-<td>21</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Username</td>
-<td>The username to log in to the FTP server.</td>
+<td>ID</td>
+<td>The ID for your SmartFreight instance.</td>
 <td>-</td>
 <td>TRUE</td>
 </tr>
 <tr>
-<td>Password</td>
-<td>The password to log in to the FTP server.</td>
+<td>Passwd</td>
+<td>The password for your SmartFreight instance.</td>
 <td>-</td>
 <td>TRUE</td>
-</tr>
-<tr>
-<td>Passive mode</td>
-<td>Enable passive mode allowing the client to initiate the data connection with the server.</td>
-<td>TRUE</td>
-<td>FALSE</td>
-</tr>
-<tr>
-<td>SSL</td>
-<td>Enable the use of SSL (Secure Socket Layer).</td>
-<td>TRUE</td>
-<td>FALSE</td>
-</tr>
-<tr>
-<td>Ignore Passive Address</td>
-<td>Ignore the received passive address from the FTP server.</td>
-<td>FALSE</td>
-<td>FALSE</td>
 </tr>
 </tbody>
 </table>
-<p>The following example configuration shows you how to configure the test FTP server at <a href="https://dlptest.com/ftp-test" target="_blank">DLP Test</a> and ensuring that passive mode is turned on.</p>
-<p><img alt="FTP Authorization Configuration" src="/assets/images/services/ftp-service/authorization-configuration.png" title="FTP Authorization Configuration"/></p>
-<div class="admonition warning">
+<p>The following example configuration shows you how to configure the authorziation for SmartFreight:</p>
+<p><img alt="SmartFreight Authorization Configuration" src="/assets/images/services/smartfreight-service/authorization-configuration.png" title="SmartFreight Authorization Configuration"/></p>
+<div class="admonition danger">
 <p class="admonition-title">Important</p>
-<p>The host address does not require the protocol as it will default to FTP (i.e ftp://).</p>
+<ul>
+<li>This service has a built in XML parser and will automatically convert to the proper format. SOAP requests will automatically contain required headers and authorization configuration so they do not need to be added.  </li>
+<li>Where there is a reference mentioned, the service will inject a unique reference that can be viewed in our logs and in SmartFreight (i.e spojit_xdfdef4543). </li>
+<li>This documenation does not fully explain all the elements of the Consignment Message. Please refer to the <a href="http://balmoral.ifsconnect.net/integration/smartfreight-consignment-message/" target="_blank" title="SmartFreight Consignment Message documentation">SmartFreight Consignment Message documentation</a> for further information.</li>
+</ul>
 </div>
 <hr/>
-<h3 id="creating-a-file">Creating a file<a class="headerlink" href="#creating-a-file" title="Permanent link">¶</a></h3>
-<p>Creating (or writing) a file will send the raw data output from another service(s) to a location.</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Method</td>
-<td>Select "write" to transfer a file.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location to write the file to (including the filename).</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Raw Data</td>
-<td>The raw data of the file that will be sent.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
-</div>
+<h3 id="calculaterate">CalculateRate<a class="headerlink" href="#calculaterate" title="Permanent link">¶</a></h3>
+<p>When the CalculateRate configuration is selected the service will call the CalculateRate resource.</p>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to transfer a file to a location.</p>
-<p><img alt="Write Configuration" src="/assets/images/services/file-system/write-configuration.png" title="Write Configuration"/></p>
+<p>This method does not requrire configuartion.</p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>Here is an example consignment message mapping that could be used for the CalculateRate method. The connote root node can be ommited from the mapping:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"recaccno"</span><span class="p">:</span> <span class="s2">"TEST"</span><span class="p">,</span>
+    <span class="nt">"recname"</span><span class="p">:</span> <span class="s2">"TEST RECEIVER"</span><span class="p">,</span>
+    <span class="nt">"recaddr"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"add1"</span><span class="p">:</span> <span class="s2">"100 George Street"</span><span class="p">,</span>
+        <span class="nt">"add3"</span><span class="p">:</span> <span class="s2">"SYDNEY"</span><span class="p">,</span>
+        <span class="nt">"add4"</span><span class="p">:</span> <span class="s2">"NSW"</span><span class="p">,</span>
+        <span class="nt">"add5"</span><span class="p">:</span> <span class="s2">"2000"</span>
+    <span class="p">},</span>
+    <span class="nt">"carriername"</span><span class="p">:</span> <span class="s2">"TEST CARRIER"</span><span class="p">,</span>
+    <span class="nt">"freightlinedetails"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"amt"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+        <span class="nt">"desc"</span><span class="p">:</span> <span class="s2">"CARTON"</span><span class="p">,</span>
+        <span class="nt">"wgt"</span><span class="p">:</span> <span class="s2">"5"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will not provide any output data.</p>
+<p>The CalculateRate call will return a CalculateRateResult which will be in the form of a Consignment Message.  For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/calculaterate/" target="_blank" title="CalculateRate documentation">CalculateRate documentation</a>.</p>
 </div>
 </input></input></input></div>
 </details>
 <hr/>
-<h3 id="updating-a-file">Updating a file<a class="headerlink" href="#updating-a-file" title="Permanent link">¶</a></h3>
-<p>Updating a file will send the raw data output from another service(s) to a location if it exists.</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Method</td>
-<td>Select "update" to update a file.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location to update the file to (including the filename).</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Raw Data</td>
-<td>The raw data of the file that will be sent.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>This option will only update the file it if already exists on the server.  If there is a possibility that the file will not exist use the Upsert (PUT) option instead.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
-</div>
+<h3 id="getdeliveryoptions">GetDeliveryOptions<a class="headerlink" href="#getdeliveryoptions" title="Permanent link">¶</a></h3>
+<p>When the GetDeliveryOptions configuration is selected the service will call the GetDeliveryOptions resource.</p>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to update a file.</p>
-<p><img alt="Update Configuration" src="/assets/images/services/file-system/update-configuration.png" title="Update Configuration"/></p>
+<p>This method does not requrire configuartion.</p>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio"><label for="__tabbed_2_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>Here is an example consignment message mapping that could be used for the GetDeliveryOptions method. The connote root node can be ommited from the mapping:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"recaccno"</span><span class="p">:</span> <span class="s2">"TEST"</span><span class="p">,</span>
+    <span class="nt">"recname"</span><span class="p">:</span> <span class="s2">"TEST RECEIVER"</span><span class="p">,</span>
+    <span class="nt">"recaddr"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"add1"</span><span class="p">:</span> <span class="s2">"100 George Street"</span><span class="p">,</span>
+        <span class="nt">"add3"</span><span class="p">:</span> <span class="s2">"SYDNEY"</span><span class="p">,</span>
+        <span class="nt">"add4"</span><span class="p">:</span> <span class="s2">"NSW"</span><span class="p">,</span>
+        <span class="nt">"add5"</span><span class="p">:</span> <span class="s2">"2000"</span>
+    <span class="p">},</span>
+    <span class="nt">"carriername"</span><span class="p">:</span> <span class="s2">"TEST CARRIER"</span><span class="p">,</span>
+    <span class="nt">"freightlinedetails"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"amt"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+        <span class="nt">"desc"</span><span class="p">:</span> <span class="s2">"CARTON"</span><span class="p">,</span>
+        <span class="nt">"wgt"</span><span class="p">:</span> <span class="s2">"5"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 <input id="__tabbed_2_3" name="__tabbed_2" type="radio"><label for="__tabbed_2_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will not provide any output data.</p>
+<p>The GetDeliveryOptions call will return a GetDeliveryOptionsResult which will be in the form of a Consignment Message.  For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/getdeliveryoptions/" target="_blank" title="GetDeliveryOptions documentation">GetDeliveryOptions documentation</a>.</p>
 </div>
 </input></input></input></div>
 </details>
 <hr/>
-<h3 id="upserting-a-file">Upserting a file<a class="headerlink" href="#upserting-a-file" title="Permanent link">¶</a></h3>
-<p>Upserting (or putting) a file will send the raw data output from another service(s) to a location. If it exists it will be overwritten and if it does not exist it will be created.</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Method</td>
-<td>Select "put" to upsert a file.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location to upsert the file to (including the filename).</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Raw Data</td>
-<td>The raw data of the file that will be sent.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>This option will create a file if it does not exist and update it if it already exists.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
-</div>
+<h3 id="costcomparison">CostComparison<a class="headerlink" href="#costcomparison" title="Permanent link">¶</a></h3>
+<p>When the CostComparison configuration is selected the service will call the CostComparison resource.</p>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><label for="__tabbed_3_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to upsert a file.</p>
-<p><img alt="PUT Configuration" src="/assets/images/services/file-system/put-configuration.png" title="PUT Configuration"/></p>
+<p>This method does not requrire configuartion.</p>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio"><label for="__tabbed_3_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>Here is an example consignment message mapping that could be used for the CostComparison method.  The connote root node can be ommited from the mapping:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"recaccno"</span><span class="p">:</span> <span class="s2">"TEST"</span><span class="p">,</span>
+    <span class="nt">"recname"</span><span class="p">:</span> <span class="s2">"TEST RECEIVER"</span><span class="p">,</span>
+    <span class="nt">"recaddr"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"add1"</span><span class="p">:</span> <span class="s2">"100 George Street"</span><span class="p">,</span>
+        <span class="nt">"add3"</span><span class="p">:</span> <span class="s2">"SYDNEY"</span><span class="p">,</span>
+        <span class="nt">"add4"</span><span class="p">:</span> <span class="s2">"NSW"</span><span class="p">,</span>
+        <span class="nt">"add5"</span><span class="p">:</span> <span class="s2">"2000"</span>
+    <span class="p">},</span>
+    <span class="nt">"carriername"</span><span class="p">:</span> <span class="s2">"TEST CARRIER"</span><span class="p">,</span>
+    <span class="nt">"freightlinedetails"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"amt"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+        <span class="nt">"desc"</span><span class="p">:</span> <span class="s2">"CARTON"</span><span class="p">,</span>
+        <span class="nt">"wgt"</span><span class="p">:</span> <span class="s2">"5"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 <input id="__tabbed_3_3" name="__tabbed_3" type="radio"><label for="__tabbed_3_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will not provide any output data.</p>
+<p>The CostComparison call will return a CostComparisonResult.  For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/costcomparison/" target="_blank" title="CostComparison documentation">CostComparison documentation</a>.</p>
 </div>
 </input></input></input></div>
 </details>
 <hr/>
-<h3 id="downloading-a-file">Downloading a file<a class="headerlink" href="#downloading-a-file" title="Permanent link">¶</a></h3>
-<p>Downloading (or reading) a file will transer the raw data from the location to be used as output for other service(s).</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Method</td>
-<td>Select "read" to download a file.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location of the file to download (including the filename).</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
-</div>
+<h3 id="import">Import<a class="headerlink" href="#import" title="Permanent link">¶</a></h3>
+<p>When the Import configuration is selected the service will call the Import resource.</p>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><label for="__tabbed_4_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to read a file.</p>
-<p><img alt="Read Configuration" src="/assets/images/services/file-system/read-configuration.png" title="Read Configuration"/></p>
+<p>This method does not requrire configuartion.</p>
 </div>
 <input id="__tabbed_4_2" name="__tabbed_4" type="radio"><label for="__tabbed_4_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>Here is an example consignment message mapping that could be used for the Import method. The connote root node can be ommited from the mapping:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"recaccno"</span><span class="p">:</span> <span class="s2">"TEST"</span><span class="p">,</span>
+    <span class="nt">"recname"</span><span class="p">:</span> <span class="s2">"TEST RECEIVER"</span><span class="p">,</span>
+    <span class="nt">"recaddr"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"add1"</span><span class="p">:</span> <span class="s2">"100 George Street"</span><span class="p">,</span>
+        <span class="nt">"add3"</span><span class="p">:</span> <span class="s2">"SYDNEY"</span><span class="p">,</span>
+        <span class="nt">"add4"</span><span class="p">:</span> <span class="s2">"NSW"</span><span class="p">,</span>
+        <span class="nt">"add5"</span><span class="p">:</span> <span class="s2">"2000"</span>
+    <span class="p">},</span>
+    <span class="nt">"carriername"</span><span class="p">:</span> <span class="s2">"TEST CARRIER"</span><span class="p">,</span>
+    <span class="nt">"freightlinedetails"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"amt"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+        <span class="nt">"desc"</span><span class="p">:</span> <span class="s2">"CARTON"</span><span class="p">,</span>
+        <span class="nt">"wgt"</span><span class="p">:</span> <span class="s2">"5"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 <input id="__tabbed_4_3" name="__tabbed_4" type="radio"><label for="__tabbed_4_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will produce the following raw data if the file transfered successfully:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
-<span class="p">}</span>
-</code></pre></div>
+<p>The Import call will return a ImportResult which will be in the form of a Consignment Message.  For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/import/" target="_blank" title="Import documentation">Import documentation</a>.</p>
 </div>
 </input></input></input></div>
 </details>
 <hr/>
-<h3 id="deleting-a-file">Deleting a file<a class="headerlink" href="#deleting-a-file" title="Permanent link">¶</a></h3>
-<p>Deleting a file will remove a file from a location if it exists.</p>
+<h3 id="findcon">FindCon<a class="headerlink" href="#findcon" title="Permanent link">¶</a></h3>
+<p>When the FindCon configuration is selected the service will call the FindCon resource.</p>
 <table>
 <thead>
 <tr>
@@ -1065,38 +960,52 @@
 </thead>
 <tbody>
 <tr>
-<td>Method</td>
-<td>Select "delete" to remove a file.</td>
+<td>Xmlfield</td>
+<td>The Search Criteria expressed as the SmartFreight field name as provided in the SmartFreight Consignment XML format.</td>
 <td>-</td>
 <td>TRUE</td>
 </tr>
 <tr>
-<td>Path</td>
-<td>The location of the file to delete (including the filename).</td>
+<td>Fieldvalue</td>
+<td>The Search Value for the Search Criteria. Wildcards are not supported.</td>
 <td>-</td>
-<td>TRUE</td>
+<td>FALSE</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The path will always require the filename at the end of it (i.e '/path/to/file.txt').</p>
-</div>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><label for="__tabbed_5_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to delete a file.</p>
-<p><img alt="Delete Configuration" src="/assets/images/services/file-system/delete-configuration.png" title="Delete Configuration"/></p>
+<p>The following example shows you how to configure the FindCon method to get data from the FindCon resource.</p>
+<p><img alt="FindCon Configuration" src="/assets/images/services/smartfreight-service/findcon-configuration.png" title="FindCon Configuration"/></p>
 </div>
 <input id="__tabbed_5_2" name="__tabbed_5" type="radio"><label for="__tabbed_5_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>This method doesn't require any service data setup.</p>
 </div>
 <input id="__tabbed_5_3" name="__tabbed_5" type="radio"><label for="__tabbed_5_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will not provide any output data.</p>
+<p>The FindCon call will return a FindConResult like the following:</p>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"FindConResult"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">"string"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">"B617301D-82F0-4B5A-9E7B-67D1D3DEA37B"</span><span class="p">,</span>
+                <span class="s2">"DCBE08E7-7FCD-493F-A0C7-1B871297FEDF"</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="s2">"200"</span><span class="p">,</span>
+        <span class="nt">"headers"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"HTTP/1.1 200 OK\r\nContent-Length: 589\r\nContent-Type: text/xml; charset=utf-8\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate: Mon, 08 Mar 2021 11:55:00 GMT\r\n"</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/findcon/" target="_blank" title="FindCon documentation">FindCon documentation</a>.</p>
 </div>
 </input></input></input></div>
 </details>
 <hr/>
-<h3 id="check-if-a-file-or-directory-exists">Check if a file or directory exists<a class="headerlink" href="#check-if-a-file-or-directory-exists" title="Permanent link">¶</a></h3>
-<p>This option will check to see if a file exists at a given location.</p>
+<h3 id="enquiry">Enquiry<a class="headerlink" href="#enquiry" title="Permanent link">¶</a></h3>
+<p>When the Enquiry configuration is selected the service will call the Enquiry resource.</p>
 <table>
 <thead>
 <tr>
@@ -1108,43 +1017,150 @@
 </thead>
 <tbody>
 <tr>
-<td>Method</td>
-<td>Select "has" to check if it exists.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location to check if it exists.</td>
+<td>Conid</td>
+<td>The SmartFreight internal consignment identifier.</td>
 <td>-</td>
 <td>TRUE</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>This method can check if directories exist as well.</p>
-</div>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><label for="__tabbed_6_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to delete a file.</p>
-<p><img alt="Has Configuration" src="/assets/images/services/file-system/has-configuration.png" title="Has Configuration"/></p>
+<p>The following example shows you how to configure the Enquiry method to get data from the Enquiry resource.</p>
+<p><img alt="Enquiry Configuration" src="/assets/images/services/smartfreight-service/enquiry-configuration.png" title="Enquiry Configuration"/></p>
 </div>
 <input id="__tabbed_6_2" name="__tabbed_6" type="radio"><label for="__tabbed_6_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>This method doesn't require any service data setup.</p>
 </div>
 <input id="__tabbed_6_3" name="__tabbed_6" type="radio"><label for="__tabbed_6_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will produce the following boolean data (<code>true</code> if it exists, <code>false</code> if it does not exist):</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
+<p>The Enquiry call will return a EnquiryResult like the following:</p>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"EnquiryResult"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">"@attributes"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"Entity"</span><span class="p">:</span> <span class="s2">"QPU"</span>
+            <span class="p">},</span>
+            <span class="nt">"_currency"</span><span class="p">:</span> <span class="s2">"$"</span><span class="p">,</span>
+            <span class="nt">"accno"</span><span class="p">:</span> <span class="s2">"654321"</span><span class="p">,</span>
+            <span class="nt">"buttonsstate"</span><span class="p">:</span> <span class="s2">"00001000000"</span><span class="p">,</span>
+            <span class="nt">"carrierid"</span><span class="p">:</span> <span class="s2">"360"</span><span class="p">,</span>
+            <span class="nt">"carriername"</span><span class="p">:</span> <span class="s2">"TEST CARRIER1"</span><span class="p">,</span>
+            <span class="nt">"carrzone"</span><span class="p">:</span> <span class="s2">"WW1"</span><span class="p">,</span>
+            <span class="nt">"chargeto"</span><span class="p">:</span> <span class="s2">"S"</span><span class="p">,</span>
+            <span class="nt">"chgwgt"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
+            <span class="nt">"condate"</span><span class="p">:</span> <span class="s2">"8/03/2021"</span><span class="p">,</span>
+            <span class="nt">"conno"</span><span class="p">:</span> <span class="s2">"WLR10141"</span><span class="p">,</span>
+            <span class="nt">"connotenumber"</span><span class="p">:</span> <span class="s2">"WLR10141"</span><span class="p">,</span>
+            <span class="nt">"conprfx"</span><span class="p">:</span> <span class="s2">"WLR"</span><span class="p">,</span>
+            <span class="nt">"consignmentdatenumber"</span><span class="p">:</span> <span class="s2">"20210308"</span><span class="p">,</span>
+            <span class="nt">"createdutcdatetime"</span><span class="p">:</span> <span class="s2">"2010160404"</span><span class="p">,</span>
+            <span class="nt">"creatorid"</span><span class="p">:</span> <span class="s2">"IMPORTED"</span><span class="p">,</span>
+            <span class="nt">"currency"</span><span class="p">:</span> <span class="s2">"AUD"</span><span class="p">,</span>
+            <span class="nt">"dailyid"</span><span class="p">:</span> <span class="s2">"496"</span><span class="p">,</span>
+            <span class="nt">"dailyid_wan"</span><span class="p">:</span> <span class="s2">"QPU496"</span><span class="p">,</span>
+            <span class="nt">"datelong"</span><span class="p">:</span> <span class="s2">"20210308"</span><span class="p">,</span>
+            <span class="nt">"deliverytimeraw"</span><span class="p">:</span> <span class="s2">"[none]"</span><span class="p">,</span>
+            <span class="nt">"entityid"</span><span class="p">:</span> <span class="s2">"QPU"</span><span class="p">,</span>
+            <span class="nt">"freightlinedetails"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"amt"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+                <span class="nt">"cube"</span><span class="p">:</span> <span class="s2">"0.00716"</span><span class="p">,</span>
+                <span class="nt">"desc"</span><span class="p">:</span> <span class="s2">"CARTON"</span><span class="p">,</span>
+                <span class="nt">"hgt"</span><span class="p">:</span> <span class="s2">"11"</span><span class="p">,</span>
+                <span class="nt">"len"</span><span class="p">:</span> <span class="s2">"31"</span><span class="p">,</span>
+                <span class="nt">"maxdimension"</span><span class="p">:</span> <span class="s2">"31"</span><span class="p">,</span>
+                <span class="nt">"mindimension"</span><span class="p">:</span> <span class="s2">"11"</span><span class="p">,</span>
+                <span class="nt">"multiplylwh"</span><span class="p">:</span> <span class="s2">"Y"</span><span class="p">,</span>
+                <span class="nt">"ref"</span><span class="p">:</span> <span class="s2">"ASD048198"</span><span class="p">,</span>
+                <span class="nt">"wdt"</span><span class="p">:</span> <span class="s2">"21"</span><span class="p">,</span>
+                <span class="nt">"wgt"</span><span class="p">:</span> <span class="s2">"3"</span>
+            <span class="p">},</span>
+            <span class="nt">"fromzone"</span><span class="p">:</span> <span class="s2">"VV1"</span><span class="p">,</span>
+            <span class="nt">"grandtotmrkup"</span><span class="p">:</span> <span class="s2">"22.946"</span><span class="p">,</span>
+            <span class="nt">"grandtotrate"</span><span class="p">:</span> <span class="s2">"22.946"</span><span class="p">,</span>
+            <span class="nt">"gstamount"</span><span class="p">:</span> <span class="s2">"2.086"</span><span class="p">,</span>
+            <span class="nt">"gstamt"</span><span class="p">:</span> <span class="s2">"2.086"</span><span class="p">,</span>
+            <span class="nt">"gstonmrkup"</span><span class="p">:</span> <span class="s2">"2.086"</span><span class="p">,</span>
+            <span class="nt">"identification"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"conid"</span><span class="p">:</span> <span class="s2">"B617301D-82F0-4B5A-9E7B-67D1D3DEA37B"</span>
+            <span class="p">},</span>
+            <span class="nt">"importfilename"</span><span class="p">:</span> <span class="s2">"ASD048198"</span><span class="p">,</span>
+            <span class="nt">"labels"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"dailyid_foreign"</span><span class="p">:</span> <span class="s2">"496"</span><span class="p">,</span>
+                <span class="nt">"dailyid_wan"</span><span class="p">:</span> <span class="s2">"QPU496"</span><span class="p">,</span>
+                <span class="nt">"freightlineno"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+                <span class="nt">"itemno"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+                <span class="nt">"labelid"</span><span class="p">:</span> <span class="s2">"407"</span><span class="p">,</span>
+                <span class="nt">"labelno_tracking"</span><span class="p">:</span> <span class="s2">"WLR10141001"</span><span class="p">,</span>
+                <span class="nt">"nooflabelsdefault"</span><span class="p">:</span> <span class="s2">"1"</span>
+            <span class="p">},</span>
+            <span class="nt">"lastmodified"</span><span class="p">:</span> <span class="s2">"20201016040432"</span><span class="p">,</span>
+            <span class="nt">"manifestaccno"</span><span class="p">:</span> <span class="s2">"654321"</span><span class="p">,</span>
+            <span class="nt">"movementtype"</span><span class="p">:</span> <span class="s2">"OUTBOUND"</span><span class="p">,</span>
+            <span class="nt">"netcost"</span><span class="p">:</span> <span class="s2">"20.86"</span><span class="p">,</span>
+            <span class="nt">"nooffashionlabels"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+            <span class="nt">"notifyrecemail"</span><span class="p">:</span> <span class="s2">"Y"</span><span class="p">,</span>
+            <span class="nt">"notifyrecsms"</span><span class="p">:</span> <span class="s2">"Y"</span><span class="p">,</span>
+            <span class="nt">"originaldespatchdate"</span><span class="p">:</span> <span class="s2">"20201016"</span><span class="p">,</span>
+            <span class="nt">"rate"</span><span class="p">:</span> <span class="s2">"20.86"</span><span class="p">,</span>
+            <span class="nt">"recaccno"</span><span class="p">:</span> <span class="s2">"AC05548"</span><span class="p">,</span>
+            <span class="nt">"recaddr"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"add1"</span><span class="p">:</span> <span class="s2">"BUILDING 614, ROOM 115"</span><span class="p">,</span>
+                <span class="nt">"add2"</span><span class="p">:</span> <span class="s2">"5 DE LAETER WAY"</span><span class="p">,</span>
+                <span class="nt">"add3"</span><span class="p">:</span> <span class="s2">"BENTLEY"</span><span class="p">,</span>
+                <span class="nt">"add4"</span><span class="p">:</span> <span class="s2">"WA"</span><span class="p">,</span>
+                <span class="nt">"add5"</span><span class="p">:</span> <span class="s2">"6102"</span><span class="p">,</span>
+                <span class="nt">"add6"</span><span class="p">:</span> <span class="s2">"AUSTRALIA"</span><span class="p">,</span>
+                <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"Business"</span>
+            <span class="p">},</span>
+            <span class="nt">"reccontact"</span><span class="p">:</span> <span class="s2">"0892667535"</span><span class="p">,</span>
+            <span class="nt">"recemail"</span><span class="p">:</span> <span class="s2">"H.Fairhurst@curtin.edu.au"</span><span class="p">,</span>
+            <span class="nt">"recloc"</span><span class="p">:</span> <span class="s2">"-32.0010000,115.9240000"</span><span class="p">,</span>
+            <span class="nt">"recname"</span><span class="p">:</span> <span class="s2">"CURTIN CORROSION CENTER"</span><span class="p">,</span>
+            <span class="nt">"recph"</span><span class="p">:</span> <span class="s2">"CHARLES LACOSTE"</span><span class="p">,</span>
+            <span class="nt">"rtsaddr"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"add6"</span><span class="p">:</span> <span class="s2">"AUSTRALIA"</span>
+            <span class="p">},</span>
+            <span class="nt">"rtzexpire"</span><span class="p">:</span> <span class="s2">"999912312359"</span><span class="p">,</span>
+            <span class="nt">"sendaccno"</span><span class="p">:</span> <span class="s2">"M4"</span><span class="p">,</span>
+            <span class="nt">"sendaddr"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"add1"</span><span class="p">:</span> <span class="s2">"C/O DSE "</span><span class="p">,</span>
+                <span class="nt">"add2"</span><span class="p">:</span> <span class="s2">"336 SETTLEMENT ROAD"</span><span class="p">,</span>
+                <span class="nt">"add3"</span><span class="p">:</span> <span class="s2">"THOMASTOWN"</span><span class="p">,</span>
+                <span class="nt">"add4"</span><span class="p">:</span> <span class="s2">"VIC"</span><span class="p">,</span>
+                <span class="nt">"add5"</span><span class="p">:</span> <span class="s2">"3074"</span><span class="p">,</span>
+                <span class="nt">"add6"</span><span class="p">:</span> <span class="s2">"AUSTRALIA"</span>
+            <span class="p">},</span>
+            <span class="nt">"sendloc"</span><span class="p">:</span> <span class="s2">"-37.6820000,145.0140000"</span><span class="p">,</span>
+            <span class="nt">"sendname"</span><span class="p">:</span> <span class="s2">"Australian Window Furnishings"</span><span class="p">,</span>
+            <span class="nt">"service"</span><span class="p">:</span> <span class="s2">"OVERNIGHT"</span><span class="p">,</span>
+            <span class="nt">"taxrate"</span><span class="p">:</span> <span class="s2">"10"</span><span class="p">,</span>
+            <span class="nt">"totalcost"</span><span class="p">:</span> <span class="s2">"20.86"</span><span class="p">,</span>
+            <span class="nt">"totcost"</span><span class="p">:</span> <span class="s2">"20.86"</span><span class="p">,</span>
+            <span class="nt">"totcostplusmrkup"</span><span class="p">:</span> <span class="s2">"20.86"</span><span class="p">,</span>
+            <span class="nt">"totcube"</span><span class="p">:</span> <span class="s2">"0.00716"</span><span class="p">,</span>
+            <span class="nt">"totdgcharge"</span><span class="p">:</span> <span class="s2">"0"</span><span class="p">,</span>
+            <span class="nt">"totitems"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+            <span class="nt">"totwgt"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
+            <span class="nt">"tpyaddr"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"add6"</span><span class="p">:</span> <span class="s2">"AUSTRALIA"</span>
+            <span class="p">},</span>
+            <span class="nt">"trackingid"</span><span class="p">:</span> <span class="s2">"qPubia"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="s2">"200"</span><span class="p">,</span>
+        <span class="nt">"headers"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"HTTP/1.1 200 OK\r\nContent-Length: 4393\r\nContent-Type: text/xml; charset=utf-8\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate: Mon, 08 Mar 2021 12:08:54 GMT\r\n"</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/enquiry/" target="_blank" title="Enquiry documentation">Enquiry documentation</a>.</p>
 </div>
 </input></input></input></div>
 </details>
 <hr/>
-<h3 id="get-list-of-files-and-directories">Get list of files and directories<a class="headerlink" href="#get-list-of-files-and-directories" title="Permanent link">¶</a></h3>
-<p>This option will get a list of files and folders in a specified directory.</p>
+<h3 id="deletecon">DeleteCon<a class="headerlink" href="#deletecon" title="Permanent link">¶</a></h3>
+<p>When the DeleteCon configuration is selected the service will call the DeleteCon resource.</p>
 <table>
 <thead>
 <tr>
@@ -1156,83 +1172,45 @@
 </thead>
 <tbody>
 <tr>
-<td>Method</td>
-<td>Select "list" to get a list of files.</td>
+<td>Conid</td>
+<td>The SmartFreight internal consignment identifier.</td>
 <td>-</td>
 <td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location to get the list from.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Recursive</td>
-<td>Whether is it recursive or not.</td>
-<td>FALSE</td>
-<td>FALSE</td>
 </tr>
 </tbody>
 </table>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio"/><label for="__tabbed_7_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to retrieve a list of files and directories:</p>
-<p><img alt="List Configuration" src="/assets/images/services/file-system/list-configuration.png" title="List Configuration"/></p>
+<p>The following example shows you how to configure the DeleteCon method to use the DeleteCon resource.</p>
+<p><img alt="DeleteCon Configuration" src="/assets/images/services/smartfreight-service/deletecon-configuration.png" title="DeleteCon Configuration"/></p>
 </div>
 <input id="__tabbed_7_2" name="__tabbed_7" type="radio"/><label for="__tabbed_7_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>This method doesn't require any service data setup.</p>
 </div>
 <input id="__tabbed_7_3" name="__tabbed_7" type="radio"/><label for="__tabbed_7_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will produce the following array of files and directories:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"file"</span><span class="p">,</span>
-        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"357a3948-e3ad-4cb5-856b-1cde09c37b55.txt"</span><span class="p">,</span>
-        <span class="nt">"visibility"</span><span class="p">:</span> <span class="s2">"public"</span><span class="p">,</span>
-        <span class="nt">"size"</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
-        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"357a3948-e3ad-4cb5-856b-1cde09c37b55.txt"</span><span class="p">,</span>
-        <span class="nt">"extension"</span><span class="p">:</span> <span class="s2">"txt"</span><span class="p">,</span>
-        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"357a3948-e3ad-4cb5-856b-1cde09c37b55"</span>
+<p>The DeleteCon call will return a DeleteConResult like the following:</p>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"DeleteConResult"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">"string"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">"B617301D-82F0-4B5A-9E7B-67D1D3DEA37B"</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
     <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"file"</span><span class="p">,</span>
-        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"59430d5e-ce73-4691-9fd7-705ab97cd792.txt"</span><span class="p">,</span>
-        <span class="nt">"visibility"</span><span class="p">:</span> <span class="s2">"public"</span><span class="p">,</span>
-        <span class="nt">"size"</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
-        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"59430d5e-ce73-4691-9fd7-705ab97cd792.txt"</span><span class="p">,</span>
-        <span class="nt">"extension"</span><span class="p">:</span> <span class="s2">"txt"</span><span class="p">,</span>
-        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"59430d5e-ce73-4691-9fd7-705ab97cd792"</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"file"</span><span class="p">,</span>
-        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"dea44f29-c9e3-441b-b02c-0d923112698d.txt"</span><span class="p">,</span>
-        <span class="nt">"visibility"</span><span class="p">:</span> <span class="s2">"public"</span><span class="p">,</span>
-        <span class="nt">"size"</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
-        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"dea44f29-c9e3-441b-b02c-0d923112698d.txt"</span><span class="p">,</span>
-        <span class="nt">"extension"</span><span class="p">:</span> <span class="s2">"txt"</span><span class="p">,</span>
-        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"dea44f29-c9e3-441b-b02c-0d923112698d"</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"dir"</span><span class="p">,</span>
-        <span class="nt">"path"</span><span class="p">:</span> <span class="s2">"Testing"</span><span class="p">,</span>
-        <span class="nt">"dirname"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
-        <span class="nt">"basename"</span><span class="p">:</span> <span class="s2">"Testing"</span><span class="p">,</span>
-        <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"Testing"</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="s2">"200"</span><span class="p">,</span>
+        <span class="nt">"headers"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"HTTP/1.1 200 OK\r\nContent-Length: 589\r\nContent-Type: text/xml; charset=utf-8\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate: Mon, 08 Mar 2021 11:55:00 GMT\r\n"</span>
+        <span class="p">]</span>
     <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[]</span>
 <span class="p">}</span>
 </code></pre></div>
+For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/deletecon/" target="_blank" title="DeleteCon documentation">DeleteCon documentation</a>.</p>
 </div>
 </div>
 </details>
 <hr/>
-<h3 id="creating-a-directory">Creating a directory<a class="headerlink" href="#creating-a-directory" title="Permanent link">¶</a></h3>
-<p>Create a directory will create a directory in a location if it doesn't exist.</p>
+<h3 id="trackingevents">TrackingEvents<a class="headerlink" href="#trackingevents" title="Permanent link">¶</a></h3>
+<p>When the TrackingEvents configuration is selected the service will call the TrackingEvents resource.</p>
 <table>
 <thead>
 <tr>
@@ -1244,67 +1222,42 @@
 </thead>
 <tbody>
 <tr>
-<td>Method</td>
-<td>Select "createDir" to create a directory.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location of the directory to create.</td>
+<td>Conid</td>
+<td>The SmartFreight internal consignment identifier.</td>
 <td>-</td>
 <td>TRUE</td>
 </tr>
 </tbody>
 </table>
 <details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio"/><label for="__tabbed_8_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to create a directory.</p>
-<p><img alt="Create Directory Configuration" src="/assets/images/services/file-system/createdir-configuration.png" title="Create Directory Configuration"/></p>
+<p>The following example shows you how to configure the TrackingEvents method to use the TrackingEvents resource.</p>
+<p><img alt="TrackingEvents Configuration" src="/assets/images/services/smartfreight-service/trackingevents-configuration.png" title="TrackingEvents Configuration"/></p>
 </div>
 <input id="__tabbed_8_2" name="__tabbed_8" type="radio"/><label for="__tabbed_8_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
+<p>This method doesn't require any service data setup.</p>
 </div>
 <input id="__tabbed_8_3" name="__tabbed_8" type="radio"/><label for="__tabbed_8_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will not provide any output data.</p>
-</div>
-</div>
-</details>
-<hr/>
-<h3 id="deleting-a-directory">Deleting a directory<a class="headerlink" href="#deleting-a-directory" title="Permanent link">¶</a></h3>
-<p>Deleting a directory will remove a directory from a location if it exists.</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Method</td>
-<td>Select "deleteDir" to remove a directory.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Path</td>
-<td>The location of the directory to delete.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-</tbody>
-</table>
-<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio"/><label for="__tabbed_9_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure a file system service to delete a directory.</p>
-<p><img alt="Delete Directory Configuration" src="/assets/images/services/file-system/deletedir-configuration.png" title="Delete Directory Configuration"/></p>
-</div>
-<input id="__tabbed_9_2" name="__tabbed_9" type="radio"/><label for="__tabbed_9_2">2. Service data setup</label><div class="tabbed-content">
-<p>This service doesn't require any service data setup.</p>
-</div>
-<input id="__tabbed_9_3" name="__tabbed_9" type="radio"/><label for="__tabbed_9_3">3. Output Data</label><div class="tabbed-content">
-<p>This service will not provide any output data.</p>
+<p>The TrackingEvents call will return a TrackingEventsResult like the following:</p>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"TrackingEventsResult"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">"Statistics"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">"\n\t"</span>
+            <span class="p">],</span>
+            <span class="nt">"Events"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">"\n\t"</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="s2">"200"</span><span class="p">,</span>
+        <span class="nt">"headers"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"HTTP/1.1 200 OK\r\nContent-Length: 577\r\nContent-Type: text/xml; charset=utf-8\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate: Mon, 08 Mar 2021 12:17:32 GMT\r\n"</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+For more information please visit the <a href="http://balmoral.ifsconnect.net/integration/web-service/trackingevents/" target="_blank" title="TrackingEvents documentation">TrackingEvents documentation</a>.</p>
 </div>
 </div>
 </details>
@@ -1315,7 +1268,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../document-ocr/" rel="prev" title="Document OCR">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../sftp-service/" rel="prev" title="SFTP Service">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -1324,17 +1277,17 @@
 <span class="md-footer-nav__direction">
               Previous
             </span>
-            Document OCR
+            SFTP Service
           </div>
 </div>
 </a>
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../iterator/" rel="next" title="Iterator">
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../start-service/" rel="next" title="Start Service">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
               Next
             </span>
-            Iterator
+            Start Service
           </div>
 </div>
 <div class="md-footer-nav__button md-icon">
