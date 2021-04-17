@@ -5,11 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.spojit.com/user-guide/services/csv-parser/" rel="canonical"/>
+<link href="https://docs.spojit.com/user-guide/services/dataset/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../../assets/favicon.ico" rel="shortcut icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-5.2.0" name="generator"/>
-<title>CSV Parser - Spojit Documentation</title>
+<title>Dataset Service - Spojit Documentation</title>
 <link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
 <meta content="#ff7043" name="theme-color"/>
@@ -21,9 +21,9 @@
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
 <meta content="website" property="og:type"/>
-<meta content="Spojit Documentation - CSV Parser" property="og:title"/>
+<meta content="Spojit Documentation - Dataset Service" property="og:title"/>
 <meta content="" property="og:description"/>
-<meta content="https://docs.spojit.com/user-guide/services/csv-parser/" property="og:url"/>
+<meta content="https://docs.spojit.com/user-guide/services/dataset/" property="og:url"/>
 <meta content="https://docs.spojit.com/assets/images/banner.png" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
 <meta content="1200" property="og:image:width"/>
@@ -31,7 +31,7 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="@squidfunk" name="twitter:site"/>
 <meta content="@squidfunk" name="twitter:creator"/>
-<meta content="Spojit Documentation - CSV Parser" name="twitter:title"/>
+<meta content="Spojit Documentation - Dataset Service" name="twitter:title"/>
 <meta content="" name="twitter:description"/>
 <meta content="https://docs.spojit.com/assets/images/banner.png" name="twitter:image"/>
 </head>
@@ -40,7 +40,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#creating-a-csv">
+<a class="md-skip" href="#creating-a-dataset">
           Skip to content
         </a>
 </div>
@@ -59,7 +59,7 @@
         </span>
 <span class="md-header-nav__topic md-ellipsis">
           
-          CSV Parser
+          Dataset Service
           
         </span>
 </div>
@@ -460,16 +460,21 @@
         Services
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../csv-parser/" title="CSV Parser">
+      CSV Parser
+    </a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-        CSV Parser
+        Dataset Service
         <span class="md-nav__icon md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
 </span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="CSV Parser">
-      CSV Parser
+<a class="md-nav__link md-nav__link--active" href="./" title="Dataset Service">
+      Dataset Service
     </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -480,22 +485,94 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#creating-a-csv">
-    Creating a CSV
+<a class="md-nav__link" href="#creating-a-dataset">
+    Creating a dataset
+  </a>
+<nav aria-label="Creating a dataset" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#column-type">
+    Column Type
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#reading-a-csv">
-    Reading a CSV
+<a class="md-nav__link" href="#data-type">
+    Data Type
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../dataset/" title="Dataset Service">
-      Dataset Service
-    </a>
+<a class="md-nav__link" href="#dataset-row-object">
+    Dataset Row Object
+  </a>
+<nav aria-label="Dataset Row Object" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reserved-columns-fields">
+    Reserved columns (fields)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-dataset-row-object">
+    Example dataset row object
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dataset-querying-criteria">
+    Dataset Querying Criteria
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#primary-keys">
+    Primary Keys
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#service-methods">
+    Service Methods
+  </a>
+<nav aria-label="Service Methods" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insert-a-row">
+    Insert a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#update-a-row">
+    Update a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upsert-a-row">
+    Upsert a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#delete-a-row">
+    Delete a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#find-one-row">
+    Find one row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#find-rows">
+    Find rows
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../deputy-service/" title="Deputy">
@@ -687,14 +764,91 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#creating-a-csv">
-    Creating a CSV
+<a class="md-nav__link" href="#creating-a-dataset">
+    Creating a dataset
+  </a>
+<nav aria-label="Creating a dataset" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#column-type">
+    Column Type
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#reading-a-csv">
-    Reading a CSV
+<a class="md-nav__link" href="#data-type">
+    Data Type
   </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dataset-row-object">
+    Dataset Row Object
+  </a>
+<nav aria-label="Dataset Row Object" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reserved-columns-fields">
+    Reserved columns (fields)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-dataset-row-object">
+    Example dataset row object
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dataset-querying-criteria">
+    Dataset Querying Criteria
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#primary-keys">
+    Primary Keys
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#service-methods">
+    Service Methods
+  </a>
+<nav aria-label="Service Methods" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insert-a-row">
+    Insert a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#update-a-row">
+    Update a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upsert-a-row">
+    Upsert a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#delete-a-row">
+    Delete a row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#find-one-row">
+    Find one row
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#find-rows">
+    Find rows
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -703,171 +857,519 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>CSV Parser</h1>
+<h1>Dataset Service</h1>
 <div class="admonition note">
 <p class="admonition-title">Before you begin</p>
-<p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
+<p>In order to use the features in this section you need to have an active Spojit account with a Business plan. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
 </div>
 <hr/>
-<p>This service can write a CSV file from source data (API/Webhook etc) which could be used that to create a file on a FTP or send the file as an email attachment. It can also read the data from a CSV file which would create data output which could be used to send API requests.</p>
+<p>The Dataset service allows you to read, write and delete columns/rows to a collection of data (database table).</p>
+<p>The following example configuration shows you how to add a dataset and how to configure the Dataset service to insert, update, delete and find data within the dataset.</p>
 <hr/>
-<h3 id="creating-a-csv">Creating a CSV<a class="headerlink" href="#creating-a-csv" title="Permanent link">¶</a></h3>
-<p>When the write configuration is selected the service will write a CSV file from mapped data and configuration options.</p>
+<h3 id="creating-a-dataset">Creating a dataset<a class="headerlink" href="#creating-a-dataset" title="Permanent link">¶</a></h3>
+<p>Before starting to use the dataset service a dataset needs to be created in the Spojit platform.  Select "Datasets" on the left side bar and click "+ Dataset" to add a new dataset.  Add a name for the dataset and define the columns:</p>
+<p><img alt="Create a new dataset" src="/assets/images/services/dataset/create-dataset.png" title="Create a new dataset"/></p>
+<h4 id="column-type">Column Type<a class="headerlink" href="#column-type" title="Permanent link">¶</a></h4>
+<p>The column type is the type of data that is stored in the column.</p>
 <table>
 <thead>
 <tr>
 <th>Option</th>
 <th>Description</th>
-<th>Default</th>
-<th>Required</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Method</td>
-<td>Select "write" to write a CSV file.</td>
-<td>-</td>
-<td>TRUE</td>
+<td>STRING</td>
+<td>A text value</td>
+<td><code>"car"</code></td>
 </tr>
 <tr>
-<td>Headers</td>
-<td>The CSV headers are not required as a file will generate without them with all the data; however, if they are specified only matching columns will be generated.  If added the Header Key and Header Value is required for each.</td>
-<td>-</td>
-<td>FALSE</td>
+<td>NUMERIC</td>
+<td>A numerical value</td>
+<td><code>123456</code></td>
 </tr>
 <tr>
-<td>Header Key</td>
-<td>The field in the data that the column corresponds to.</td>
-<td>-</td>
-<td>TRUE</td>
+<td>BOOL</td>
+<td>A boolean value</td>
+<td><code>TRUE</code> or <code>FALSE</code></td>
 </tr>
 <tr>
-<td>Header Value</td>
-<td>The name of the column header in the CSV file.</td>
-<td>-</td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Always Quote</td>
-<td>Always encapsulate column data in quotes in the CSV file? Either TRUE or FALSE.</td>
-<td><code>FALSE</code></td>
-<td>FALSE</td>
-</tr>
-<tr>
-<td>Field Delimiter</td>
-<td>String value of delimiter between column values.</td>
-<td><code>,</code></td>
-<td>TRUE</td>
-</tr>
-<tr>
-<td>Record Delimiter</td>
-<td>String value of delimiter between rows. Either LF (Linux) or CRLF (Windows).</td>
-<td><code>LF</code></td>
-<td>TRUE</td>
+<td>ARRAY</td>
+<td>A list of values or objects</td>
+<td><code>["bike", "boat", "car"]</code></td>
 </tr>
 </tbody>
 </table>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>Mapped service data must be contained with an ARRAY where the fields match the desired header columns.  The parser does not generate the file itself rather the raw data that can be used by other services to generate a file (i.e SFTP/Email).</p>
-</div>
-<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure the CSV Parser to create a two column CSV file from an array of data.  The configuration is set up to create two headers for the columns with a comma as a field delimiter and using the LF record delimiter.</p>
-<p><img alt="CSV Parser Write Configuration" src="/assets/images/services/csv-parser/write-configuration.png" title="CSV Parser Write Configuration"/></p>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
-<p>After the configuration is setup we can then create a schema for the output CSV. Each field within the array can be a column (depending on how headers are setup) and each index of the array consists of a row in the CSV.  For this example we are going to switch to the ARRAY schema and add <strong>id</strong> and <strong>job</strong> as fields to that ARRAY:</p>
-<p><img alt="CSV Parser Write Schema" src="/assets/images/services/csv-parser/write-schema.png" title="CSV Parser Write Schema"/></p>
-<p>Given the following source data from another service:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
-      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
-      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Plumber"</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Next we can map the <strong>data</strong> array on the array in the field mapping with the <strong>id_number</strong> and <strong>job_name</strong> on <strong>id</strong> and <strong>job</strong> respectively as fields within the array:</p>
-<p><img alt="CSV Parser Write Mapping" src="/assets/images/services/csv-parser/write-mapping.png" title="CSV Parser Write Mapping"/></p>
-</div>
-<input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
-<p>In this example the following output will be generated automatically by this service after it is run:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>This output data can be used to create a CSV file like this:</p>
-<p><img alt="CSV Parser Write Output CSV" src="/assets/images/services/csv-parser/write-output-csv.png" title="CSV Parser Write Output CSV"/></p>
-</div>
-</input></input></input></div>
-</details>
-<hr/>
-<h3 id="reading-a-csv">Reading a CSV<a class="headerlink" href="#reading-a-csv" title="Permanent link">¶</a></h3>
-<p>When the read configuration is selected the service will read the raw data from a CSV file to create an array of output data.  The array can then be used by other services.</p>
+<h4 id="data-type">Data Type<a class="headerlink" href="#data-type" title="Permanent link">¶</a></h4>
+<p>The data type is the type of data used for statistical and training purposes.</p>
 <table>
 <thead>
 <tr>
 <th>Option</th>
 <th>Description</th>
-<th>Default</th>
-<th>Required</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Method</td>
-<td>Select "read" to read a CSV file.</td>
-<td>-</td>
-<td>TRUE</td>
+<td>TEXT</td>
+<td>Free forms words or sentences.</td>
+<td><code>"The sun is hot in the summer!"</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">Important</p>
+<p>Inactive columns will be cleaned a regular intervals.</p>
+</div>
+<p>Once the columns are defined make sure that they are active in order to be used.  After a dataset is saved you will be able to use it in any workflow.</p>
+<h3 id="dataset-row-object">Dataset Row Object<a class="headerlink" href="#dataset-row-object" title="Permanent link">¶</a></h3>
+<p>When dealing with a row in the dataset an object with be used with the fields matching the columns specified in the dataset configuration.</p>
+<h4 id="reserved-columns-fields">Reserved columns (fields)<a class="headerlink" href="#reserved-columns-fields" title="Permanent link">¶</a></h4>
+<p>The following reserved names can not be used to name a column or be a field in the dataset row object as they are automatically generated for an object:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_id</td>
+<td>Internal ID generated for this row.</td>
 </tr>
 <tr>
-<td>Raw Data</td>
-<td>The raw data of the CSV file that will be parsed.</td>
-<td>-</td>
-<td>TRUE</td>
+<td>_createdAt</td>
+<td>The interal creation datetime for this row (UTC).</td>
+</tr>
+<tr>
+<td>_updatedAt</td>
+<td>The interal updated datetime for this row (UTC).</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>There is no need to configure the service data that is read. The CSV data will be read with output fields and headers automatically created.</p>
+<p>Although you can not create/update or delete any reserved fields they can be used for querying the dataset. </p>
 </div>
-<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure the CSV Parser to read a two column CSV file and create an array of data from that. </p>
-<p>Given the following source data from another service:</p>
+<h4 id="example-dataset-row-object">Example dataset row object<a class="headerlink" href="#example-dataset-row-object" title="Permanent link">¶</a></h4>
+<p>If you have the columns <code>id</code> and <code>name</code> from the creating a dataset example above the object would consist of the following (with the reserved fields added):</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+  <span class="nt">"_id"</span><span class="p">:</span> <span class="s2">"60792518693cf2625e7530b2"</span><span class="p">,</span>
+  <span class="nt">"_createdAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:48:08+00:00"</span><span class="p">,</span>
+  <span class="nt">"_updatedAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:48:08+00:00"</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>The location of the raw CSV data needs to be specified in the configuration:</p>
-<p><img alt="CSV Parser Read Configuration" src="/assets/images/services/csv-parser/read-configuration.png" title="CSV Parser Read Configuration"/></p>
+<h3 id="dataset-querying-criteria">Dataset Querying Criteria<a class="headerlink" href="#dataset-querying-criteria" title="Permanent link">¶</a></h3>
+<p>You can query a dataset with critier to find a record to update or to search for records within the dataset.</p>
+<p>The following operators can be used:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eq</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td>neq</td>
+<td>Not equal to</td>
+</tr>
+<tr>
+<td>lt</td>
+<td>Less than</td>
+</tr>
+<tr>
+<td>lte</td>
+<td>Less than equal to</td>
+</tr>
+<tr>
+<td>gt</td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td>gte</td>
+<td>Greater than equal to</td>
+</tr>
+</tbody>
+</table>
+<p>These operators can be chained to produce more specific results.</p>
+<h3 id="primary-keys">Primary Keys<a class="headerlink" href="#primary-keys" title="Permanent link">¶</a></h3>
+<p>The internal primary key (id) will always be generated automatically but if you want to pair it with an external primary key (or other unique identifier) the "Upsert" method can be used with criteria to identify it.</p>
+<p>For example if the "Upsert" method  is setup in the following way:</p>
+<p><img alt="Dataset Primary Key Example" src="/assets/images/services/dataset/primary-key-example.png" title="Dataset Primary Key Example"/></p>
+<p>The record will be created if the value for <code>external_id</code> doesn't exist in the <code>id</code> column or updated if it does.  Two or more columns can also be used to have a composite primary key.</p>
+<h3 id="service-methods">Service Methods<a class="headerlink" href="#service-methods" title="Permanent link">¶</a></h3>
+<p>The dataset service has various methods add to and perform actions on data in a dataset.</p>
+<h4 id="insert-a-row">Insert a row<a class="headerlink" href="#insert-a-row" title="Permanent link">¶</a></h4>
+<p>Inserting a row will add a new record into the dataset.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "insert" to insert a row into the dataset.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Select the name of the dataset you wish to use.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Dataset Service to insert a record.</p>
+<p><img alt="Dataset Insert Row Configuration" src="/assets/images/services/dataset/insert-row-configuration.png" title="Dataset Insert Row Configuration"/></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
+<p>The schema can be whatever you wish to insert into the dataset with the fields matching the columns specified in the Dataset Configuration. For this example we are going to create an OBJECT schema with the specified fields:</p>
+<p><img alt="Dataset Insert Row Schema" src="/assets/images/services/dataset/insert-row-schema.png" title="Dataset Insert Row Schema"/></p>
+<p>Given the following source data from another service:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+    <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We can map the applicable fields with the schema object:</p>
+<p><img alt="Dataset Insert Row Mapping" src="/assets/images/services/dataset/insert-row-mapping.png" title="Dataset Insert Row Mapping"/></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+    <span class="nt">"_id"</span><span class="p">:</span> <span class="s2">"60792518693cf2625e7530b2"</span><span class="p">,</span>
+    <span class="nt">"_createdAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:48:08+00:00"</span><span class="p">,</span>
+    <span class="nt">"_updatedAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:48:08+00:00"</span>
+  <span class="p">},</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<h4 id="update-a-row">Update a row<a class="headerlink" href="#update-a-row" title="Permanent link">¶</a></h4>
+<p>Updating a row will update a record in the dataset.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "update" to update a row in the dataset.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Select the name of the dataset you wish to use.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Criteria</td>
+<td>Criteria used to find existing records to update.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Dataset Service to update a record given an <code>id</code> of 1.</p>
+<p><img alt="Dataset Update Row Configuration" src="/assets/images/services/dataset/update-row-configuration.png" title="Dataset Update Row Configuration"/></p>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio"><label for="__tabbed_2_2">2. Service data setup</label><div class="tabbed-content">
-<p>The CSV reader doesn't require any service data setup.</p>
+<p>The schema can be whatever you wish to update into the dataset with the fields matching the columns specified in the Dataset Configuration. For this example we are going to create an OBJECT schema with the specified fields:</p>
+<p><img alt="Dataset Update Row Schema" src="/assets/images/services/dataset/update-row-schema.png" title="Dataset Update Row Schema"/></p>
+<p>Given the following source data from another service:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"hello world"</span><span class="p">,</span>
+    <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We can map the applicable fields with the schema object:</p>
+<p><img alt="Dataset Update Row Mapping" src="/assets/images/services/dataset/update-row-mapping.png" title="Dataset Update Row Mapping"/></p>
 </div>
 <input id="__tabbed_2_3" name="__tabbed_2" type="radio"><label for="__tabbed_2_3">3. Output Data</label><div class="tabbed-content">
 <p>In this example the following output will be generated automatically by this service after it is run:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"hello world"</span><span class="p">,</span>
+    <span class="nt">"_id"</span><span class="p">:</span> <span class="s2">"60792518693cf2625e7530b2"</span><span class="p">,</span>
+    <span class="nt">"_createdAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:48:08+00:00"</span><span class="p">,</span>
+    <span class="nt">"_updatedAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:58:08+00:00"</span>
+  <span class="p">},</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<h4 id="upsert-a-row">Upsert a row<a class="headerlink" href="#upsert-a-row" title="Permanent link">¶</a></h4>
+<p>Upserting a row will either create a record in the dataset if it doesn't exist or update a record if it already exists.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "upsert" to upsert a row in the dataset.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Select the name of the dataset you wish to use.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Criteria</td>
+<td>Criteria used to find existing records to update.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><label for="__tabbed_3_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Dataset Service to upsert a record given an <code>id</code> from an external entity (see above about <a href="#primary-keys">primary keys</a>).</p>
+<p><img alt="Dataset Upsert Row Configuration" src="/assets/images/services/dataset/upsert-row-configuration.png" title="Dataset Upsert Row Configuration"/></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio"><label for="__tabbed_3_2">2. Service data setup</label><div class="tabbed-content">
+<p>The schema can be whatever you wish to upsert into the dataset with the fields matching the columns specified in the Dataset Configuration. For this example we are going to create an OBJECT schema with the specified fields:</p>
+<p><img alt="Dataset Upsert Row Schema" src="/assets/images/services/dataset/upsert-row-schema.png" title="Dataset Upsert Row Schema"/></p>
+<p>Given the following source data from another service:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"hello world"</span><span class="p">,</span>
+    <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We can map the applicable fields with the schema object:</p>
+<p><img alt="Dataset Update Row Mapping" src="/assets/images/services/dataset/update-row-mapping.png" title="Dataset Update Row Mapping"/></p>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio"><label for="__tabbed_3_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"hello world"</span><span class="p">,</span>
+    <span class="nt">"_id"</span><span class="p">:</span> <span class="s2">"60792518693cf2625e7530b2"</span><span class="p">,</span>
+    <span class="nt">"_createdAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:48:08+00:00"</span><span class="p">,</span>
+    <span class="nt">"_updatedAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:58:08+00:00"</span>
+  <span class="p">},</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<h4 id="delete-a-row">Delete a row<a class="headerlink" href="#delete-a-row" title="Permanent link">¶</a></h4>
+<p>Deleting a row will remove a record from the dataset if it exists.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "delete" to delete a row in the dataset.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Select the name of the dataset you wish to use.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Criteria</td>
+<td>Criteria used to find existing records to delete.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><label for="__tabbed_4_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Dataset Service to update a record given an <code>id</code> of 1.</p>
+<p><img alt="Dataset Delete Row Configuration" src="/assets/images/services/dataset/delete-row-configuration.png" title="Dataset Delete Row Configuration"/></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio"><label for="__tabbed_4_2">2. Service data setup</label><div class="tabbed-content">
+<p>The DELETE method doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio"><label for="__tabbed_4_3">3. Output Data</label><div class="tabbed-content">
+<p>There will be no output data generated by the DELETE method.  An error will be thrown if it can't be deleted.</p>
+</div>
+</input></input></input></div>
+</details>
+<h4 id="find-one-row">Find one row<a class="headerlink" href="#find-one-row" title="Permanent link">¶</a></h4>
+<p>Find one row will search for and find one record from the dataset if it exists.  It will find and return the first matching record.  If there are multiple matching rows then "find" should be used.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "findOne" to find a row in the dataset.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Select the name of the dataset you wish to use.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Criteria</td>
+<td>Criteria used to find existing records.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><label for="__tabbed_5_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Dataset Service to find a record given an <code>id</code> of 1.</p>
+<p><img alt="Dataset Find One Row Configuration" src="/assets/images/services/dataset/find-one-row-configuration.png" title="Dataset Find One Row Configuration"/></p>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio"><label for="__tabbed_5_2">2. Service data setup</label><div class="tabbed-content">
+<p>The FINDONE method doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio"><label for="__tabbed_5_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"hello world"</span><span class="p">,</span>
+    <span class="nt">"_id"</span><span class="p">:</span> <span class="s2">"60792518693cf2625e7530b2"</span><span class="p">,</span>
+    <span class="nt">"_createdAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:48:08+00:00"</span><span class="p">,</span>
+    <span class="nt">"_updatedAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05:58:08+00:00"</span>
+  <span class="p">},</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<h4 id="find-rows">Find rows<a class="headerlink" href="#find-rows" title="Permanent link">¶</a></h4>
+<p>Find rows will search for and find records from the dataset if they exists.  It will find and return all matching records in an array.  If you only want one result "findOne" should be used.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "find" to find rows the dataset.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Select the name of the dataset you wish to use.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Criteria</td>
+<td>Criteria used to find existing records.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><label for="__tabbed_6_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Dataset Service to find records given an <code>colour</code> of "blue".</p>
+<p><img alt="Dataset Find Rows Configuration" src="/assets/images/services/dataset/find-rows-configuration.png" title="Dataset Find Rows Configuration"/></p>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio"><label for="__tabbed_6_2">2. Service data setup</label><div class="tabbed-content">
+<p>The FIND method doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio"><label for="__tabbed_6_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run (note that an array of objects is returned):</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
     <span class="p">{</span>
-      <span class="nt">"ID"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
-      <span class="nt">"Job"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
+      <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"pants"</span><span class="p">,</span>
+      <span class="nt">"colour"</span><span class="p">:</span> <span class="s2">"blue"</span><span class="p">,</span>
+      <span class="nt">"_id"</span><span class="p">:</span> <span class="s2">"60792518693cf2625e7530b2"</span><span class="p">,</span>
+      <span class="nt">"_createdAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05: 48: 08+00: 00"</span><span class="p">,</span>
+      <span class="nt">"_updatedAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05: 58: 08+00: 00"</span>
     <span class="p">},</span>
     <span class="p">{</span>
-      <span class="nt">"ID"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
-      <span class="nt">"Job"</span><span class="p">:</span> <span class="s2">"Plumber"</span>
+      <span class="nt">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"tshirt"</span><span class="p">,</span>
+      <span class="nt">"colour"</span><span class="p">:</span> <span class="s2">"blue"</span><span class="p">,</span>
+      <span class="nt">"_id"</span><span class="p">:</span> <span class="s2">"60792518693cf2625e7530b2"</span><span class="p">,</span>
+      <span class="nt">"_createdAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05: 48: 08+00: 00"</span><span class="p">,</span>
+      <span class="nt">"_updatedAt"</span><span class="p">:</span> <span class="s2">"2021-04-16T05: 58: 08+00: 00"</span>
     <span class="p">}</span>
   <span class="p">],</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[</span>
 
-  <span class="p">}</span>
+  <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 </div>
@@ -880,7 +1382,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../../mapper/functions/math/" rel="prev" title="Math Functions">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../csv-parser/" rel="prev" title="CSV Parser">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -889,17 +1391,17 @@
 <span class="md-footer-nav__direction">
               Previous
             </span>
-            Math Functions
+            CSV Parser
           </div>
 </div>
 </a>
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../dataset/" rel="next" title="Dataset Service">
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../deputy-service/" rel="next" title="Deputy">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
               Next
             </span>
-            Dataset Service
+            Deputy
           </div>
 </div>
 <div class="md-footer-nav__button md-icon">
