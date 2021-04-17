@@ -173,6 +173,7 @@ nav:
         - Math Functions: user-guide/mapper/functions/math.md
     - Services:
       - CSV Parser: user-guide/services/csv-parser.md
+      - Dataset Service: user-guide/services/dataset.md
       - Deputy: user-guide/services/deputy-service.md
       - Document OCR: user-guide/services/document-ocr.md
       - FTP Service: user-guide/services/ftp-service.md
