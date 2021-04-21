@@ -28,10 +28,10 @@ site_description: >-
 header_links:
   display: true
   contact:
-    url: https://www.spojit.com/contact.html
+    url: https://www.spojit.com/contact
     title: Contact Us
   pricing:
-    url: https://www.spojit.com/pricing.html
+    url: https://www.spojit.com/pricing
     title: Pricing
   signup:
     url: https://app.spojit.com/register/
