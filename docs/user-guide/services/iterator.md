@@ -1,4 +1,7 @@
 ---
+description: This service can facilitate the parallel processing of a collection of items. This iterator service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

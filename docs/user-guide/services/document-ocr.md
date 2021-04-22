@@ -1,4 +1,7 @@
 ---
+description: The Document OCR (Optical Character Recognition) service allows you to read text and tables in documents (such as PDFs) which could be used to make an API request or create an Excel or CSV file. This Document OCR service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

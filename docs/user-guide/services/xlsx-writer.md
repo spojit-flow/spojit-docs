@@ -1,4 +1,7 @@
 ---
+description: This service can write a XLSX (Microsoft Excel Open XML Spreadsheet) file from source data (API/Webhook etc) which could be used that to create a file on a FTP or send the file as an email attachment. This XLSX (Microsoft Excel Open XML Spreadsheet) service can be added to your workflow and connect and share data with other services. 
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

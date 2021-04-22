@@ -1,4 +1,7 @@
 ---
+description: The start service is the starting point for incoming webhooks and realtime requests.  When provided the service will take any incoming data and create a new output object. This start service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

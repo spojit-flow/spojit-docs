@@ -1,4 +1,7 @@
 ---
+description: Integrate Unleashed.  Create and modify an Unleashed integration with the bilateral transfer of resources within the Unleashed RESTful web service. This Unleashed Software service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

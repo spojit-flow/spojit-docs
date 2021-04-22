@@ -1,4 +1,7 @@
 ---
+description: This service can facilitate the transfer of computer files between a client and server via the File Transfer Protocol (FTP). This FTP service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

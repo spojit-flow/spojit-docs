@@ -1,4 +1,7 @@
 ---
+description: Integrate WooCommerce on Wordpress.  Create and modify a WooCommerce integration on Worpdress with the bilateral transfer of resources within the WooCommerce RESTful web service. This WooCommerce service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

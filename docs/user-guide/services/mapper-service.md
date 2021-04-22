@@ -1,4 +1,7 @@
 ---
+description: The mapper service allows the mapping of data to create new objects or arrays.  The developed schema and associated mapping becomes the output of this service which could be used by other services. This mapper service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

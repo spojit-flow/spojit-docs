@@ -1,4 +1,7 @@
 ---
+description: This service can write a JSON file from source data which could be used that to create a file on a FTP or make a request in the JSON format. It can also read the data from a JSON file which would create data output. This JSON parser service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

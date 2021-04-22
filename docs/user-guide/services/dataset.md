@@ -1,4 +1,7 @@
 ---
+description: The Dataset service allows you to read, write and delete columns/rows to a collection of data (database table). This dataset service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

@@ -1,4 +1,7 @@
 ---
+description: This service can write a CSV file from source data (API/Webhook etc) which could be used that to create a file on a FTP or send the file as an email attachment. It can also read the data from a CSV file which would create data output which could be used to send API requests. This CSV service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

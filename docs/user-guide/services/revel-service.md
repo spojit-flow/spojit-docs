@@ -1,4 +1,7 @@
 ---
+description: Integrate Revel Systems.  Create and modify a Revel Systems integration with the bilateral transfer of resources within the Revel Systems RESTful web service. This Revel service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

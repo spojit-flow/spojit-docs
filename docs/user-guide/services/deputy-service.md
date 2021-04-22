@@ -1,4 +1,7 @@
 ---
+description: Integrate Deputy.  Create and modify an Deputy integration with the bilateral transfer of resources within the Deputy RESTful web service. This Deputy service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

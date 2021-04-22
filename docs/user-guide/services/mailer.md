@@ -1,4 +1,7 @@
 ---
+description: This service can send a simple email from the Spojit System email address.  It includes the ability to configure recipients, a subject line, text body, and add attachments. This mailer service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

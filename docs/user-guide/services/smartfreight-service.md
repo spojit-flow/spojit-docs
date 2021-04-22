@@ -1,4 +1,7 @@
 ---
+description: Integrate SmartFreight®.  Create and modify a SmartFreight® integration with the transfer of resources within SmartFreight® SOAP web service. This SmartFreight® service can be added to your workflow and connect and share data with other services.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 
