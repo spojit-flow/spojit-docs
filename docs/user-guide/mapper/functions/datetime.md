@@ -1,4 +1,7 @@
 ---
+description: Datetime functions are mapper functions that are designed to modify or create a datetime, date, or time field.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

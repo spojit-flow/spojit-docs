@@ -1,4 +1,7 @@
 ---
+description: Schedule functionality refers to running an integration with a schedule set.
+---
+---
 template: overrides/main.html
 ---
 !!! warning "Not all integrations require schedule (ie. webhook / near real-time integrations)."

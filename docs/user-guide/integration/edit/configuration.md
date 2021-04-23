@@ -1,4 +1,7 @@
 ---
+description: The configuration section of Edit integration screen allows you to edit the necessary configuration options related to your integration which you have initially entered when completing the integration setup wizard.
+---
+---
 template: overrides/main.html
 ---
 

@@ -1,4 +1,7 @@
 ---
+description: Webhook refers to one application sending information to another when something happens, essentially near real-time callbacks/notifications of changes.
+---
+---
 template: overrides/main.html
 ---
 

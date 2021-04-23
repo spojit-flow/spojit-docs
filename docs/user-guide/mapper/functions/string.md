@@ -1,4 +1,7 @@
 ---
+description: String functions are mapper functions that are designed to modify a string field.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

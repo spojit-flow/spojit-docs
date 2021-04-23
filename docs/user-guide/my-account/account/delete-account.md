@@ -1,4 +1,7 @@
 ---
+description: When you request deletion of your account, your account is scheduled for deletion at the end of current billing cycle. 
+---
+---
 template: overrides/main.html
 ---
 

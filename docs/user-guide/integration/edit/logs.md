@@ -1,4 +1,7 @@
 ---
+description: Each integration in your account provides you with logs of each and every run. These logs can be accessed from the Edit integration screen and give you an overview of the dates and times when the integration ran as well as the result of the run such as a success status or an error with a detailed reason of the error.
+---
+---
 template: overrides/main.html
 ---
 

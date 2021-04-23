@@ -1,4 +1,7 @@
 ---
+description: Math functions are mapper functions that are designed to make mathematical calculations on a field.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

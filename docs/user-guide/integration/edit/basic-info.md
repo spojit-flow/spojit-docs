@@ -1,4 +1,7 @@
 ---
+description: Basic integration info tab allows you to edit the name, description and also the category of given integration.
+---
+---
 template: overrides/main.html
 ---
 

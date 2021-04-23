@@ -1,4 +1,7 @@
 ---
+description: You can access the integration library directly from the main navigation menu or via 'Add new integration' button from the list of your integrations.
+---
+---
 template: overrides/main.html
 ---
   

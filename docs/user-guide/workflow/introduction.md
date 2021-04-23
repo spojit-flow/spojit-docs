@@ -1,4 +1,7 @@
 ---
+description: A workflow is a sequence of steps, where each step is responsible for a unique function. The collection of steps coupled with data flow controls and connections between steps forms a workflow which represents a process. 
+---
+---
 template: overrides/main.html
 ---
 

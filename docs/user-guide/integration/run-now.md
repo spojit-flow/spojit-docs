@@ -1,4 +1,7 @@
 ---
+description: Run Now functionality refers to running an integration manually (without schedule set).
+---
+---
 template: overrides/main.html
 ---
 

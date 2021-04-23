@@ -1,4 +1,7 @@
 ---
+description: Cancellation does not take effect until the end of your current billing cycle. During this time, your account remains active and you may choose to reactivate your account.
+---
+---
 template: overrides/main.html
 ---
 

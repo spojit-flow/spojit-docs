@@ -1,4 +1,7 @@
 ---
+description: From the main navigational menu, expand the ‘Billing’ section and select ‘Pay Method’. Click the 'Change Method' button at the top right of the screen to change your billing details.
+---
+---
 template: overrides/main.html
 ---
 

@@ -1,4 +1,7 @@
 ---
+description: From the main navigational menu, expand the ‘Billing’ section and select ‘Pricing’. Alternatively, you can also access the Pricing page from within 'My Account' section > 'Subscription' tab by clicking the 'Change Plan' button.
+---
+---
 template: overrides/main.html
 ---
 

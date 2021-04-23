@@ -1,4 +1,7 @@
 ---
+description: Find and click the red ‘bucket’ icon button in the integration table row next to the integration you wish to delete, you will be prompted to confirm the action.
+---
+---
 template: overrides/main.html
 ---
 

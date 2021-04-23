@@ -1,4 +1,7 @@
 ---
+description: Connecting services is as easy as hovering over your start service, grabing a connection start point and dragging towards your end service you wish to connect.
+---
+---
 template: overrides/main.html
 ---
 ## Instructions

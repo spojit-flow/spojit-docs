@@ -1,4 +1,7 @@
 ---
+description: In case you forget your password, you can request for your password to be reset.
+---
+---
 template: overrides/main.html
 ---
 

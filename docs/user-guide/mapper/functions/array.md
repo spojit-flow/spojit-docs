@@ -1,4 +1,7 @@
 ---
+description: Array functions are mapper functions that are designed to modify an array field.
+---
+---
 template: overrides/main.html
 ---
 !!! note "Before you begin" 

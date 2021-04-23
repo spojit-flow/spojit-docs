@@ -1,4 +1,7 @@
 ---
+description: To create a new workflow from scratch, log in to your account and on the main menu navigate to Integrations.
+---
+---
 template: overrides/main.html
 ---
   
