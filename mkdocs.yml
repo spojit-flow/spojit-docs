@@ -181,6 +181,7 @@ nav:
       - JSON Parser: user-guide/services/json-parser.md
       - Mailer: user-guide/services/mailer.md
       - Mapper Service: user-guide/services/mapper-service.md
+      - Netsuite REST Service: user-guide/services/netsuite-rest-service.md
       - Parallel Gateway: user-guide/services/parallel-gateway.md
       - REST Service: user-guide/services/rest-service.md
       - Revel Systems: user-guide/services/revel-service.md
