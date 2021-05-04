@@ -33,6 +33,19 @@ getItemByIndex(array $value, integer $index):mixed
   getItemByIndex([0], 1) => throws Exception (array does not have an item at index 1)
 ```
 ___
+#### Remove Item By Index
+```
+removeItemByIndex(array $value, integer $index):array
+```
+  Searches an array for given index and removes value or object at the specified index. Array indexes start at 0 - zero index represents the first item in an array.  Will reindex the array afterwards.
+
+  Throws exception if array does not contain an item at specified index.
+```
+  removeItemByIndex(["one", "two", "three"], 0) => ["two", "three"]
+  removeItemByIndex([1, 2], 1) => [2]
+  removeItemByIndex([0], 1) => throws Exception (array does not have an item at index 1)
+```
+___
 #### Implode (Join)
 ```
 implode( array $value, string $glue):string
