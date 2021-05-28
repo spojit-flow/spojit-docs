@@ -180,6 +180,7 @@ nav:
       - Iterator: user-guide/services/iterator.md
       - JSON Parser: user-guide/services/json-parser.md
       - Mailer: user-guide/services/mailer.md
+      - Magento 2: user-guide/services/magento2-service.md
       - Mapper Service: user-guide/services/mapper-service.md
       - Netsuite REST Service: user-guide/services/netsuite-rest-service.md
       - Netsuite SOAP Service: user-guide/services/netsuite-soap-service.md
