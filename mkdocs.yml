@@ -38,7 +38,7 @@ header_links:
     title: Free Trial
 
 # Copyright
-copyright: Copyright &copy; 2020 Spojit
+copyright: Copyright &copy; 2021 Spojit
 
 # Configuration
 theme:
@@ -167,15 +167,17 @@ nav:
       - Run workflow: user-guide/workflow/run-workflow.md
     - Mapper:
       - Functions:
-        - String Functions: user-guide/mapper/functions/string.md
         - Array Functions: user-guide/mapper/functions/array.md
         - Datetime Functions: user-guide/mapper/functions/datetime.md
+        - Formula Functions: user-guide/mapper/functions/formula.md
         - Math Functions: user-guide/mapper/functions/math.md
+        - String Functions: user-guide/mapper/functions/string.md
     - Services:
       - CSV Parser: user-guide/services/csv-parser.md
       - Dataset Service: user-guide/services/dataset.md
       - Deputy: user-guide/services/deputy-service.md
       - Document OCR: user-guide/services/document-ocr.md
+      - Filter: user-guide/services/filter.md
       - FTP Service: user-guide/services/ftp-service.md
       - Iterator: user-guide/services/iterator.md
       - JSON Parser: user-guide/services/json-parser.md

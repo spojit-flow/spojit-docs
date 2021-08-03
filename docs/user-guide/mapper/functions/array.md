@@ -137,3 +137,37 @@ arr_map(array $collection, string $field):array
   $field = "contact"
   arr_map($collection, $field) => [{"email": "john@email.com"}, {"email": "mary@email.com"}, {"email": "flynn@email.com"}, {"email": "brad@email.com"}]
 ```
+___
+#### Array Reduce
+```
+arr_reduce(string $type, string $method, string $field, array $collection):mixed
+```
+  Iterates over elements of a __\$collection__, reducing the array to a single value/object using a predetermined __\$method__.  
+
+  __\$type__: the type of array (ie. 'simple', or 'object').
+
+  __\$method__: the method to reduce the array (ie. 'max', or 'min').
+
+  __\$field__: the name of the field if object type is used (ie. 'id', or 'order_id').
+  
+```
+  Given the following $collection:
+
+  [
+    {"id": 1, "name": "John", "contact": {"email": "john@email.com"}},
+    {"id": 2, "name": "Mary", "contact": {"email": "mary@email.com"}},
+    {"id": 3, "name": "Flynn", "contact": {"email": "flynn@email.com"}},
+    {"id": 4, "name": "Brad", "contact": {"email": "brad@email.com"}}
+  ]
+
+  //Reduce the array using the max method on an array of objects
+  arr_reduce('object', 'max' 'id', $collection) => {"id": 4, "name": "Brad", "contact": {"email": "brad@email.com"}}
+
+  Given the following $collection:
+
+  [54, 4, 19, 5, 16, 6]
+
+  //Reduce the array using the min method on a simple array
+  arr_reduce('simple', 'min' null, $collection) => 4
+
+```
