@@ -9,7 +9,7 @@
 <link href="https://docs.spojit.com/user-guide/mapper/functions/array/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../../../assets/favicon.ico" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-5.2.0" name="generator"/>
+<meta content="mkdocs-1.2.2, mkdocs-material-5.2.0" name="generator"/>
 <title>Array Functions - Spojit Documentation</title>
 <link href="../../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
@@ -405,11 +405,6 @@
         Functions
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../string/" title="String Functions">
-      String Functions
-    </a>
-</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -459,6 +454,11 @@
     Array Map
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#array-reduce">
+    Array Reduce
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -468,8 +468,18 @@
     </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../formula/" title="Formula Functions">
+      Formula Functions
+    </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../math/" title="Math Functions">
       Math Functions
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../string/" title="String Functions">
+      String Functions
     </a>
 </li>
 </ul>
@@ -512,6 +522,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../services/document-ocr/" title="Document OCR">
       Document OCR
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../services/filter/" title="Filter">
+      Filter
     </a>
 </li>
 <li class="md-nav__item">
@@ -738,6 +753,11 @@
     Array Map
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#array-reduce">
+    Array Reduce
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -856,6 +876,33 @@
   $field = "contact"
   arr_map($collection, $field) =&gt; [{"email": "john@email.com"}, {"email": "mary@email.com"}, {"email": "flynn@email.com"}, {"email": "brad@email.com"}]
 </code></pre></div>
+<hr/>
+<h4 id="array-reduce">Array Reduce<a class="headerlink" href="#array-reduce" title="Permanent link">¶</a></h4>
+<p><div class="highlight"><pre><span></span><code>arr_reduce(string $type, string $method, string $field, array $collection):mixed
+</code></pre></div>
+  Iterates over elements of a <strong>$collection</strong>, reducing the array to a single value/object using a predetermined <strong>$method</strong>.  </p>
+<p><strong>$type</strong>: the type of array (ie. 'simple', or 'object').</p>
+<p><strong>$method</strong>: the method to reduce the array (ie. 'max', or 'min').</p>
+<p><strong>$field</strong>: the name of the field if object type is used (ie. 'id', or 'order_id').</p>
+<div class="highlight"><pre><span></span><code>  Given the following $collection:
+
+  [
+    {"id": 1, "name": "John", "contact": {"email": "john@email.com"}},
+    {"id": 2, "name": "Mary", "contact": {"email": "mary@email.com"}},
+    {"id": 3, "name": "Flynn", "contact": {"email": "flynn@email.com"}},
+    {"id": 4, "name": "Brad", "contact": {"email": "brad@email.com"}}
+  ]
+
+  //Reduce the array using the max method on an array of objects
+  arr_reduce('object', 'max' 'id', $collection) =&gt; {"id": 4, "name": "Brad", "contact": {"email": "brad@email.com"}}
+
+  Given the following $collection:
+
+  [54, 4, 19, 5, 16, 6]
+
+  //Reduce the array using the min method on a simple array
+  arr_reduce('simple', 'min' null, $collection) =&gt; 4
+</code></pre></div>
 </article>
 </div>
 </div>
@@ -863,7 +910,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../string/" rel="prev" title="String Functions">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../../../workflow/run-workflow/" rel="prev" title="Run workflow">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -872,7 +919,7 @@
 <span class="md-footer-nav__direction">
               Previous
             </span>
-            String Functions
+            Run workflow
           </div>
 </div>
 </a>
@@ -895,7 +942,7 @@
 <div class="md-footer-meta__inner md-grid">
 <div class="md-footer-copyright">
 <div class="md-footer-copyright__highlight">
-          Copyright © 2020 Spojit
+          Copyright © 2021 Spojit
         </div>
 </div>
 <div class="md-footer-social">
