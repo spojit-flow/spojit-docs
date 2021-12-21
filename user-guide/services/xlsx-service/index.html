@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="This service can write a XLSX (Microsoft Excel Open XML Spreadsheet) file from source data (API/Webhook etc) which could be used that to create a file on a FTP or send the file as an email attachment. This XLSX (Microsoft Excel Open XML Spreadsheet) service can be added to your workflow and connect and share data with other services." name="description"/>
-<link href="https://docs.spojit.com/user-guide/services/xlsx-writer/" rel="canonical"/>
+<meta content="This service can write or read a XLSX (Microsoft Excel Open XML Spreadsheet) file from source data (API/Webhook etc) which could be used that to create a file on a FTP or send the file as an email attachment. This XLSX (Microsoft Excel Open XML Spreadsheet) service can be added to your workflow and connect and share data with other services." name="description"/>
+<link href="https://docs.spojit.com/user-guide/services/xlsx-service/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../../assets/favicon.ico" rel="shortcut icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-5.2.0" name="generator"/>
-<title>XLSX Writer - Spojit Documentation</title>
+<meta content="mkdocs-1.2.3, mkdocs-material-5.2.0" name="generator"/>
+<title>XLSX Service - Spojit Documentation</title>
 <link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
 <meta content="#ff7043" name="theme-color"/>
@@ -46,7 +46,7 @@
         </span>
 <span class="md-header-nav__topic md-ellipsis">
           
-          XLSX Writer
+          XLSX Service
           
         </span>
 </div>
@@ -565,13 +565,13 @@
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-        XLSX Writer
+        XLSX Service
         <span class="md-nav__icon md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
 </span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="XLSX Writer">
-      XLSX Writer
+<a class="md-nav__link md-nav__link--active" href="./" title="XLSX Service">
+      XLSX Service
     </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -584,6 +584,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#creating-a-microsoft-excel-file">
     Creating a Microsoft Excel file
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reading-a-microsoft-excel-file">
+    Reading a Microsoft Excel file
   </a>
 </li>
 </ul>
@@ -703,6 +708,11 @@
     Creating a Microsoft Excel file
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reading-a-microsoft-excel-file">
+    Reading a Microsoft Excel file
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -710,13 +720,13 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>XLSX Writer</h1>
+<h1>XLSX Service</h1>
 <div class="admonition note">
 <p class="admonition-title">Before you begin</p>
 <p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
 </div>
 <hr/>
-<p>This service can write a XLSX (Microsoft Excel Open XML Spreadsheet) file from source data (API/Webhook etc) which could be used that to create a file on a FTP or send the file as an email attachment. </p>
+<p>This service can write or read a XLSX (Microsoft Excel Open XML Spreadsheet) file from source data (API/Webhook etc) which could be used that to create a file on a FTP or send the file as an email attachment. </p>
 <hr/>
 <h3 id="creating-a-microsoft-excel-file">Creating a Microsoft Excel file<a class="headerlink" href="#creating-a-microsoft-excel-file" title="Permanent link">¶</a></h3>
 <p>The following configuration options can be used to create the raw data for a XLSX file from mapped data.</p>
@@ -730,6 +740,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Method</td>
+<td>Select "write" to create a XLSX file</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
 <tr>
 <td>Headers</td>
 <td>The XLSX headers are not required as a file will generate without them with all the data; however, if they are specified only matching columns will be generated.  If added the Header Key and Header Value is required for each.</td>
@@ -754,13 +770,15 @@
 <p class="admonition-title">Important</p>
 <p>Mapped service data must be contained with an ARRAY where the fields match the desired header columns.  The parser does not generate the file itself rather the raw data that can be used by other services to generate a file (i.e SFTP/Email).</p>
 </div>
-<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure the XLSX writer to create a two column XLSX file from an array of data.  The configuration is set up to create two headers for the columns.</p>
-<p><img alt="XLSX Writer Configuration" src="/assets/images/services/xlsx-writer/configuration.png" title="XLSX Writer Configuration"/></p>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the XLSX service to create a two column XLSX file from an array of data.  The configuration is set up to create two headers for the columns.</p>
+<p><img alt="XLSX Service Writer Configuration" src="/assets/images/services/xlsx-service/configuration.png" title="XLSX Service Writer Configuration"/></p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
 <p>After the configuration is setup we can then create a schema for the output XLSX. Each field within the array can be a column (depending on how headers are setup) and each index of the array consists of a row in the XLSX.  For this example we are going to switch to the ARRAY schema and add <strong>id</strong> and <strong>job</strong> as fields to that ARRAY:</p>
-<p><img alt="XLSX Writer Schema" src="/assets/images/services/xlsx-writer/schema.png" title="XLSX Writer Schema"/></p>
+<p><img alt="XLSX Service Writer Schema" src="/assets/images/services/xlsx-service/schema.png" title="XLSX Service Writer Schema"/></p>
 <p>Given the following source data from another service:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
@@ -776,7 +794,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>Next we can map the <strong>data</strong> array on the array in the field mapping with the <strong>id_number</strong> and <strong>job_name</strong> on <strong>id</strong> and <strong>job</strong> respectively as fields within the array:</p>
-<p><img alt="XLSX Writer Mapping" src="/assets/images/services/xlsx-writer/mapping.png" title="XLSX Writer Mapping"/></p>
+<p><img alt="XLSX Service Writer Mapping" src="/assets/images/services/xlsx-service/mapping.png" title="XLSX Service Writer Mapping"/></p>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
 <p>In this example the following output will be generated automatically by this service after it is run.  The data will be pretty unreadable but contained within the <code>data</code> node:</p>
@@ -786,7 +804,77 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>This output data can be used to create a XLSX file like this:</p>
-<p><img alt="XLSX Writer Output File" src="/assets/images/services/xlsx-writer/xlsx-output.png" title="XLSX Writer Output File"/></p>
+<p><img alt="XLSX Writer Output File" src="/assets/images/services/xlsx-service/xlsx-output.png" title="XLSX Writer Output File"/></p>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="reading-a-microsoft-excel-file">Reading a Microsoft Excel file<a class="headerlink" href="#reading-a-microsoft-excel-file" title="Permanent link">¶</a></h3>
+<p>When the read configuration is selected the service will read the raw data from a XLSX file to create output data.  The output data can then be used by other services.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "read" to read a XLSX file</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Raw Data</td>
+<td>The raw data of the XLSX file that will be parsed</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>File Type</td>
+<td>The type of file to be read - a newer "XLSX" file or the older "XLS" file</td>
+<td>XLSX</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>There is no need to configure the service data that is read. The XLSX data will automatically create the data object.</p>
+</div>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the XLSX Service to create a data object. </p>
+<p>Given the following source data from another service:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="s2">"XLSX raw data will be here"</span><span class="p">,</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The location of the raw XLSX data needs to be specified in the configuration:</p>
+<p><img alt="XLSX Service Read Configuration" src="/assets/images/services/xlsx-service/read-configuration.png" title="XLSX Service Read Configuration"/></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio"><label for="__tabbed_2_2">2. Service data setup</label><div class="tabbed-content">
+<p>The [XLSX Service reader doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio"><label for="__tabbed_2_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+    <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 </input></input></input></div>
 </details>

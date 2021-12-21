@@ -9,7 +9,7 @@
 <link href="https://docs.spojit.com/user-guide/services/csv-parser/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../../assets/favicon.ico" rel="shortcut icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-5.2.0" name="generator"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-5.2.0" name="generator"/>
 <title>CSV Parser - Spojit Documentation</title>
 <link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
@@ -590,8 +590,8 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../xlsx-writer/" title="XLSX Writer">
-      XLSX Writer
+<a class="md-nav__link" href="../xlsx-service/" title="XLSX Service">
+      XLSX Service
     </a>
 </li>
 </ul>
@@ -788,7 +788,9 @@
 <p class="admonition-title">Important</p>
 <p>Mapped service data must be contained with an ARRAY where the fields match the desired header columns.  The parser does not generate the file itself rather the raw data that can be used by other services to generate a file (i.e SFTP/Email).</p>
 </div>
-<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
 <p>The following example shows you how to configure the CSV Parser to create a two column CSV file from an array of data.  The configuration is set up to create two headers for the columns with a comma as a field delimiter and using the LF record delimiter.</p>
 <p><img alt="CSV Parser Write Configuration" src="/assets/images/services/csv-parser/write-configuration.png" title="CSV Parser Write Configuration"/></p>
 </div>
@@ -855,7 +857,9 @@
 <p class="admonition-title">Info</p>
 <p>There is no need to configure the service data that is read. The CSV data will be read with output fields and headers automatically created.</p>
 </div>
-<details class="spojit-example"><summary>Example configuration and mapping</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
 <p>The following example shows you how to configure the CSV Parser to read a two column CSV file and create an array of data from that. </p>
 <p>Given the following source data from another service:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>

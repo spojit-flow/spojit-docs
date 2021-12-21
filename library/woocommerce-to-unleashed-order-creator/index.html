@@ -8,7 +8,7 @@
 <link href="https://docs.spojit.com/library/woocommerce-to-unleashed-order-creator/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../assets/favicon.ico" rel="shortcut icon"/>
-<meta content="mkdocs-1.2.2, mkdocs-material-5.2.0" name="generator"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-5.2.0" name="generator"/>
 <title>Woocommerce to unleashed order creator - Spojit Documentation</title>
 <link href="../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
@@ -562,8 +562,8 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/xlsx-writer/" title="XLSX Writer">
-      XLSX Writer
+<a class="md-nav__link" href="../../user-guide/services/xlsx-service/" title="XLSX Service">
+      XLSX Service
     </a>
 </li>
 </ul>
@@ -784,7 +784,9 @@
 <p>The following instructions outline what is needed to setup the WooCommerce to Unleashed order creator.  We will get API keys from Unleashed, add them and setup the integration within Spojit and then create a webhook in WooCommerce to send newly created orders for processing.</p>
 <h4 id="2-unleashed-authorization">2. Unleashed Authorization<a class="headerlink" href="#2-unleashed-authorization" title="Permanent link">¶</a></h4>
 <p>In order for the integration to be able to connect with Unleashed, API keys need to be copied from Unleashed into Spojit.</p>
-<details class="info"><summary>View steps...</summary><h4 id="1-log-in-to-your-unleashed-account">1. Log in to your Unleashed account<a class="headerlink" href="#1-log-in-to-your-unleashed-account" title="Permanent link">¶</a></h4>
+<details class="info">
+<summary>View steps...</summary>
+<h4 id="1-log-in-to-your-unleashed-account">1. Log in to your Unleashed account<a class="headerlink" href="#1-log-in-to-your-unleashed-account" title="Permanent link">¶</a></h4>
 <h4 id="2-navigate-to-integration-unleashed-api-access">2. Navigate to Integration &gt; Unleashed API Access<a class="headerlink" href="#2-navigate-to-integration-unleashed-api-access" title="Permanent link">¶</a></h4>
 <p>From the Unleashed dashboard click on “Integration” / “Unleashed API Access” from the side bar</p>
 <p><img alt="Unleashed API Settings" src="/assets/images/connectors/unleashed/unleashed-auth-settings.png" title="Unleashed API Settings"/></p>
@@ -794,7 +796,9 @@
 </details>
 <h4 id="3-integration-configuration">3. Integration Configuration<a class="headerlink" href="#3-integration-configuration" title="Permanent link">¶</a></h4>
 <p>Enter the “Warehouse Code” to associate with new sales orders in Unleashed.  Choose to create sales orders in Unleashed as Parked, Placed, or Completed.</p>
-<details class="info"><summary>How to find a warehouse code...</summary><h4 id="1-log-in-to-your-unleashed-account_1">1. Log in to your Unleashed account<a class="headerlink" href="#1-log-in-to-your-unleashed-account_1" title="Permanent link">¶</a></h4>
+<details class="info">
+<summary>How to find a warehouse code...</summary>
+<h4 id="1-log-in-to-your-unleashed-account_1">1. Log in to your Unleashed account<a class="headerlink" href="#1-log-in-to-your-unleashed-account_1" title="Permanent link">¶</a></h4>
 <h4 id="2-navigate-to-settings-system-warehouses">2. Navigate to Settings &gt; System &gt; Warehouses<a class="headerlink" href="#2-navigate-to-settings-system-warehouses" title="Permanent link">¶</a></h4>
 <p>From the Unleashed dashboard click on Settings &gt; System &gt; "Warehouses" from the side bar</p>
 <h4 id="3-copy-warehouse-code">3. Copy Warehouse Code<a class="headerlink" href="#3-copy-warehouse-code" title="Permanent link">¶</a></h4>
@@ -803,7 +807,9 @@
 </details>
 <h4 id="4-configure-webhook">4. Configure Webhook<a class="headerlink" href="#4-configure-webhook" title="Permanent link">¶</a></h4>
 <p>Follow the steps and create a webhook in WooCommerce with the “Order created” topic</p>
-<details class="info"><summary>View steps...</summary><div class="admonition info">
+<details class="info">
+<summary>View steps...</summary>
+<div class="admonition info">
 <p class="admonition-title">Webhook URL Configuration</p>
 <p>This guide shows you how to use the Spojit generated webhook URL with WooCommerce. Follow the below steps to enable WooCommerce webhook and link your WooCommerce with the Spojit platform.</p>
 </div>

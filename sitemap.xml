@@ -2,302 +2,302 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.spojit.com/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/connectors/unleashed/unleashed-authorization/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/connectors/unleashed/unleashed-warehouse-code/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/connectors/woocommerce/woocommerce-authorization/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/connectors/woocommerce/woocommerce-legacy-api/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/connectors/woocommerce/woocommerce-webhooks/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/library/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/library/unleashed-to-woocommerce-stock-updater/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/library/woocommerce-to-unleashed-order-creator/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/create-integration/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/delete-integration/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/run-now/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/edit/basic-info/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/edit/configuration/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/edit/logs/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/edit/schedule/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/integration/edit/webhook/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/mapper/functions/array/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/mapper/functions/datetime/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/mapper/functions/formula/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/mapper/functions/math/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/mapper/functions/string/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/account/change-password/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/account/delete-account/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/account/reset-password/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/billing/change-billing/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/billing/view-invoices/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/subscription/cancel-subscription/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/subscription/change-subscription/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/my-account/subscription/create-subscription/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/csv-parser/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/dataset/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/default-connector/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/deputy-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/document-ocr/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/file-system/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/filter/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/ftp-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/iterator/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/json-parser/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/magento2-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/mailer/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/mapper-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/netsuite-rest-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/netsuite-soap-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/parallel-gateway/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/rest-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/revel-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/sftp-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/shipstation-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/smartfreight-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/start-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/unleashed-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/services/woocommerce-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.spojit.com/user-guide/services/xlsx-writer/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <loc>https://docs.spojit.com/user-guide/services/xlsx-service/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/workflow/add-service/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/workflow/connect-services/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/workflow/create-workflow/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/workflow/introduction/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/user-guide/workflow/run-workflow/</loc>
-         <lastmod>2021-08-06</lastmod>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
