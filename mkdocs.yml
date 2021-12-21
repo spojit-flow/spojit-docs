@@ -195,7 +195,7 @@ nav:
       - Start Service: user-guide/services/start-service.md
       - Unleashed Software: user-guide/services/unleashed-service.md
       - WooCommerce: user-guide/services/woocommerce-service.md
-      - XLSX Writer: user-guide/services/xlsx-writer.md
+      - XLSX Service: user-guide/services/xlsx-service.md
   - Connectors Guide:
     - WooCommerce:
       - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
