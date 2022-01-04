@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Services are the building blocks of workflows." name="description"/>
-<link href="https://docs.spojit.com/user-guide/workflow/add-service/" rel="canonical"/>
+<meta content="Integrate DEAR Systems. Create and modify an DEAR Systems integration with the bilateral transfer of resources within the DEAR Systems RESTful web service. This DEAR Systems service can be added to your workflow and connect and share data with other services." name="description"/>
+<link href="https://docs.spojit.com/user-guide/services/dear-systems-service/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
 <link href="../../../assets/favicon.ico" rel="shortcut icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-5.2.0" name="generator"/>
-<title>Add service - Spojit Documentation</title>
+<title>DEAR Systems - Spojit Documentation</title>
 <link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
 <meta content="#ff7043" name="theme-color"/>
@@ -27,7 +27,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#instructions">
+<a class="md-skip" href="#dear-systems-authorization">
           Skip to content
         </a>
 </div>
@@ -46,7 +46,7 @@
         </span>
 <span class="md-header-nav__topic md-ellipsis">
           
-          Add service
+          DEAR Systems
           
         </span>
 </div>
@@ -329,8 +329,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" id="nav-2-3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" id="nav-2-3" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-3">
       Workflow
       <span class="md-nav__icon md-icon">
@@ -346,63 +346,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../introduction/" title="Introduction">
+<a class="md-nav__link" href="../../workflow/introduction/" title="Introduction">
       Introduction
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../create-workflow/" title="Create workflow">
+<a class="md-nav__link" href="../../workflow/create-workflow/" title="Create workflow">
       Create workflow
     </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        Add service
-        <span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
-</span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Add service">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../workflow/add-service/" title="Add service">
       Add service
     </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#instructions">
-    Instructions
-  </a>
-<nav aria-label="Instructions" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-accessing-service-library">
-    1. Accessing Service Library
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2-adding-a-service">
-    2. Adding a service
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../connect-services/" title="Connect services">
+<a class="md-nav__link" href="../../workflow/connect-services/" title="Connect services">
       Connect services
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../run-workflow/" title="Run workflow">
+<a class="md-nav__link" href="../../workflow/run-workflow/" title="Run workflow">
       Run workflow
     </a>
 </li>
@@ -472,8 +436,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-5">
       Services
       <span class="md-nav__icon md-icon">
@@ -489,122 +453,164 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/csv-parser/" title="CSV Parser">
+<a class="md-nav__link" href="../csv-parser/" title="CSV Parser">
       CSV Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/dataset/" title="Dataset Service">
+<a class="md-nav__link" href="../dataset/" title="Dataset Service">
       Dataset Service
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../services/dear-systems-service/" title="DEAR Systems">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        DEAR Systems
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="DEAR Systems">
       DEAR Systems
     </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dear-systems-authorization">
+    DEAR Systems Authorization
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/deputy-service/" title="Deputy">
+<a class="md-nav__link" href="#get">
+    GET
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#post">
+    POST
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#put">
+    PUT
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#delete">
+    DELETE
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../deputy-service/" title="Deputy">
       Deputy
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/document-ocr/" title="Document OCR">
+<a class="md-nav__link" href="../document-ocr/" title="Document OCR">
       Document OCR
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/filter/" title="Filter">
+<a class="md-nav__link" href="../filter/" title="Filter">
       Filter
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/ftp-service/" title="FTP Service">
+<a class="md-nav__link" href="../ftp-service/" title="FTP Service">
       FTP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/iterator/" title="Iterator">
+<a class="md-nav__link" href="../iterator/" title="Iterator">
       Iterator
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/json-parser/" title="JSON Parser">
+<a class="md-nav__link" href="../json-parser/" title="JSON Parser">
       JSON Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/mailer/" title="Mailer">
+<a class="md-nav__link" href="../mailer/" title="Mailer">
       Mailer
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/magento2-service/" title="Magento 2">
+<a class="md-nav__link" href="../magento2-service/" title="Magento 2">
       Magento 2
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/mapper-service/" title="Mapper Service">
+<a class="md-nav__link" href="../mapper-service/" title="Mapper Service">
       Mapper Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/netsuite-rest-service/" title="Netsuite REST Service">
+<a class="md-nav__link" href="../netsuite-rest-service/" title="Netsuite REST Service">
       Netsuite REST Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/netsuite-soap-service/" title="Netsuite SOAP Service">
+<a class="md-nav__link" href="../netsuite-soap-service/" title="Netsuite SOAP Service">
       Netsuite SOAP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/parallel-gateway/" title="Parallel Gateway">
+<a class="md-nav__link" href="../parallel-gateway/" title="Parallel Gateway">
       Parallel Gateway
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/rest-service/" title="REST Service">
+<a class="md-nav__link" href="../rest-service/" title="REST Service">
       REST Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/revel-service/" title="Revel Systems">
+<a class="md-nav__link" href="../revel-service/" title="Revel Systems">
       Revel Systems
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/sftp-service/" title="SFTP Service">
+<a class="md-nav__link" href="../sftp-service/" title="SFTP Service">
       SFTP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/shipstation-service/" title="ShipStation">
+<a class="md-nav__link" href="../shipstation-service/" title="ShipStation">
       ShipStation
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/smartfreight-service/" title="SmartFreight Service">
+<a class="md-nav__link" href="../smartfreight-service/" title="SmartFreight Service">
       SmartFreight Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/start-service/" title="Start Service">
+<a class="md-nav__link" href="../start-service/" title="Start Service">
       Start Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/unleashed-service/" title="Unleashed Software">
+<a class="md-nav__link" href="../unleashed-service/" title="Unleashed Software">
       Unleashed Software
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/woocommerce-service/" title="WooCommerce">
+<a class="md-nav__link" href="../woocommerce-service/" title="WooCommerce">
       WooCommerce
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../services/xlsx-service/" title="XLSX Service">
+<a class="md-nav__link" href="../xlsx-service/" title="XLSX Service">
       XLSX Service
     </a>
 </li>
@@ -718,23 +724,29 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#instructions">
-    Instructions
-  </a>
-<nav aria-label="Instructions" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-accessing-service-library">
-    1. Accessing Service Library
+<a class="md-nav__link" href="#dear-systems-authorization">
+    DEAR Systems Authorization
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2-adding-a-service">
-    2. Adding a service
+<a class="md-nav__link" href="#get">
+    GET
   </a>
 </li>
-</ul>
-</nav>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#post">
+    POST
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#put">
+    PUT
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#delete">
+    DELETE
+  </a>
 </li>
 </ul>
 </nav>
@@ -743,17 +755,384 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>Add service</h1>
-<h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">¶</a></h2>
-<h3 id="1-accessing-service-library">1. Accessing Service Library<a class="headerlink" href="#1-accessing-service-library" title="Permanent link">¶</a></h3>
-<p>Services are the building blocks of workflows. To add a service, click the 'SERVICES' button from the toolbar above the canvas.</p>
-<p><img alt="Toolbar" src="/assets/images/workflow/access-service-library.png" title="Toolbar"/></p>
-<p>Our Service Library will open in new window where you can search available services.</p>
-<p><img alt="Service Library" src="/assets/images/workflow/service-library.png" title="Service Library"/></p>
-<h3 id="2-adding-a-service">2. Adding a service<a class="headerlink" href="#2-adding-a-service" title="Permanent link">¶</a></h3>
-<p>You will notice that services which do not require configuration can be added directly onto the canvas via the 'ADD' button at the bottom of each service card. Simply clicking the 'ADD' button will hide the Service Library and add your selected service onto the canvas.</p>
-<p>Services requiring configuration will present a Configuration screen before allowing you to add a service onto the canvas, however, completing the configuration is not mandatory. You can add such service from the Configuration screen by clicking the 'Save and Add' button at the top of that screen. Configuration can be completed later from the service settings accessible from the canvas.</p>
-<p><img alt="Service Configuration Screen" src="/assets/images/workflow/service-config-screen.png" title="Service Configuration Screen"/></p>
+<h1>DEAR Systems</h1>
+<div class="admonition note">
+<p class="admonition-title">Before you begin</p>
+<p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
+</div>
+<hr/>
+<p>DEAR Systems is a cloud-based ERP solution for small to midsized retailers, wholesalers, manufacturers, and e-commerce operators.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Full documentation of DEAR Systems resources and configuration is available at <a href="https://dearinventory.docs.apiary.io/" target="_blank" title="DEAR Systems API Documentation">DEAR Systems API Documentation</a>.</p>
+</div>
+<hr/>
+<h3 id="dear-systems-authorization">DEAR Systems Authorization<a class="headerlink" href="#dear-systems-authorization" title="Permanent link">¶</a></h3>
+<p>The following authorization configuration needs to filled out in order to connect with DEAR Systems:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Account ID</td>
+<td>Your DEAR Systems account ID.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Application Key</td>
+<td>An application key for your DEAR Systems account.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<p>The following example configuration shows you how to configure the authorziation for DEAR Systems:</p>
+<p><img alt="DEAR Systems Authorization Configuration" src="/assets/images/services/dear-systems-service/authorization-configuration.png" title="DEAR Systems Authorization Configuration"/></p>
+<p>The details can be created &amp; viewed in your DEAR Systems account under Integrations / API:</p>
+<p><img alt="DEAR Systems Authorization Details" src="/assets/images/services/dear-systems-service/authorization-details.png" title="DEAR Systems Authorization Details"/></p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>This service uses <strong>Version 2 (v2)</strong> of the DEAR Systems API by default and will append this to the path automatically.  Please add the paths accordingly without the reference to <code>/externalapi/v2/</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Correct</th>
+<th>Incorrect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/saleList</code></td>
+<td><code>/externalapi/v2/saleList</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div class="admonition danger">
+<p class="admonition-title">Important</p>
+<ul>
+<li>This service has a built in JSON parser and will automatically convert to the proper format. Requests will automatically contain required headers and authorization configuration so they do not need to be added.  </li>
+<li>The following (below) is a general guide on how to use the methods for this service.  The examples use the <a href="https://jsonplaceholder.typicode.com/" target="_blank" title="JSONPlaceholder">JSONPlaceholder</a> fake online REST API. Please refer to the system documentation above for full path and schema information.</li>
+</ul>
+</div>
+<hr/>
+<h3 id="get">GET<a class="headerlink" href="#get" title="Permanent link">¶</a></h3>
+<p>When the GET configuration is selected the service will retrieve a resource from a given URL.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "get" to retrieve a resource.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>API Url</td>
+<td>The full URL of the resource .</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Headers</td>
+<td>The request headers are not required as a request can be made without them. If added the Header Key and Header Value is required for each.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Header Key</td>
+<td>The name of the header key.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Header Value</td>
+<td>The value of the header.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Rest Service to get data from a resource.  It also contains an example header for an OAuth authorization bearer token.</p>
+<p><img alt="Rest Service GET Configuration" src="/assets/images/services/default-connector/get-configuration.png" title="Rest Service GET Configuration"/></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
+<p>The GET method doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+        <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="mi">200</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="post">POST<a class="headerlink" href="#post" title="Permanent link">¶</a></h3>
+<p>When the POST configuration is selected the service will create a resource at a given location.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "post" to create a resource.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>API Url</td>
+<td>The full URL of the resource .</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Headers</td>
+<td>The request headers are not required as a request can be made without them. If added the Header Key and Header Value is required for each.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Header Key</td>
+<td>The name of the header key.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Header Value</td>
+<td>The value of the header.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Rest Service to create a resource.</p>
+<p><img alt="Rest Service POST Configuration" src="/assets/images/services/default-connector/post-configuration.png" title="Rest Service POST Configuration"/></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio"><label for="__tabbed_2_2">2. Service data setup</label><div class="tabbed-content">
+<p>The schema can be whatever the resource excepts and for this example we are going to create an OBJECT schema with the specified fields:</p>
+<p><img alt="Rest Service POST Schema" src="/assets/images/services/default-connector/post-schema.png" title="Rest Service POST Schema"/></p>
+<p>Given the following source data from another service:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">"user_id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">"my_id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">"the_title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+      <span class="nt">"finished"</span><span class="p">:</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We can map the applicable fields with the schema object:</p>
+<p><img alt="Rest Service POST Mapping" src="/assets/images/services/default-connector/post-mapping.png" title="Rest Service POST Mapping"/></p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio"><label for="__tabbed_2_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+        <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="mi">201</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="put">PUT<a class="headerlink" href="#put" title="Permanent link">¶</a></h3>
+<p>When the PUT configuration is selected the service will update a resource at a given location.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "put" to update a resource.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>API Url</td>
+<td>The full URL of the resource .</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Headers</td>
+<td>The request headers are not required as a request can be made without them. If added the Header Key and Header Value is required for each.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Header Key</td>
+<td>The name of the header key.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Header Value</td>
+<td>The value of the header.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><label for="__tabbed_3_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Rest Service to update a resource.</p>
+<p><img alt="Rest Service PUT Configuration" src="/assets/images/services/default-connector/put-configuration.png" title="Rest Service PUT Configuration"/></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio"><label for="__tabbed_3_2">2. Service data setup</label><div class="tabbed-content">
+<p>The schema can be whatever the resource excepts and for this example we are going to create an OBJECT schema with the specified fields:</p>
+<p><img alt="Rest Service PUT Schema" src="/assets/images/services/default-connector/put-schema.png" title="Rest Service PUT Schema"/></p>
+<p>Given the following source data from another service:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">"user_id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">"my_id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">"the_title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+      <span class="nt">"finished"</span><span class="p">:</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We can map the applicable fields with the schema object:</p>
+<p><img alt="Rest Service PUT Mapping" src="/assets/images/services/default-connector/put-mapping.png" title="Rest Service PUT Mapping"/></p>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio"><label for="__tabbed_3_3">3. Output Data</label><div class="tabbed-content">
+<p>In this example the following output will be generated automatically by this service after it is run:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+        <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="mi">200</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="delete">DELETE<a class="headerlink" href="#delete" title="Permanent link">¶</a></h3>
+<p>When the DELETE configuration is selected the service will delete a resource from a given URL.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "delete" to delete a resource.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>API Url</td>
+<td>The full URL of the resource .</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Headers</td>
+<td>The request headers are not required as a request can be made without them. If added the Header Key and Header Value is required for each.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Header Key</td>
+<td>The name of the header key.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Header Value</td>
+<td>The value of the header.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><label for="__tabbed_4_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the Rest Service to delete a resource:</p>
+<p><img alt="Rest Service DELETE Configuration" src="/assets/images/services/default-connector/delete-configuration.png" title="Rest Service DELETE Configuration"/></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio"><label for="__tabbed_4_2">2. Service data setup</label><div class="tabbed-content">
+<p>The DELETE method doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio"><label for="__tabbed_4_3">3. Output Data</label><div class="tabbed-content">
+<p>Many services will not return any data after a resource is deleted but if data is returned it could possiblly look like this:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"userId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"delectus aut autem"</span><span class="p">,</span>
+        <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"statusCode"</span><span class="p">:</span> <span class="mi">204</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
 </article>
 </div>
 </div>
@@ -761,7 +1140,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../create-workflow/" rel="prev" title="Create workflow">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../dataset/" rel="prev" title="Dataset Service">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -770,17 +1149,17 @@
 <span class="md-footer-nav__direction">
               Previous
             </span>
-            Create workflow
+            Dataset Service
           </div>
 </div>
 </a>
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../connect-services/" rel="next" title="Connect services">
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../deputy-service/" rel="next" title="Deputy">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
               Next
             </span>
-            Connect services
+            Deputy
           </div>
 </div>
 <div class="md-footer-nav__button md-icon">
