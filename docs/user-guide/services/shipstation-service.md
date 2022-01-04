@@ -1,5 +1,5 @@
 ---
-description: Integrate ShipStation.  ShipStation is a web-based shipping solution that streamlines the shipping label printing and do-it-yourself shipping process for online retailers.
+description: Integrate ShipStation. Create and modify an ShipStation integration with the bilateral transfer of resources within the ShipStation RESTful web service. This ShipStation service can be added to your workflow and connect and share data with other services.
 ---
 ---
 template: overrides/main.html
