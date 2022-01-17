@@ -193,6 +193,7 @@ nav:
       - SFTP Service: user-guide/services/sftp-service.md
       - ShipStation: user-guide/services/shipstation-service.md
       - SmartFreight Service: user-guide/services/smartfreight-service.md
+      - SMTP Mailer Service: user-guide/services/smtp-mailer.md
       - Start Service: user-guide/services/start-service.md
       - Unleashed Software: user-guide/services/unleashed-service.md
       - WooCommerce: user-guide/services/woocommerce-service.md
