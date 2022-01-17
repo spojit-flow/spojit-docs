@@ -5,19 +5,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Webhook refers to one application sending information to another when something happens, essentially near real-time callbacks/notifications of changes." name="description"/>
-<link href="https://docs.spojit.com/user-guide/integration/edit/webhook/" rel="canonical"/>
+<meta content="This service can send a simple email from an email account.  It includes the ability to configure recipients, a subject line, text body, html body and add attachments. This SMTP mailer service can be added to your workflow and connect and share data with other services." name="description"/>
+<link href="https://docs.spojit.com/user-guide/services/smtp-mailer/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
-<link href="../../../../assets/favicon.ico" rel="shortcut icon"/>
+<link href="../../../assets/favicon.ico" rel="shortcut icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-5.2.0" name="generator"/>
-<title>Webhook - Spojit Documentation</title>
-<link href="../../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
+<title>SMTP Mailer Service - Spojit Documentation</title>
+<link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
 <meta content="#ff7043" name="theme-color"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
-<link href="../../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
 <link href="https://www.google-analytics.com" rel="preconnect dns-prefetch"/>
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
@@ -27,14 +27,14 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#instructions">
+<a class="md-skip" href="#login-authorization">
           Skip to content
         </a>
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header-nav md-grid">
 <a aria-label="Spojit Documentation" class="md-header-nav__button md-logo" href="https://docs.spojit.com/" title="Spojit Documentation">
-<img alt="logo" src="../../../../assets/logo.svg"/>
+<img alt="logo" src="../../../assets/logo.svg"/>
 </a>
 <label class="md-header-nav__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -46,7 +46,7 @@
         </span>
 <span class="md-header-nav__topic md-ellipsis">
           
-          Webhook
+          SMTP Mailer Service
           
         </span>
 </div>
@@ -109,13 +109,13 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Spojit Documentation" class="md-nav__button md-logo" href="https://docs.spojit.com/" title="Spojit Documentation">
-<img alt="logo" src="../../../../assets/logo.svg"/>
+<img alt="logo" src="../../../assets/logo.svg"/>
 </a>
     Spojit Documentation
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../.." title="Introduction">
+<a class="md-nav__link" href="../../.." title="Introduction">
       Introduction
     </a>
 </li>
@@ -168,17 +168,17 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/account/change-password/" title="Change password">
+<a class="md-nav__link" href="../../my-account/account/change-password/" title="Change password">
       Change password
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/account/reset-password/" title="Reset password">
+<a class="md-nav__link" href="../../my-account/account/reset-password/" title="Reset password">
       Reset password
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/account/delete-account/" title="Delete account">
+<a class="md-nav__link" href="../../my-account/account/delete-account/" title="Delete account">
       Delete account
     </a>
 </li>
@@ -202,12 +202,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/billing/change-billing/" title="Change billing">
+<a class="md-nav__link" href="../../my-account/billing/change-billing/" title="Change billing">
       Change billing
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/billing/view-invoices/" title="View invoices">
+<a class="md-nav__link" href="../../my-account/billing/view-invoices/" title="View invoices">
       View invoices
     </a>
 </li>
@@ -231,17 +231,17 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/subscription/create-subscription/" title="Create subscription">
+<a class="md-nav__link" href="../../my-account/subscription/create-subscription/" title="Create subscription">
       Create subscription
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/subscription/change-subscription/" title="Change subscription">
+<a class="md-nav__link" href="../../my-account/subscription/change-subscription/" title="Change subscription">
       Change subscription
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../my-account/subscription/cancel-subscription/" title="Cancel subscription">
+<a class="md-nav__link" href="../../my-account/subscription/cancel-subscription/" title="Cancel subscription">
       Cancel subscription
     </a>
 </li>
@@ -251,8 +251,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" id="nav-2-2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" id="nav-2-2" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-2">
       Integration
       <span class="md-nav__icon md-icon">
@@ -268,12 +268,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../create-integration/" title="Create integration">
+<a class="md-nav__link" href="../../integration/create-integration/" title="Create integration">
       Create integration
     </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-2" id="nav-2-2-2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-2" id="nav-2-2-2" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-2-2">
       Edit integration
       <span class="md-nav__icon md-icon">
@@ -289,78 +289,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../basic-info/" title="Basic info">
+<a class="md-nav__link" href="../../integration/edit/basic-info/" title="Basic info">
       Basic info
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../configuration/" title="Configuration">
+<a class="md-nav__link" href="../../integration/edit/configuration/" title="Configuration">
       Configuration
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../schedule/" title="Schedule">
+<a class="md-nav__link" href="../../integration/edit/schedule/" title="Schedule">
       Schedule
     </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        Webhook
-        <span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
-</span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Webhook">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../integration/edit/webhook/" title="Webhook">
       Webhook
     </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#instructions">
-    Instructions
-  </a>
-<nav aria-label="Instructions" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-log-in-to-your-account">
-    1. Log in to your account
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2-access-my-integrations-page">
-    2. Access 'My Integrations' page
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-enter-edit-integration-page">
-    3. Enter 'Edit Integration' page
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#4-enable-webhook-note-url">
-    4. Enable webhook, note URL
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#5-save-changes">
-    5. Save changes
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../logs/" title="Logs">
+<a class="md-nav__link" href="../../integration/edit/logs/" title="Logs">
       Logs
     </a>
 </li>
@@ -368,12 +317,12 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../run-now/" title="Run now">
+<a class="md-nav__link" href="../../integration/run-now/" title="Run now">
       Run now
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../delete-integration/" title="Delete integration">
+<a class="md-nav__link" href="../../integration/delete-integration/" title="Delete integration">
       Delete integration
     </a>
 </li>
@@ -397,27 +346,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../workflow/introduction/" title="Introduction">
+<a class="md-nav__link" href="../../workflow/introduction/" title="Introduction">
       Introduction
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../workflow/create-workflow/" title="Create workflow">
+<a class="md-nav__link" href="../../workflow/create-workflow/" title="Create workflow">
       Create workflow
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../workflow/add-service/" title="Add service">
+<a class="md-nav__link" href="../../workflow/add-service/" title="Add service">
       Add service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../workflow/connect-services/" title="Connect services">
+<a class="md-nav__link" href="../../workflow/connect-services/" title="Connect services">
       Connect services
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../workflow/run-workflow/" title="Run workflow">
+<a class="md-nav__link" href="../../workflow/run-workflow/" title="Run workflow">
       Run workflow
     </a>
 </li>
@@ -457,27 +406,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../mapper/functions/array/" title="Array Functions">
+<a class="md-nav__link" href="../../mapper/functions/array/" title="Array Functions">
       Array Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../mapper/functions/datetime/" title="Datetime Functions">
+<a class="md-nav__link" href="../../mapper/functions/datetime/" title="Datetime Functions">
       Datetime Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../mapper/functions/formula/" title="Formula Functions">
+<a class="md-nav__link" href="../../mapper/functions/formula/" title="Formula Functions">
       Formula Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../mapper/functions/math/" title="Math Functions">
+<a class="md-nav__link" href="../../mapper/functions/math/" title="Math Functions">
       Math Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../mapper/functions/string/" title="String Functions">
+<a class="md-nav__link" href="../../mapper/functions/string/" title="String Functions">
       String Functions
     </a>
 </li>
@@ -487,8 +436,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-5">
       Services
       <span class="md-nav__icon md-icon">
@@ -504,127 +453,154 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/csv-parser/" title="CSV Parser">
+<a class="md-nav__link" href="../csv-parser/" title="CSV Parser">
       CSV Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/dataset/" title="Dataset Service">
+<a class="md-nav__link" href="../dataset/" title="Dataset Service">
       Dataset Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/dear-systems-service/" title="DEAR Systems">
+<a class="md-nav__link" href="../dear-systems-service/" title="DEAR Systems">
       DEAR Systems
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/deputy-service/" title="Deputy">
+<a class="md-nav__link" href="../deputy-service/" title="Deputy">
       Deputy
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/document-ocr/" title="Document OCR">
+<a class="md-nav__link" href="../document-ocr/" title="Document OCR">
       Document OCR
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/filter/" title="Filter">
+<a class="md-nav__link" href="../filter/" title="Filter">
       Filter
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/ftp-service/" title="FTP Service">
+<a class="md-nav__link" href="../ftp-service/" title="FTP Service">
       FTP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/iterator/" title="Iterator">
+<a class="md-nav__link" href="../iterator/" title="Iterator">
       Iterator
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/json-parser/" title="JSON Parser">
+<a class="md-nav__link" href="../json-parser/" title="JSON Parser">
       JSON Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/mailer/" title="Mailer">
+<a class="md-nav__link" href="../mailer/" title="Mailer">
       Mailer
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/magento2-service/" title="Magento 2">
+<a class="md-nav__link" href="../magento2-service/" title="Magento 2">
       Magento 2
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/mapper-service/" title="Mapper Service">
+<a class="md-nav__link" href="../mapper-service/" title="Mapper Service">
       Mapper Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/netsuite-rest-service/" title="Netsuite REST Service">
+<a class="md-nav__link" href="../netsuite-rest-service/" title="Netsuite REST Service">
       Netsuite REST Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/netsuite-soap-service/" title="Netsuite SOAP Service">
+<a class="md-nav__link" href="../netsuite-soap-service/" title="Netsuite SOAP Service">
       Netsuite SOAP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/parallel-gateway/" title="Parallel Gateway">
+<a class="md-nav__link" href="../parallel-gateway/" title="Parallel Gateway">
       Parallel Gateway
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/rest-service/" title="REST Service">
+<a class="md-nav__link" href="../rest-service/" title="REST Service">
       REST Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/revel-service/" title="Revel Systems">
+<a class="md-nav__link" href="../revel-service/" title="Revel Systems">
       Revel Systems
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/sftp-service/" title="SFTP Service">
+<a class="md-nav__link" href="../sftp-service/" title="SFTP Service">
       SFTP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/shipstation-service/" title="ShipStation">
+<a class="md-nav__link" href="../shipstation-service/" title="ShipStation">
       ShipStation
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/smartfreight-service/" title="SmartFreight Service">
+<a class="md-nav__link" href="../smartfreight-service/" title="SmartFreight Service">
       SmartFreight Service
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/smtp-mailer/" title="SMTP Mailer Service">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        SMTP Mailer Service
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path></svg>
+</span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./" title="SMTP Mailer Service">
       SMTP Mailer Service
     </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#login-authorization">
+    Login Authorization
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/start-service/" title="Start Service">
+<a class="md-nav__link" href="#configuration">
+    Configuration
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../start-service/" title="Start Service">
       Start Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/unleashed-service/" title="Unleashed Software">
+<a class="md-nav__link" href="../unleashed-service/" title="Unleashed Software">
       Unleashed Software
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/woocommerce-service/" title="WooCommerce">
+<a class="md-nav__link" href="../woocommerce-service/" title="WooCommerce">
       WooCommerce
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../services/xlsx-service/" title="XLSX Service">
+<a class="md-nav__link" href="../xlsx-service/" title="XLSX Service">
       XLSX Service
     </a>
 </li>
@@ -667,17 +643,17 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../connectors/woocommerce/woocommerce-authorization/" title="WooCommerce Authorization">
+<a class="md-nav__link" href="../../../connectors/woocommerce/woocommerce-authorization/" title="WooCommerce Authorization">
       WooCommerce Authorization
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../connectors/woocommerce/woocommerce-legacy-api/" title="WooCommerce Legacy API">
+<a class="md-nav__link" href="../../../connectors/woocommerce/woocommerce-legacy-api/" title="WooCommerce Legacy API">
       WooCommerce Legacy API
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../connectors/woocommerce/woocommerce-webhooks/" title="WooCommerce Webhooks">
+<a class="md-nav__link" href="../../../connectors/woocommerce/woocommerce-webhooks/" title="WooCommerce Webhooks">
       WooCommerce Webhooks
     </a>
 </li>
@@ -701,12 +677,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../connectors/unleashed/unleashed-authorization/" title="Unleashed Authorization">
+<a class="md-nav__link" href="../../../connectors/unleashed/unleashed-authorization/" title="Unleashed Authorization">
       Unleashed Authorization
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../connectors/unleashed/unleashed-warehouse-code/" title="Unleashed Warehouse Code">
+<a class="md-nav__link" href="../../../connectors/unleashed/unleashed-warehouse-code/" title="Unleashed Warehouse Code">
       Unleashed Warehouse Code
     </a>
 </li>
@@ -717,7 +693,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../library/" title="Library">
+<a class="md-nav__link" href="../../../library/" title="Library">
       Library
     </a>
 </li>
@@ -738,38 +714,14 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#instructions">
-    Instructions
-  </a>
-<nav aria-label="Instructions" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-log-in-to-your-account">
-    1. Log in to your account
+<a class="md-nav__link" href="#login-authorization">
+    Login Authorization
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2-access-my-integrations-page">
-    2. Access 'My Integrations' page
+<a class="md-nav__link" href="#configuration">
+    Configuration
   </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-enter-edit-integration-page">
-    3. Enter 'Edit Integration' page
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#4-enable-webhook-note-url">
-    4. Enable webhook, note URL
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#5-save-changes">
-    5. Save changes
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -778,34 +730,175 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>Webhook</h1>
+<h1>SMTP Mailer Service</h1>
+<div class="admonition note">
+<p class="admonition-title">Before you begin</p>
+<p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
+</div>
+<hr/>
+<p>This service can send a simple email from an email address.  It includes the ability to configure recipients, a subject line, text body, html body and add attachments.</p>
+<hr/>
+<h3 id="login-authorization">Login Authorization<a class="headerlink" href="#login-authorization" title="Permanent link">¶</a></h3>
+<p>The following authorization configuration needs to filled out in order to send mail via SMTP:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>The host of the mail server (i.e. smtp.gmail.com).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>The port of the mail server.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>The username to login.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>The password to login.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<p>The following example configuration shows you how to configure the login authorziation SMTP:</p>
+<p><img alt="SMTP Login Authorization Configuration" src="/assets/images/services/smtp-mailer/login-authorization-configuration.png" title="SMTP Login Authorization Configuration"/></p>
 <div class="admonition warning">
-<p class="admonition-title">Not all integrations require webhook (ie. scheduled / polling integrations).</p>
-<p>Webhook tab is accessible only for integrations which require or support webhooks. On scheduled integrations where webhooks are not supported you may find the ‘Webhook’ tab disabled, in which case please refer to the specific integration template in our <a href="/library">Library</a> section (you may be required to enable and configure schedule instead).</p>
+<p class="admonition-title">Using GMAIL</p>
+<p>To use login authorization for SMTP with GMAIL you need to allow <a href="https://support.google.com/accounts/answer/6010255" target="_blank" title="Less secure app access">Less secure app access</a> in your Google account.</p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Webhooks - what are they? <a href="https://en.wikipedia.org/wiki/Webhook">https://en.wikipedia.org/wiki/Webhook</a></p>
-<p>In simple terms, there are two main ways in which applications on the web communicate and share information - either by polling or using webhooks.</p>
-<p>Polling refers to one application periodically asking another if something happened. This requires a scheduler and can be inefficient as there may not be any updates in the requested period. Webhook on the other hand refers to one application sending information to another when something happens, essentially near real-time callbacks/notifications of changes.</p>
-<p><strong>Simplified Example:</strong> Keeping inventory levels in sync between online shop and warehouse system.</p>
-<ul>
-<li><strong>Polling/Schedule:</strong> Online store asks warehouse system every 10 minutes if there are any stock updates.</li>
-<li><strong>Webhook:</strong> Warehouse system sends notification to online store every time there is an update to stock levels in the warehouse.</li>
-</ul>
-<p>Spojit platform allows you to generate a unique webhook URL for an integration which can then be entered into a 3<sup>rd</sup> party system (ie. the Warehouse system from the example above) so that every time there is an update in the warehouse, the warehouse app sends info to the provided URL which in turn starts your integration.</p>
+<hr/>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>From Name</td>
+<td>The name of the sender of the email message.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>From Email</td>
+<td>The email address of the sender.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>To</td>
+<td>The recipient(s) of the email message.  Each receipient requires a name and email address</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Cc</td>
+<td>The Cc recipient(s) of the email message.  Each receipient requires a name and email address</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Bcc</td>
+<td>The Bcc recipient(s) of the email message.  Each receipient requires a name and email address</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>The name of the recipient of the email message.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>The email address of the recipient.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Subject</td>
+<td>The subject line of the email that is going to be sent.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>The body of the email that is going to be sent.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>The HTML body of the email that is going to be sent.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Attachments</td>
+<td>File(s) that are attached to the email.  This requires attachment type, name and the raw data for the file.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Attachment Type</td>
+<td>The type of file that is being attached (i.e application/csv).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Attachment Filename</td>
+<td>The name of file that is being attached (i.e somedata.csv).</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Raw data</td>
+<td>The raw data of the file that will be attached.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The attachments need to be provided to this service in raw data with the correct data type and file name selected in order for the file to be read properly with some email clients.</p>
 </div>
-<h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">¶</a></h2>
-<h3 id="1-log-in-to-your-account">1. Log in to your account<a class="headerlink" href="#1-log-in-to-your-account" title="Permanent link">¶</a></h3>
-<h3 id="2-access-my-integrations-page">2. Access 'My Integrations' page<a class="headerlink" href="#2-access-my-integrations-page" title="Permanent link">¶</a></h3>
-<p>You can access the page via the main menu by expanding  the 'Integrations' menu item and selecting 'My Integrations'. You should see a table listing all your integrations here.</p>
-<p><img alt="Access My Integrations Page" src="/assets/images/access-library.png" title="Access My Integrations Page"/></p>
-<h3 id="3-enter-edit-integration-page">3. Enter 'Edit Integration' page<a class="headerlink" href="#3-enter-edit-integration-page" title="Permanent link">¶</a></h3>
-<p>Enter the Edit integration screen by clicking on the integration table row or the blue ‘pencil’ icon button at the end of a table row. Switch to 'Webhook' tab.</p>
-<h3 id="4-enable-webhook-note-url">4. Enable webhook, note URL<a class="headerlink" href="#4-enable-webhook-note-url" title="Permanent link">¶</a></h3>
-<p>Enable webhook by switching the ‘Enabled’ toggle at the top of the page. This will generate a unique URL for your integration which you can enter into 3<sup>rd</sup> party system.</p>
-<p><img alt="Edit Integration - Webhook Activate" src="/assets/images/edit-integration-webhook.png" title="Edit Integration - Webhook Activate"/></p>
-<h3 id="5-save-changes">5. Save changes<a class="headerlink" href="#5-save-changes" title="Permanent link">¶</a></h3>
-<p>Don't forget to save your changes. The ‘Save’ button can be found in the header of the Edit integration screen (top right corner).</p>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the mailer to send an email with an attachment.  The <code>To</code>, <code>Subject</code> and <code>Body</code> are essential and attachments must be raw data with the applicable data type and name provided.</p>
+<p><img alt="SMTP Mailer Configuration" src="/assets/images/services/smtp-mailer/configuration.png" title="SMTP Mailer Configuration"/></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
+<p>The mailer doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
+<p>The mailer will not provide much output data besides if the email was sent or not.  The following is what this configured email might look like when received:</p>
+<p><img alt="Mailer Output Email" src="/assets/images/services/smtp-mailer/output-email.png" title="Mailer Output Email"/></p>
+</div>
+</input></input></input></div>
+</details>
 </article>
 </div>
 </div>
@@ -813,7 +906,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../schedule/" rel="prev" title="Schedule">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../smartfreight-service/" rel="prev" title="SmartFreight Service">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -822,17 +915,17 @@
 <span class="md-footer-nav__direction">
               Previous
             </span>
-            Schedule
+            SmartFreight Service
           </div>
 </div>
 </a>
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../logs/" rel="next" title="Logs">
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../start-service/" rel="next" title="Start Service">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
               Next
             </span>
-            Logs
+            Start Service
           </div>
 </div>
 <div class="md-footer-nav__button md-icon">
@@ -866,14 +959,14 @@
 </div>
 </footer>
 </div>
-<script src="../../../../assets/javascripts/vendor.de50e36d.min.js"></script>
-<script src="../../../../assets/javascripts/bundle.ff925e8b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/vendor.de50e36d.min.js"></script>
+<script src="../../../assets/javascripts/bundle.ff925e8b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
-          base: "../../../..",
+          base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
