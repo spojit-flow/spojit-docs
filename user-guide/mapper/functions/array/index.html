@@ -459,6 +459,11 @@
     Array Reduce
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-index-to-object">
+    Add Index To Object
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -788,6 +793,11 @@
     Array Reduce
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-index-to-object">
+    Add Index To Object
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -932,6 +942,24 @@
 
   //Reduce the array using the min method on a simple array
   arr_reduce('simple', 'min' null, $collection) =&gt; 4
+</code></pre></div>
+<hr/>
+<h4 id="add-index-to-object">Add Index To Object<a class="headerlink" href="#add-index-to-object" title="Permanent link">¶</a></h4>
+<p><div class="highlight"><pre><span></span><code>add_index_to_object(string $field, array $collection):array
+</code></pre></div>
+  Iterates over elements of a <strong>$collection</strong>, adding the collection index as a <strong>$field</strong> on the object.  </p>
+<p><strong>$field</strong>: the name of the field on the object (ie. 'sequence', or 'order_id').</p>
+<div class="highlight"><pre><span></span><code>  Given the following $collection:
+
+  [
+    {"id": 1, "name": "John", "contact": {"email": "john@email.com"}},
+    {"id": 2, "name": "Mary", "contact": {"email": "mary@email.com"}},
+    {"id": 3, "name": "Flynn", "contact": {"email": "flynn@email.com"}},
+    {"id": 4, "name": "Brad", "contact": {"email": "brad@email.com"}}
+  ]
+
+  //Add an index on the 'index_value' on an array of objects
+  add_index_to_object('index_value', $collection) =&gt; [{"index_value":0,"id":1,"name":"John","contact":{"email":"john@email.com"}},{"index_value":1,"id":2,"name":"Mary","contact":{"email":"mary@email.com"}},{"index_value":2,"id":3,"name":"Flynn","contact":{"email":"flynn@email.com"}},{"index_value":3,"id":4,"name":"Brad","contact":{"email":"brad@email.com"}}]
 </code></pre></div>
 </article>
 </div>
