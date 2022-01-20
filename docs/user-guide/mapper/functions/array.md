@@ -171,3 +171,26 @@ arr_reduce(string $type, string $method, string $field, array $collection):mixed
   arr_reduce('simple', 'min' null, $collection) => 4
 
 ```
+___
+#### Add Index To Object
+```
+add_index_to_object(string $field, array $collection):array
+```
+  Iterates over elements of a __\$collection__, adding the collection index as a __\$field__ on the object.  
+
+  __\$field__: the name of the field on the object (ie. 'sequence', or 'order_id').
+  
+```
+  Given the following $collection:
+
+  [
+    {"id": 1, "name": "John", "contact": {"email": "john@email.com"}},
+    {"id": 2, "name": "Mary", "contact": {"email": "mary@email.com"}},
+    {"id": 3, "name": "Flynn", "contact": {"email": "flynn@email.com"}},
+    {"id": 4, "name": "Brad", "contact": {"email": "brad@email.com"}}
+  ]
+
+  //Add an index on the 'index_value' on an array of objects
+  add_index_to_object('index_value', $collection) => [{"index_value":0,"id":1,"name":"John","contact":{"email":"john@email.com"}},{"index_value":1,"id":2,"name":"Mary","contact":{"email":"mary@email.com"}},{"index_value":2,"id":3,"name":"Flynn","contact":{"email":"flynn@email.com"}},{"index_value":3,"id":4,"name":"Brad","contact":{"email":"brad@email.com"}}]
+
+```
