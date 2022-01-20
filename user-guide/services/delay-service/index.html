@@ -5,18 +5,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.spojit.com/library/unleashed-to-woocommerce-stock-updater/" rel="canonical"/>
+<meta content="This service can be used to delay the execution of a workflow. This delay service can be added to your workflow and connect with other services." name="description"/>
+<link href="https://docs.spojit.com/user-guide/services/delay-service/" rel="canonical"/>
 <meta content="Spojit" name="author"/>
-<link href="../../assets/favicon.ico" rel="shortcut icon"/>
+<link href="../../../assets/favicon.ico" rel="shortcut icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-5.2.0" name="generator"/>
-<title>Unleashed to woocommerce stock updater - Spojit Documentation</title>
-<link href="../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
+<title>Delay Service - Spojit Documentation</title>
+<link href="../../../assets/stylesheets/main.55fa3425.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.02db69e1.min.css" rel="stylesheet"/>
 <meta content="#ff7043" name="theme-color"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
-<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
 <link href="https://www.google-analytics.com" rel="preconnect dns-prefetch"/>
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
@@ -26,14 +27,11 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#introduction">
-          Skip to content
-        </a>
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header-nav md-grid">
 <a aria-label="Spojit Documentation" class="md-header-nav__button md-logo" href="https://docs.spojit.com/" title="Spojit Documentation">
-<img alt="logo" src="../../assets/logo.svg"/>
+<img alt="logo" src="../../../assets/logo.svg"/>
 </a>
 <label class="md-header-nav__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
@@ -45,7 +43,7 @@
         </span>
 <span class="md-header-nav__topic md-ellipsis">
           
-          Unleashed to woocommerce stock updater
+          Delay Service
           
         </span>
 </div>
@@ -108,18 +106,18 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Spojit Documentation" class="md-nav__button md-logo" href="https://docs.spojit.com/" title="Spojit Documentation">
-<img alt="logo" src="../../assets/logo.svg"/>
+<img alt="logo" src="../../../assets/logo.svg"/>
 </a>
     Spojit Documentation
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../.." title="Introduction">
+<a class="md-nav__link" href="../../.." title="Introduction">
       Introduction
     </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
 <label class="md-nav__link" for="nav-2">
       User Guide
       <span class="md-nav__icon md-icon">
@@ -167,17 +165,17 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/account/change-password/" title="Change password">
+<a class="md-nav__link" href="../../my-account/account/change-password/" title="Change password">
       Change password
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/account/reset-password/" title="Reset password">
+<a class="md-nav__link" href="../../my-account/account/reset-password/" title="Reset password">
       Reset password
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/account/delete-account/" title="Delete account">
+<a class="md-nav__link" href="../../my-account/account/delete-account/" title="Delete account">
       Delete account
     </a>
 </li>
@@ -201,12 +199,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/billing/change-billing/" title="Change billing">
+<a class="md-nav__link" href="../../my-account/billing/change-billing/" title="Change billing">
       Change billing
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/billing/view-invoices/" title="View invoices">
+<a class="md-nav__link" href="../../my-account/billing/view-invoices/" title="View invoices">
       View invoices
     </a>
 </li>
@@ -230,17 +228,17 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/subscription/create-subscription/" title="Create subscription">
+<a class="md-nav__link" href="../../my-account/subscription/create-subscription/" title="Create subscription">
       Create subscription
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/subscription/change-subscription/" title="Change subscription">
+<a class="md-nav__link" href="../../my-account/subscription/change-subscription/" title="Change subscription">
       Change subscription
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/my-account/subscription/cancel-subscription/" title="Cancel subscription">
+<a class="md-nav__link" href="../../my-account/subscription/cancel-subscription/" title="Cancel subscription">
       Cancel subscription
     </a>
 </li>
@@ -267,7 +265,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/create-integration/" title="Create integration">
+<a class="md-nav__link" href="../../integration/create-integration/" title="Create integration">
       Create integration
     </a>
 </li>
@@ -288,27 +286,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/edit/basic-info/" title="Basic info">
+<a class="md-nav__link" href="../../integration/edit/basic-info/" title="Basic info">
       Basic info
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/edit/configuration/" title="Configuration">
+<a class="md-nav__link" href="../../integration/edit/configuration/" title="Configuration">
       Configuration
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/edit/schedule/" title="Schedule">
+<a class="md-nav__link" href="../../integration/edit/schedule/" title="Schedule">
       Schedule
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/edit/webhook/" title="Webhook">
+<a class="md-nav__link" href="../../integration/edit/webhook/" title="Webhook">
       Webhook
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/edit/logs/" title="Logs">
+<a class="md-nav__link" href="../../integration/edit/logs/" title="Logs">
       Logs
     </a>
 </li>
@@ -316,12 +314,12 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/run-now/" title="Run now">
+<a class="md-nav__link" href="../../integration/run-now/" title="Run now">
       Run now
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/integration/delete-integration/" title="Delete integration">
+<a class="md-nav__link" href="../../integration/delete-integration/" title="Delete integration">
       Delete integration
     </a>
 </li>
@@ -345,27 +343,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/workflow/introduction/" title="Introduction">
+<a class="md-nav__link" href="../../workflow/introduction/" title="Introduction">
       Introduction
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/workflow/create-workflow/" title="Create workflow">
+<a class="md-nav__link" href="../../workflow/create-workflow/" title="Create workflow">
       Create workflow
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/workflow/add-service/" title="Add service">
+<a class="md-nav__link" href="../../workflow/add-service/" title="Add service">
       Add service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/workflow/connect-services/" title="Connect services">
+<a class="md-nav__link" href="../../workflow/connect-services/" title="Connect services">
       Connect services
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/workflow/run-workflow/" title="Run workflow">
+<a class="md-nav__link" href="../../workflow/run-workflow/" title="Run workflow">
       Run workflow
     </a>
 </li>
@@ -405,27 +403,27 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/mapper/functions/array/" title="Array Functions">
+<a class="md-nav__link" href="../../mapper/functions/array/" title="Array Functions">
       Array Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/mapper/functions/datetime/" title="Datetime Functions">
+<a class="md-nav__link" href="../../mapper/functions/datetime/" title="Datetime Functions">
       Datetime Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/mapper/functions/formula/" title="Formula Functions">
+<a class="md-nav__link" href="../../mapper/functions/formula/" title="Formula Functions">
       Formula Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/mapper/functions/math/" title="Math Functions">
+<a class="md-nav__link" href="../../mapper/functions/math/" title="Math Functions">
       Math Functions
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/mapper/functions/string/" title="String Functions">
+<a class="md-nav__link" href="../../mapper/functions/string/" title="String Functions">
       String Functions
     </a>
 </li>
@@ -435,8 +433,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
 <label class="md-nav__link" for="nav-2-5">
       Services
       <span class="md-nav__icon md-icon">
@@ -452,142 +450,143 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/array-service/" title="Array Service">
+<a class="md-nav__link" href="../array-service/" title="Array Service">
       Array Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/csv-parser/" title="CSV Parser">
+<a class="md-nav__link" href="../csv-parser/" title="CSV Parser">
       CSV Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/dataset/" title="Dataset Service">
+<a class="md-nav__link" href="../dataset/" title="Dataset Service">
       Dataset Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/dear-systems-service/" title="DEAR Systems">
+<a class="md-nav__link" href="../dear-systems-service/" title="DEAR Systems">
       DEAR Systems
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/delay-service/" title="Delay Service">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./" title="Delay Service">
       Delay Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/deputy-service/" title="Deputy">
+<a class="md-nav__link" href="../deputy-service/" title="Deputy">
       Deputy
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/document-ocr/" title="Document OCR">
+<a class="md-nav__link" href="../document-ocr/" title="Document OCR">
       Document OCR
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/filter/" title="Filter">
+<a class="md-nav__link" href="../filter/" title="Filter">
       Filter
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/ftp-service/" title="FTP Service">
+<a class="md-nav__link" href="../ftp-service/" title="FTP Service">
       FTP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/iterator/" title="Iterator">
+<a class="md-nav__link" href="../iterator/" title="Iterator">
       Iterator
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/json-parser/" title="JSON Parser">
+<a class="md-nav__link" href="../json-parser/" title="JSON Parser">
       JSON Parser
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/mailer/" title="Mailer">
+<a class="md-nav__link" href="../mailer/" title="Mailer">
       Mailer
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/magento2-service/" title="Magento 2">
+<a class="md-nav__link" href="../magento2-service/" title="Magento 2">
       Magento 2
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/mapper-service/" title="Mapper Service">
+<a class="md-nav__link" href="../mapper-service/" title="Mapper Service">
       Mapper Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/netsuite-rest-service/" title="Netsuite REST Service">
+<a class="md-nav__link" href="../netsuite-rest-service/" title="Netsuite REST Service">
       Netsuite REST Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/netsuite-restlet-service/" title="Netsuite RESTlet Service">
+<a class="md-nav__link" href="../netsuite-restlet-service/" title="Netsuite RESTlet Service">
       Netsuite RESTlet Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/netsuite-soap-service/" title="Netsuite SOAP Service">
+<a class="md-nav__link" href="../netsuite-soap-service/" title="Netsuite SOAP Service">
       Netsuite SOAP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/parallel-gateway/" title="Parallel Gateway">
+<a class="md-nav__link" href="../parallel-gateway/" title="Parallel Gateway">
       Parallel Gateway
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/rest-service/" title="REST Service">
+<a class="md-nav__link" href="../rest-service/" title="REST Service">
       REST Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/revel-service/" title="Revel Systems">
+<a class="md-nav__link" href="../revel-service/" title="Revel Systems">
       Revel Systems
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/sftp-service/" title="SFTP Service">
+<a class="md-nav__link" href="../sftp-service/" title="SFTP Service">
       SFTP Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/shipstation-service/" title="ShipStation">
+<a class="md-nav__link" href="../shipstation-service/" title="ShipStation">
       ShipStation
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/smartfreight-service/" title="SmartFreight Service">
+<a class="md-nav__link" href="../smartfreight-service/" title="SmartFreight Service">
       SmartFreight Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/smtp-mailer/" title="SMTP Mailer Service">
+<a class="md-nav__link" href="../smtp-mailer/" title="SMTP Mailer Service">
       SMTP Mailer Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/start-service/" title="Start Service">
+<a class="md-nav__link" href="../start-service/" title="Start Service">
       Start Service
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/unleashed-service/" title="Unleashed Software">
+<a class="md-nav__link" href="../unleashed-service/" title="Unleashed Software">
       Unleashed Software
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/woocommerce-service/" title="WooCommerce">
+<a class="md-nav__link" href="../woocommerce-service/" title="WooCommerce">
       WooCommerce
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../user-guide/services/xlsx-service/" title="XLSX Service">
+<a class="md-nav__link" href="../xlsx-service/" title="XLSX Service">
       XLSX Service
     </a>
 </li>
@@ -630,17 +629,17 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../connectors/woocommerce/woocommerce-authorization/" title="WooCommerce Authorization">
+<a class="md-nav__link" href="../../../connectors/woocommerce/woocommerce-authorization/" title="WooCommerce Authorization">
       WooCommerce Authorization
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../connectors/woocommerce/woocommerce-legacy-api/" title="WooCommerce Legacy API">
+<a class="md-nav__link" href="../../../connectors/woocommerce/woocommerce-legacy-api/" title="WooCommerce Legacy API">
       WooCommerce Legacy API
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../connectors/woocommerce/woocommerce-webhooks/" title="WooCommerce Webhooks">
+<a class="md-nav__link" href="../../../connectors/woocommerce/woocommerce-webhooks/" title="WooCommerce Webhooks">
       WooCommerce Webhooks
     </a>
 </li>
@@ -664,12 +663,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../connectors/unleashed/unleashed-authorization/" title="Unleashed Authorization">
+<a class="md-nav__link" href="../../../connectors/unleashed/unleashed-authorization/" title="Unleashed Authorization">
       Unleashed Authorization
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../connectors/unleashed/unleashed-warehouse-code/" title="Unleashed Warehouse Code">
+<a class="md-nav__link" href="../../../connectors/unleashed/unleashed-warehouse-code/" title="Unleashed Warehouse Code">
       Unleashed Warehouse Code
     </a>
 </li>
@@ -680,7 +679,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../" title="Library">
+<a class="md-nav__link" href="../../../library/" title="Library">
       Library
     </a>
 </li>
@@ -689,189 +688,82 @@
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#introduction">
-    Introduction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#instructions">
-    Instructions
-  </a>
-<nav aria-label="Instructions" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-introduction">
-    1. Introduction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-unleashed-authorization">
-    2. Unleashed Authorization
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-log-in-to-your-unleashed-account">
-    1. Log in to your Unleashed account
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-navigate-to-integration-unleashed-api-access">
-    2. Navigate to Integration &gt; Unleashed API Access
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-copy-api-id-and-api-key">
-    3. Copy API Id and API Key
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-woocommerce-authorization">
-    3. WooCommerce Authorization
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-log-in-to-your-woocommerce-admin-panel">
-    1. Log in to your WooCommerce admin panel
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-navigate-to-woocommerce-settings">
-    2. Navigate to WooCommerce &gt; Settings
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-when-in-settings-click-on-advanced-and-then-rest-api">
-    3. When in settings, click on “Advanced” and then “REST API”
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#4-generate-new-api-key">
-    4. Generate new API key
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#5-copy-generated-api-keys">
-    5. Copy generated API keys
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#4-enable-legacy-mode-in-woocommerce">
-    4. Enable Legacy Mode in WooCommerce
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-log-in-to-your-woocommerce-admin-panel_1">
-    1. Log in to your WooCommerce admin panel
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-navigate-to-woocommerce-settings_1">
-    2. Navigate to WooCommerce &gt; Settings
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-when-in-settings-click-on-advanced-and-then-legacy-api">
-    3. When in settings, click on “Advanced” and then “Legacy API”
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#4-enable-legacy-api-and-save-your-changes">
-    4. Enable Legacy API and save your changes
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#5-set-schedule">
-    5. Set Schedule
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>Unleashed to woocommerce stock updater</h1>
-<div class="admonition info">
-<p class="admonition-title">Schedule-based integration (min. 1 minute interval)</p>
+<h1>Delay Service</h1>
+<div class="admonition note">
+<p class="admonition-title">Before you begin</p>
+<p>In order to use the features in this section you need to have an active Spojit account. If you don't have an account you can checkout out the <a href="https://www.spojit.com/pricing.html" target="_blank" title="Spojit Pricing">pricing</a> and <a href="https://app.spojit.com/register" target="_blank" title="Spojit Registration">register here</a>.  If you already have an account you can <a href="https://app.spojit.com/login" target="_blank" title="Spojit Login">login here</a>.</p>
 </div>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
-<p>The Unleashed to WooCommerce Stock Updater integration template solves the issue of overselling online and eliminates any manual labour associated with keeping your inventory levels up to date and in sync between Unleashed Software and your WooCommerce online store.</p>
-<p>In less than 5 minutes, you will be able to reap the benefits of this integration, saving you countless hours of manual labour each and every month and leaving you more time to focus on your business.</p>
-<p>After a simple step-by-step wizard guiding you through the initial configuration, the Spojit platform gives you the ability to choose how often you would like to check Unleashed Software for any stock level updates, starting at one minute intervals. Once set, the platform will check for any updates to stock levels in Unleashed and seamlessly update your WooCommerce online store as per the schedule.</p>
-<p>You stay in control of the integration link and have the ability to change the schedule as you see fit. Spojit gives you detailed logs each time the integration starts, giving you insight into the integration’s performance.</p>
-<!-- ## What to expect -->
-<h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">¶</a></h2>
-<h4 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">¶</a></h4>
-<p>The following instructions outline what is needed to setup the Unleashed to WooCommerce stock updater. We will get API keys from Unleashed, create/get API keys from WooCommerce, add them both in Spojit, turn on the Legacy API in WooCommerce and then create a schedule to specify when the integration will run.</p>
-<h4 id="2-unleashed-authorization">2. Unleashed Authorization<a class="headerlink" href="#2-unleashed-authorization" title="Permanent link">¶</a></h4>
-<p>In order for the integration to be able to connect with Unleashed, API keys need to be copied from Unleashed into Spojit.</p>
-<details class="info">
-<summary>View steps...</summary>
-<h4 id="1-log-in-to-your-unleashed-account">1. Log in to your Unleashed account<a class="headerlink" href="#1-log-in-to-your-unleashed-account" title="Permanent link">¶</a></h4>
-<h4 id="2-navigate-to-integration-unleashed-api-access">2. Navigate to Integration &gt; Unleashed API Access<a class="headerlink" href="#2-navigate-to-integration-unleashed-api-access" title="Permanent link">¶</a></h4>
-<p>From the Unleashed dashboard click on “Integration” / “Unleashed API Access” from the side bar</p>
-<p><img alt="Unleashed API Settings" src="/assets/images/connectors/unleashed/unleashed-auth-settings.png" title="Unleashed API Settings"/></p>
-<h4 id="3-copy-api-id-and-api-key">3. Copy API Id and API Key<a class="headerlink" href="#3-copy-api-id-and-api-key" title="Permanent link">¶</a></h4>
-<p>Copy the “API Id” and the “API Key” in the Unleashed API Access page. These API access credentials are used to link your Unleashed account with Spojit integrations utilizing the Unleashed connector.</p>
-<p><img alt="Unleashed API Keys" src="/assets/images/connectors/unleashed/unleashed-auth-keys.png" title="Unleashed API Keys"/></p>
-</details>
-<h4 id="3-woocommerce-authorization">3. WooCommerce Authorization<a class="headerlink" href="#3-woocommerce-authorization" title="Permanent link">¶</a></h4>
-<p>In order for the integration to be able to connect with WooCommerce, API Keys need to be generated and granted permission to read and write data from WooCommerce.</p>
-<details class="info">
-<summary>View steps...</summary>
-<h4 id="1-log-in-to-your-woocommerce-admin-panel">1. Log in to your WooCommerce admin panel<a class="headerlink" href="#1-log-in-to-your-woocommerce-admin-panel" title="Permanent link">¶</a></h4>
-<h4 id="2-navigate-to-woocommerce-settings">2. Navigate to WooCommerce &gt; Settings<a class="headerlink" href="#2-navigate-to-woocommerce-settings" title="Permanent link">¶</a></h4>
-<p>From the Wordpress Dashboard click on “WooCommerce” &gt; “Settings” from the side bar</p>
-<p><img alt="WooCommerce Settings" src="/assets/images/connectors/woocommerce/woo-auth-settings.png" title="WooCommerce Settings"/></p>
-<h4 id="3-when-in-settings-click-on-advanced-and-then-rest-api">3. When in settings, click on “Advanced” and then “REST API”<a class="headerlink" href="#3-when-in-settings-click-on-advanced-and-then-rest-api" title="Permanent link">¶</a></h4>
-<p><img alt="WooCommerce API Settings" src="/assets/images/connectors/woocommerce/woo-auth-rest-api.png" title="WooCommerce API Settings"/></p>
-<h4 id="4-generate-new-api-key">4. Generate new API key<a class="headerlink" href="#4-generate-new-api-key" title="Permanent link">¶</a></h4>
-<p>Click the 'Add key' button, add a name for the generated key, select a user to be assigned to the key, select “Read/Write” for the permissions and then click “Generate API Key”</p>
-<p><img alt="WooCommerce Generate API Key" src="/assets/images/connectors/woocommerce/woo-auth-generate-key.png" title="WooCommerce Generate API Key"/></p>
-<h4 id="5-copy-generated-api-keys">5. Copy generated API keys<a class="headerlink" href="#5-copy-generated-api-keys" title="Permanent link">¶</a></h4>
-<p>Your keys should now be generated and will be displayed as follows (make sure you copy them at this stage otherwise you will not be able to see them again). Both the Consumer Key and Consumer Secret is required to authenticate WooCommerce in Spojit platform.</p>
-<p><img alt="WooCommerce API Key" src="/assets/images/connectors/woocommerce/woo-auth-api-key.png" title="WooCommerce API Key"/></p>
-</details>
-<h4 id="4-enable-legacy-mode-in-woocommerce">4. Enable Legacy Mode in WooCommerce<a class="headerlink" href="#4-enable-legacy-mode-in-woocommerce" title="Permanent link">¶</a></h4>
-<p>Because of the batch processing of the stock and its reliance on SKU data Legacy Mode needs to be enabled in WooCommerce to send batch stock updates with SKU and quantity values</p>
-<details class="info">
-<summary>View steps...</summary>
-<div class="admonition tip">
-<p class="admonition-title">Solving commong WooCommerce API Issues</p>
-<p>If you are running into trouble while trying to connect your WooCommerce store via the REST API, you may want to review few technical notes on the most common issues and how to solve them in <a href="https://robotninja.com/blog/fix-common-woocommerce-rest-api-issues/">this blog post</a></p>
+<hr/>
+<p>This service can be used to delay the execution of a workflow.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delay</td>
+<td>The amount you want to delay in seconds (max 60).</td>
+<td>5</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><label for="__tabbed_1_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the delay service to delay the workflow by 5 seconds.</p>
+<p><img alt="Delay Configuration" src="/assets/images/services/delay-service/delay-configuration.png" title="Delay Configuration"/></p>
 </div>
-<h4 id="1-log-in-to-your-woocommerce-admin-panel_1">1. Log in to your WooCommerce admin panel<a class="headerlink" href="#1-log-in-to-your-woocommerce-admin-panel_1" title="Permanent link">¶</a></h4>
-<h4 id="2-navigate-to-woocommerce-settings_1">2. Navigate to WooCommerce &gt; Settings<a class="headerlink" href="#2-navigate-to-woocommerce-settings_1" title="Permanent link">¶</a></h4>
-<p>From the Wordpress Dashboard click on “WooCommerce” &gt; “Settings” from the side bar</p>
-<p><img alt="WooCommerce Settings" src="/assets/images/connectors/woocommerce/woo-auth-settings.png" title="WooCommerce Settings"/></p>
-<h4 id="3-when-in-settings-click-on-advanced-and-then-legacy-api">3. When in settings, click on “Advanced” and then “Legacy API”<a class="headerlink" href="#3-when-in-settings-click-on-advanced-and-then-legacy-api" title="Permanent link">¶</a></h4>
-<p><img alt="WooCommerce Legacy API Settings" src="/assets/images/connectors/woocommerce/woo-auth-legacy-api.png" title="WooCommerce Legacy API Settings"/></p>
-<h4 id="4-enable-legacy-api-and-save-your-changes">4. Enable Legacy API and save your changes<a class="headerlink" href="#4-enable-legacy-api-and-save-your-changes" title="Permanent link">¶</a></h4>
-<p>Click the checkbox to enable the Legacy API, and save your changes.</p>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio"><label for="__tabbed_1_2">2. Service data setup</label><div class="tabbed-content">
+<p>The delay service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
+<p>The delay service doesn't have any output data.</p>
+</div>
+</input></input></input></div>
 </details>
-<h4 id="5-set-schedule">5. Set Schedule<a class="headerlink" href="#5-set-schedule" title="Permanent link">¶</a></h4>
-<p>Set a schedule to run this integration.  Find out more in the <a href="/user-guide/integration/edit/schedule">Schedule</a>  section.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
+<div class="md-footer-nav">
+<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../dear-systems-service/" rel="prev" title="DEAR Systems">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+              Previous
+            </span>
+            DEAR Systems
+          </div>
+</div>
+</a>
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../deputy-service/" rel="next" title="Deputy">
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+              Next
+            </span>
+            Deputy
+          </div>
+</div>
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+</div>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-footer-copyright">
@@ -897,14 +789,14 @@
 </div>
 </footer>
 </div>
-<script src="../../assets/javascripts/vendor.de50e36d.min.js"></script>
-<script src="../../assets/javascripts/bundle.ff925e8b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script src="../../../assets/javascripts/vendor.de50e36d.min.js"></script>
+<script src="../../../assets/javascripts/bundle.ff925e8b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
 <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
