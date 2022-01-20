@@ -35,7 +35,7 @@ The following example configuration shows you how to configure the authorziation
 ___
 ### Making a request
 
-Creating (or writing) a file will send the raw data output from another service(s) to a location.
+Making a request with send/retrieve data from a given Netsuite RESTlet URL.  Basic HTTP are used (GET, POST, PUT and DELETE) and the responses will be what is configured for the RESTlet.
 
 | Option | Description | Default | Required |
 | ----------- | ----------- | ----------- | ----------- |
