@@ -173,9 +173,11 @@ nav:
         - Math Functions: user-guide/mapper/functions/math.md
         - String Functions: user-guide/mapper/functions/string.md
     - Services:
+      - Array Service: user-guide/services/array-service.md
       - CSV Parser: user-guide/services/csv-parser.md
       - Dataset Service: user-guide/services/dataset.md
       - DEAR Systems: user-guide/services/dear-systems-service.md
+      - Delay Service: user-guide/services/delay-service.md
       - Deputy: user-guide/services/deputy-service.md
       - Document OCR: user-guide/services/document-ocr.md
       - Filter: user-guide/services/filter.md
@@ -186,6 +188,7 @@ nav:
       - Magento 2: user-guide/services/magento2-service.md
       - Mapper Service: user-guide/services/mapper-service.md
       - Netsuite REST Service: user-guide/services/netsuite-rest-service.md
+      - Netsuite RESTlet Service: user-guide/services/netsuite-restlet-service.md
       - Netsuite SOAP Service: user-guide/services/netsuite-soap-service.md
       - Parallel Gateway: user-guide/services/parallel-gateway.md
       - REST Service: user-guide/services/rest-service.md
