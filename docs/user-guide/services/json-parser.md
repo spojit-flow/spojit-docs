@@ -10,6 +10,10 @@ template: overrides/main.html
 ___
    
 This service can write a JSON file from source data which could be used that to create a file on a FTP or make a request in the JSON format. It can also read the data from a JSON file which would create data output.
+
+!!! tip "Tip" 
+
+    Choose the `writeToString` or `readFromString` methods to input/output as a string instead of a file.
 ___
 ### Writing a JSON file
 
