@@ -242,7 +242,7 @@ Multidimensional Array Combine Values will combine values in a multidimensional 
 | ----------- | ----------- | ----------- | ----------- |
 | Method | Select "multidimensionalCombineValues". | - | TRUE |
 | Array | The multidimensional array to process. | - | TRUE |
-| Keys | A list of keys. | - | FALSE |
+| Keys | A list of keys. | - | TRUE |
 
 !!! tip "Tip" 
 
