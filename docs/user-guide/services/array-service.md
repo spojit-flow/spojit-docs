@@ -148,6 +148,85 @@ The following operators can be used for the criteria:
           "metadata": {}
         }
         ```
+___
+### Filter While
+
+Filter While will iterate through an array and add items to a new array until criteria are not met and then stop iterating.
+
+| Option | Description | Default | Required |
+| ----------- | ----------- | ----------- | ----------- |
+| Method | Select "filterWhile". | - | TRUE |
+| Array | The array to filter. | - | TRUE |
+
+The following operators can be used for the criteria:
+
+| Operator | Description |
+| ----------- | ----------- |
+| eq | Equal to |
+| neq | Not equal to |
+| lt | Less than |
+| lte | Less than equal to |
+| gt | Greater than |
+| gte | Greater than equal to |
+| isTrue | Is it true |
+| isFalse | Is it false |
+| isNull | Is it NULL |
+| isNotNull | Is it not NULL |
+
+??? spojit-example "Example configuration and mapping"
+
+    === "1. Configuration"
+
+        The following example shows you how to configure the array service to filter an array until criteria are not met.
+
+        ![Filter While Configuration](/assets/images/services/array-service/array-filter-while-configuration.png "Filter While Configuration")
+
+    === "2. Service data setup"
+
+        The array service doesn't require any service data setup.
+    
+    === "3. Output Data"
+
+        Given the following arrays:
+        
+        ```json
+        [
+            {
+              "id_number": "1",
+              "job_name": "Scuba Diver"
+            },
+            {
+              "id_number": "2",
+              "job_name": "Scuba Diver"
+            },
+            {
+              "id_number": "3",
+              "job_name": "Plumber"
+            },
+                        {
+              "id_number": "4",
+              "job_name": "Scuba Diver"
+            }
+          ]
+        ```
+        
+        In this example the following output will be generated automatically by this service after it is run if the criteria is `job_name == "Scuba Diver"`:
+
+        ```json
+        {
+          "data": [
+            {
+              "id_number": "1",
+              "job_name": "Scuba Diver"
+            },
+            {
+              "id_number": "2",
+              "job_name": "Scuba Diver"
+            }
+          ],
+          "metadata": {}
+        }
+        ```
 
 ___
 ### Join While
