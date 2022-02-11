@@ -486,6 +486,11 @@
     Join While
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#multidimensional-array-combine-values">
+    Multidimensional Array Combine Values
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -753,6 +758,11 @@
     Join While
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#multidimensional-array-combine-values">
+    Multidimensional Array Combine Values
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -845,7 +855,7 @@
 </details>
 <hr/>
 <h3 id="filter-by">Filter By<a class="headerlink" href="#filter-by" title="Permanent link">¶</a></h3>
-<p>Filter By will remove items from an array if they match a given set of criteria.</p>
+<p>Filter By will remove items from an array if they don't match a given set of criteria.</p>
 <table>
 <thead>
 <tr>
@@ -1052,7 +1062,7 @@
 <details class="spojit-example">
 <summary>Example configuration and mapping</summary>
 <div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><label for="__tabbed_3_1">1. Configuration</label><div class="tabbed-content">
-<p>The following example shows you how to configure the array service to join vales of an array based on criteria.</p>
+<p>The following example shows you how to configure the array service to join values of an array based on criteria.</p>
 <p><img alt="Array Join While Configuration" src="/assets/images/services/array-service/array-join-while-configuration.png" title="Array Join While Configuration"/></p>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio"><label for="__tabbed_3_2">2. Service data setup</label><div class="tabbed-content">
@@ -1093,6 +1103,125 @@
     <span class="p">{</span>
       <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
       <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Bus Driver - Cashier - Zoo Keeper"</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
+<h3 id="multidimensional-array-combine-values">Multidimensional Array Combine Values<a class="headerlink" href="#multidimensional-array-combine-values" title="Permanent link">¶</a></h3>
+<p>Multidimensional Array Combine Values will combine values in a multidimensional array based on keys.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "multidimensionalCombineValues".</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>The multidimensional array to process.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Keys</td>
+<td>A list of keys.</td>
+<td>-</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Each key added is another level that will get you deeper in the array.  If the key does not exist the function won't go any deeper.</p>
+</div>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><label for="__tabbed_4_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the array service to combine values in a multidimensional array.</p>
+<p><img alt="Multidimensional Array Combine Values Configuration" src="/assets/images/services/array-service/multidimensional-combine-values-configuration.png" title="Multidimensional Array Combine Values Configuration"/></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio"><label for="__tabbed_4_2">2. Service data setup</label><div class="tabbed-content">
+<p>The array service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio"><label for="__tabbed_4_3">3. Output Data</label><div class="tabbed-content">
+<p>Given the following arrays:</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Leanne Graham"</span><span class="p">,</span>
+    <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"Bret"</span><span class="p">,</span>
+    <span class="nt">"email"</span><span class="p">:</span> <span class="s2">"Sincere@april.biz"</span><span class="p">,</span>
+    <span class="nt">"companies"</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Romaguera-Crona"</span><span class="p">,</span>
+        <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Multi-layered client-server neural-net"</span><span class="p">,</span>
+        <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"harness real-time e-markets"</span><span class="p">,</span>
+
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Deckow-Crist"</span><span class="p">,</span>
+        <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Proactive didactic contingency"</span><span class="p">,</span>
+        <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"synergize scalable supply-chains"</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="nt">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Ervin Howell"</span><span class="p">,</span>
+    <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"Antonette"</span><span class="p">,</span>
+    <span class="nt">"email"</span><span class="p">:</span> <span class="s2">"Shanna@melissa.tv"</span><span class="p">,</span>
+    <span class="nt">"companies"</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Romaguera-Jacobson"</span><span class="p">,</span>
+        <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Face to face bifurcated interface"</span><span class="p">,</span>
+        <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"e-enable strategic applications"</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Robel-Corkery"</span><span class="p">,</span>
+        <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Multi-tiered zero tolerance productivity"</span><span class="p">,</span>
+        <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"transition cutting-edge web services"</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>In this example the following output will be generated automatically by this service after it is run if the key is set to <code>companies</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Romaguera-Crona"</span><span class="p">,</span>
+      <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Multi-layered client-server neural-net"</span><span class="p">,</span>
+      <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"harness real-time e-markets"</span><span class="p">,</span>
+
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Deckow-Crist"</span><span class="p">,</span>
+      <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Proactive didactic contingency"</span><span class="p">,</span>
+      <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"synergize scalable supply-chains"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Romaguera-Jacobson"</span><span class="p">,</span>
+      <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Face to face bifurcated interface"</span><span class="p">,</span>
+      <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"e-enable strategic applications"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Robel-Corkery"</span><span class="p">,</span>
+      <span class="nt">"catchPhrase"</span><span class="p">:</span> <span class="s2">"Multi-tiered zero tolerance productivity"</span><span class="p">,</span>
+      <span class="nt">"bs"</span><span class="p">:</span> <span class="s2">"transition cutting-edge web services"</span>
     <span class="p">}</span>
   <span class="p">],</span>
   <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
