@@ -76,7 +76,7 @@ Array merge will merge two arrays into one array.
 ___
 ### Filter By
 
-Filter By will remove items from an array if they match a given set of criteria.
+Filter By will remove items from an array if they don't match a given set of criteria.
 
 | Option | Description | Default | Required |
 | ----------- | ----------- | ----------- | ----------- |
@@ -179,7 +179,7 @@ The following operators can be used for the criteria:
 
     === "1. Configuration"
 
-        The following example shows you how to configure the array service to join vales of an array based on criteria.
+        The following example shows you how to configure the array service to join values of an array based on criteria.
 
         ![Array Join While Configuration](/assets/images/services/array-service/array-join-while-configuration.png "Array Join While Configuration")
 
@@ -228,6 +228,109 @@ The following operators can be used for the criteria:
             {
               "id_number": "3",
               "job_name": "Bus Driver - Cashier - Zoo Keeper"
+            }
+          ],
+          "metadata": {}
+        }
+        ```
+___
+### Multidimensional Array Combine Values
+
+Multidimensional Array Combine Values will combine values in a multidimensional array based on keys.
+
+| Option | Description | Default | Required |
+| ----------- | ----------- | ----------- | ----------- |
+| Method | Select "multidimensionalCombineValues". | - | TRUE |
+| Array | The multidimensional array to process. | - | TRUE |
+| Keys | A list of keys. | - | FALSE |
+
+!!! tip "Tip" 
+
+    Each key added is another level that will get you deeper in the array.  If the key does not exist the function won't go any deeper.
+
+??? spojit-example "Example configuration and mapping"
+
+    === "1. Configuration"
+
+        The following example shows you how to configure the array service to combine values in a multidimensional array.
+
+        ![Multidimensional Array Combine Values Configuration](/assets/images/services/array-service/multidimensional-combine-values-configuration.png "Multidimensional Array Combine Values Configuration")
+
+    === "2. Service data setup"
+
+        The array service doesn't require any service data setup.
+    
+    === "3. Output Data"
+
+        Given the following arrays:
+        
+        ```json
+        [
+          {
+            "id": 1,
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "companies": [
+              {
+                "name": "Romaguera-Crona",
+                "catchPhrase": "Multi-layered client-server neural-net",
+                "bs": "harness real-time e-markets",
+                
+              },
+              {
+                "name": "Deckow-Crist",
+                "catchPhrase": "Proactive didactic contingency",
+                "bs": "synergize scalable supply-chains"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Ervin Howell",
+            "username": "Antonette",
+            "email": "Shanna@melissa.tv",
+            "companies": [
+              {
+                "name": "Romaguera-Jacobson",
+                "catchPhrase": "Face to face bifurcated interface",
+                "bs": "e-enable strategic applications"
+              },
+              {
+                "name": "Robel-Corkery",
+                "catchPhrase": "Multi-tiered zero tolerance productivity",
+                "bs": "transition cutting-edge web services"
+              }
+            ]
+          }
+        ]
+        ```
+        
+        In this example the following output will be generated automatically by this service after it is run if the key is set to `companies`:
+
+        ```json
+        {
+          "data": [
+            {
+              "name": "Romaguera-Crona",
+              "catchPhrase": "Multi-layered client-server neural-net",
+              "bs": "harness real-time e-markets",
+              
+            },
+            {
+              "name": "Deckow-Crist",
+              "catchPhrase": "Proactive didactic contingency",
+              "bs": "synergize scalable supply-chains"
+            },
+            {
+              "name": "Romaguera-Jacobson",
+              "catchPhrase": "Face to face bifurcated interface",
+              "bs": "e-enable strategic applications"
+            },
+            {
+              "name": "Robel-Corkery",
+              "catchPhrase": "Multi-tiered zero tolerance productivity",
+              "bs": "transition cutting-edge web services"
             }
           ],
           "metadata": {}
