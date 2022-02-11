@@ -482,6 +482,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#filter-while">
+    Filter While
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#join-while">
     Join While
   </a>
@@ -754,6 +759,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#filter-while">
+    Filter While
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#join-while">
     Join While
   </a>
@@ -976,6 +986,132 @@
 </input></input></input></div>
 </details>
 <hr/>
+<h3 id="filter-while">Filter While<a class="headerlink" href="#filter-while" title="Permanent link">¶</a></h3>
+<p>Filter While will iterate through an array and add items to a new array until criteria are not met and then stop iterating.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>Select "filterWhile".</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>The array to filter.</td>
+<td>-</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<p>The following operators can be used for the criteria:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eq</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td>neq</td>
+<td>Not equal to</td>
+</tr>
+<tr>
+<td>lt</td>
+<td>Less than</td>
+</tr>
+<tr>
+<td>lte</td>
+<td>Less than equal to</td>
+</tr>
+<tr>
+<td>gt</td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td>gte</td>
+<td>Greater than equal to</td>
+</tr>
+<tr>
+<td>isTrue</td>
+<td>Is it true</td>
+</tr>
+<tr>
+<td>isFalse</td>
+<td>Is it false</td>
+</tr>
+<tr>
+<td>isNull</td>
+<td>Is it NULL</td>
+</tr>
+<tr>
+<td>isNotNull</td>
+<td>Is it not NULL</td>
+</tr>
+</tbody>
+</table>
+<details class="spojit-example">
+<summary>Example configuration and mapping</summary>
+<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><label for="__tabbed_3_1">1. Configuration</label><div class="tabbed-content">
+<p>The following example shows you how to configure the array service to filter an array until criteria are not met.</p>
+<p><img alt="Filter While Configuration" src="/assets/images/services/array-service/array-filter-while-configuration.png" title="Filter While Configuration"/></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio"><label for="__tabbed_3_2">2. Service data setup</label><div class="tabbed-content">
+<p>The array service doesn't require any service data setup.</p>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio"><label for="__tabbed_3_3">3. Output Data</label><div class="tabbed-content">
+<p>Given the following arrays:</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
+      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
+      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Plumber"</span>
+    <span class="p">},</span>
+                <span class="p">{</span>
+      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"4"</span><span class="p">,</span>
+      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+</code></pre></div>
+<p>In this example the following output will be generated automatically by this service after it is run if the criteria is <code>job_name == "Scuba Diver"</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
+      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</input></input></input></div>
+</details>
+<hr/>
 <h3 id="join-while">Join While<a class="headerlink" href="#join-while" title="Permanent link">¶</a></h3>
 <p>Join while will join the values into a string of subsequent objects by key while a given set of criteria is not met.</p>
 <table>
@@ -1061,14 +1197,14 @@
 </table>
 <details class="spojit-example">
 <summary>Example configuration and mapping</summary>
-<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><label for="__tabbed_3_1">1. Configuration</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><label for="__tabbed_4_1">1. Configuration</label><div class="tabbed-content">
 <p>The following example shows you how to configure the array service to join values of an array based on criteria.</p>
 <p><img alt="Array Join While Configuration" src="/assets/images/services/array-service/array-join-while-configuration.png" title="Array Join While Configuration"/></p>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio"><label for="__tabbed_3_2">2. Service data setup</label><div class="tabbed-content">
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio"><label for="__tabbed_4_2">2. Service data setup</label><div class="tabbed-content">
 <p>The array service doesn't require any service data setup.</p>
 </div>
-<input id="__tabbed_3_3" name="__tabbed_3" type="radio"><label for="__tabbed_3_3">3. Output Data</label><div class="tabbed-content">
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio"><label for="__tabbed_4_3">3. Output Data</label><div class="tabbed-content">
 <p>Given the following arrays:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span>
     <span class="p">{</span>
@@ -1150,14 +1286,14 @@
 </div>
 <details class="spojit-example">
 <summary>Example configuration and mapping</summary>
-<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><label for="__tabbed_4_1">1. Configuration</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><label for="__tabbed_5_1">1. Configuration</label><div class="tabbed-content">
 <p>The following example shows you how to configure the array service to combine values in a multidimensional array.</p>
 <p><img alt="Multidimensional Array Combine Values Configuration" src="/assets/images/services/array-service/multidimensional-combine-values-configuration.png" title="Multidimensional Array Combine Values Configuration"/></p>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio"><label for="__tabbed_4_2">2. Service data setup</label><div class="tabbed-content">
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio"><label for="__tabbed_5_2">2. Service data setup</label><div class="tabbed-content">
 <p>The array service doesn't require any service data setup.</p>
 </div>
-<input id="__tabbed_4_3" name="__tabbed_4" type="radio"><label for="__tabbed_4_3">3. Output Data</label><div class="tabbed-content">
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio"><label for="__tabbed_5_3">3. Output Data</label><div class="tabbed-content">
 <p>Given the following arrays:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span>
   <span class="p">{</span>
