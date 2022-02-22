@@ -13,9 +13,33 @@ The Document OCR (Optical Character Recognition) service allows you to read text
 
 !!! warning "Important"
 
-    The Document OCR service will sometimes pick up outliers and other noise/graphics as text or have difficulty reading some text depending on the font. Changing the sections and implementing functions can help to eliminate this issue. Always test with multiple documents prior to implementing in a production environment to ensure that the proper functions have been used to get the required result.
+    The Document OCR service will sometimes pick up outliers and other noise/graphics as text or have difficulty reading some text depending on the font. Changing the sections or page segmentation mode and implementing functions can help to eliminate this issue. Always test with multiple documents prior to implementing in a production environment to ensure that the proper functions have been used to get the required result.
+
+___
+### Page Segmentation Mode
+
+The page segmentation mode (PSM) will enhance the accuracy of the text by choosing a the mode for the type of text that the OCR will expect in your section.  You will be able to select the mode on each simple or table section.
+
+| Mode | Description |
+| ----------- | ----------- |
+| 0 | Orientation and script detection (OSD) only. |
+| 1 | Automatic page segmentation with OSD. |
+| 2 | Automatic page segmentation, but no OSD, or OCR. |
+| 3 | Fully automatic page segmentation, but no OSD. |
+| 4 | Assume a single column of text of variable sizes. |
+| 5 | Assume a single uniform block of vertically aligned text. |
+| 6 | Assume a single uniform block of text. |
+| 7 | Treat the image as a single text line. |
+| 8 | Treat the image as a single word. |
+| 9 | Treat the image as a single word in a circle. |
+| 10 | Treat the image as a single character. |
+| 11 | Sparse text. Find as much text as possible in no particular order. |
+| 12 | Sparse text with OSD. |
+| 13 | Raw line. |
+
 
 The following example configuration shows you how to configure the Document OCR service to read a field and a table in a PDF and create an output that could be used for other services.
+
 ___
 ### Input Data Configuration
 
