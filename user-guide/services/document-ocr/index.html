@@ -27,7 +27,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#input-data-configuration">
+<a class="md-skip" href="#page-segmentation-mode">
           Skip to content
         </a>
 </div>
@@ -502,6 +502,11 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#page-segmentation-mode">
+    Page Segmentation Mode
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#input-data-configuration">
     Input Data Configuration
   </a>
@@ -768,6 +773,11 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#page-segmentation-mode">
+    Page Segmentation Mode
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#input-data-configuration">
     Input Data Configuration
   </a>
@@ -827,8 +837,77 @@
 <p>The Document OCR (Optical Character Recognition) service allows you to read text and tables in documents (such as PDFs) which could be used to make an API request or create an Excel or CSV file.</p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>The Document OCR service will sometimes pick up outliers and other noise/graphics as text or have difficulty reading some text depending on the font. Changing the sections and implementing functions can help to eliminate this issue. Always test with multiple documents prior to implementing in a production environment to ensure that the proper functions have been used to get the required result.</p>
+<p>The Document OCR service will sometimes pick up outliers and other noise/graphics as text or have difficulty reading some text depending on the font. Changing the sections or page segmentation mode and implementing functions can help to eliminate this issue. Always test with multiple documents prior to implementing in a production environment to ensure that the proper functions have been used to get the required result.</p>
 </div>
+<hr/>
+<h3 id="page-segmentation-mode">Page Segmentation Mode<a class="headerlink" href="#page-segmentation-mode" title="Permanent link">¶</a></h3>
+<p>The page segmentation mode (PSM) will enhance the accuracy of the text by choosing a the mode for the type of text that the OCR will expect in your section.  You will be able to select the mode on each simple or table section.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Orientation and script detection (OSD) only.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Automatic page segmentation with OSD.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Automatic page segmentation, but no OSD, or OCR.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Fully automatic page segmentation, but no OSD.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Assume a single column of text of variable sizes.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Assume a single uniform block of vertically aligned text.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Assume a single uniform block of text.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Treat the image as a single text line.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Treat the image as a single word.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Treat the image as a single word in a circle.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Treat the image as a single character.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Sparse text. Find as much text as possible in no particular order.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sparse text with OSD.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Raw line.</td>
+</tr>
+</tbody>
+</table>
 <p>The following example configuration shows you how to configure the Document OCR service to read a field and a table in a PDF and create an output that could be used for other services.</p>
 <hr/>
 <h3 id="input-data-configuration">Input Data Configuration<a class="headerlink" href="#input-data-configuration" title="Permanent link">¶</a></h3>
