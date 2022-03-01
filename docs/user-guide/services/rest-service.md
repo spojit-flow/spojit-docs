@@ -15,6 +15,7 @@ This is a simple RESTful service that sends HTTP requests using GET, POST, PUT a
 
     This service has a built in JSON parser and will not work with other formats. Requests will automatically contain `Content-Type: application/json` and `Accept: application/json` headers.
 
+![type:video](https://www.youtube.com/embed/44wYAJKRNnE)
 ___
 ### GET
 

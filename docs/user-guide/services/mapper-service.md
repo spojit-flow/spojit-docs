@@ -11,6 +11,8 @@ ___
    
 The mapper service allows the mapping of data to create new objects or arrays.  The developed schema and associated mapping becomes the output of this service which could be used by other services.
 
+![type:video](https://www.youtube.com/embed/4fCkJUXCe1A)
+
 ??? spojit-example "Example configuration and mapping"
 
     === "1. Configuration"

@@ -72,6 +72,7 @@ theme:
 plugins:
   - search
   - mermaid2
+  - mkdocs-video
   # - minify:
   #     minify_html: true
 
