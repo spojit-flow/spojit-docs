@@ -828,28 +828,28 @@
 <p>After the configuration is setup we can then create a schema for the output CSV. Each field within the array can be a column (depending on how headers are setup) and each index of the array consists of a row in the CSV.  For this example we are going to switch to the ARRAY schema and add <strong>id</strong> and <strong>job</strong> as fields to that ARRAY:</p>
 <p><img alt="CSV Parser Write Schema" src="/assets/images/services/csv-parser/write-schema.png" title="CSV Parser Write Schema"/></p>
 <p>Given the following source data from another service:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
-      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">"id_number"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
-      <span class="nt">"job_name"</span><span class="p">:</span> <span class="s2">"Plumber"</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"id_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"job_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Scuba Diver"</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"id_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"job_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plumber"</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>Next we can map the <strong>data</strong> array on the array in the field mapping with the <strong>id_number</strong> and <strong>job_name</strong> on <strong>id</strong> and <strong>job</strong> respectively as fields within the array:</p>
 <p><img alt="CSV Parser Write Mapping" src="/assets/images/services/csv-parser/write-mapping.png" title="CSV Parser Write Mapping"/></p>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio"><label for="__tabbed_1_3">3. Output Data</label><div class="tabbed-content">
 <p>In this example the following output will be generated automatically by this service after it is run:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>This output data can be used to create a CSV file like this:</p>
 <p><img alt="CSV Parser Write Output CSV" src="/assets/images/services/csv-parser/write-output-csv.png" title="CSV Parser Write Output CSV"/></p>
@@ -892,10 +892,10 @@
 <div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><label for="__tabbed_2_1">1. Configuration</label><div class="tabbed-content">
 <p>The following example shows you how to configure the CSV Parser to read a two column CSV file and create an array of data from that. </p>
 <p>Given the following source data from another service:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID,Job\n1,Scuba Diver\n2,Plumber\n"</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>The location of the raw CSV data needs to be specified in the configuration:</p>
 <p><img alt="CSV Parser Read Configuration" src="/assets/images/services/csv-parser/read-configuration.png" title="CSV Parser Read Configuration"/></p>
@@ -905,21 +905,21 @@
 </div>
 <input id="__tabbed_2_3" name="__tabbed_2" type="radio"><label for="__tabbed_2_3">3. Output Data</label><div class="tabbed-content">
 <p>In this example the following output will be generated automatically by this service after it is run:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">"data"</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">"ID"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
-      <span class="nt">"Job"</span><span class="p">:</span> <span class="s2">"Scuba Diver"</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">"ID"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
-      <span class="nt">"Job"</span><span class="p">:</span> <span class="s2">"Plumber"</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"Job"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Scuba Diver"</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">"Job"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plumber"</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </div>
 </input></input></input></div>
