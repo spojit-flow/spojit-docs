@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+# Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -21,32 +21,23 @@
 # Project information
 site_name: Spojit Documentation
 site_url: https://docs.spojit.com/
-site_author: Spojit
+site_author: Spojit Pty Ltd
 site_description: >-
+  Intelligent business process management platform
 
-# Header Links
-header_links:
-  display: true
-  contact:
-    url: https://www.spojit.com/contact
-    title: Contact Us
-  pricing:
-    url: https://www.spojit.com/pricing
-    title: Pricing
-  signup:
-    url: https://app.spojit.com/register/
-    title: Free Trial
+## Repository
+#repo_name: squidfunk/mkdocs-material
+#repo_url: https://github.com/squidfunk/mkdocs-material
 
 # Copyright
-copyright: Copyright &copy; 2021 Spojit
+copyright: Copyright &copy; 2022 Spojit Pty Ltd
 
 # Configuration
 theme:
   name: material
   custom_dir: spojit
-  logo: assets/logo.svg
 
-  # 404 page
+  # Static files
   static_templates:
     - 404.html
 
@@ -57,27 +48,56 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   features:
-    - tabs
-    #- instant
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-    scheme: default
-    primary: deep orange
-    accent: deep orange
+    - scheme: spojit
+      primary: spojit
+      accent: spojit
+#      toggle:
+#        icon: material/toggle-switch
+#        name: Switch to dark mode
+#    - scheme: slate
+#      primary: indigo
+#      accent: indigo
+#      toggle:
+#        icon: material/toggle-switch-off-outline
+#        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.ico
+  icon:
+    logo: logo
+  logo: assets/logo.svg
 
 # Plugins
 plugins:
   - search
-  - mermaid2
   - mkdocs-video
-  # - minify:
-  #     minify_html: true
+  - minify:
+      minify_html: true
 
 # Customization
 extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/solid/globe
       link: https://www.spojit.com
@@ -91,29 +111,29 @@ extra:
 # Extra CSS stylesheet
 extra_css:
   - stylesheets/extra.css
-    
+
 # Extensions
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.attr_list
-  - markdown.extensions.codehilite:
-      guess_lang: false
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
       permalink: true
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  # - pymdownx.highlight:
-  #     linenums_style: pymdownx-inline
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -128,92 +148,91 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
-  - pymdownx.tabbed
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
 
 # Page tree
 nav:
-  - Introduction: index.md
-  - User Guide:
-    - My Account:
-      - Account:
-        - Change password: user-guide/my-account/account/change-password.md
-        - Reset password: user-guide/my-account/account/reset-password.md
-        - Delete account: user-guide/my-account/account/delete-account.md
-      - Billing:
-        - Change billing: user-guide/my-account/billing/change-billing.md
-        - View invoices: user-guide/my-account/billing/view-invoices.md
-      - Subscription:
-        - Create subscription: user-guide/my-account/subscription/create-subscription.md
-        - Change subscription: user-guide/my-account/subscription/change-subscription.md
-        - Cancel subscription: user-guide/my-account/subscription/cancel-subscription.md
-    - Integration:
-      - Create integration: user-guide/integration/create-integration.md
-      - Edit integration:
-        - Basic info: user-guide/integration/edit/basic-info.md
-        - Configuration: user-guide/integration/edit/configuration.md
-        - Schedule: user-guide/integration/edit/schedule.md
-        - Webhook: user-guide/integration/edit/webhook.md
-        - Logs: user-guide/integration/edit/logs.md
-      - Run now: user-guide/integration/run-now.md
-      - Delete integration: user-guide/integration/delete-integration.md
-    - Workflow:
-      - Introduction: user-guide/workflow/introduction.md
-      - Create workflow: user-guide/workflow/create-workflow.md
-      - Add service: user-guide/workflow/add-service.md
-      - Connect services: user-guide/workflow/connect-services.md
-      - Run workflow: user-guide/workflow/run-workflow.md
-    - Mapper:
-      - Functions:
-        - Array Functions: user-guide/mapper/functions/array.md
-        - Datetime Functions: user-guide/mapper/functions/datetime.md
-        - Formula Functions: user-guide/mapper/functions/formula.md
-        - Math Functions: user-guide/mapper/functions/math.md
-        - String Functions: user-guide/mapper/functions/string.md
-    - Services:
-      - Array Service: user-guide/services/array-service.md
-      - CSV Parser: user-guide/services/csv-parser.md
-      - Dataset Service: user-guide/services/dataset.md
-      - DEAR Systems: user-guide/services/dear-systems-service.md
-      - Delay Service: user-guide/services/delay-service.md
-      - Deputy: user-guide/services/deputy-service.md
-      - Document OCR: user-guide/services/document-ocr.md
-      - Filter: user-guide/services/filter.md
-      - FTP Service: user-guide/services/ftp-service.md
-      - Iterator: user-guide/services/iterator.md
-      - JSON Parser: user-guide/services/json-parser.md
-      - Mailer: user-guide/services/mailer.md
-      - Magento 2: user-guide/services/magento2-service.md
-      - Mapper Service: user-guide/services/mapper-service.md
-      - Netsuite REST Service: user-guide/services/netsuite-rest-service.md
-      - Netsuite RESTlet Service: user-guide/services/netsuite-restlet-service.md
-      - Netsuite SOAP Service: user-guide/services/netsuite-soap-service.md
-      - Parallel Gateway: user-guide/services/parallel-gateway.md
-      - REST Service: user-guide/services/rest-service.md
-      - Revel Systems: user-guide/services/revel-service.md
-      - SFTP Service: user-guide/services/sftp-service.md
-      - Shipping Tools: user-guide/services/shipping-tools.md
-      - ShipStation: user-guide/services/shipstation-service.md
-      - SmartFreight Service: user-guide/services/smartfreight-service.md
-      - SMTP Mailer Service: user-guide/services/smtp-mailer.md
-      - Start Service: user-guide/services/start-service.md
-      - Unleashed Software: user-guide/services/unleashed-service.md
-      - WooCommerce: user-guide/services/woocommerce-service.md
-      - XLSX Service: user-guide/services/xlsx-service.md
-  - Connectors Guide:
-    - WooCommerce:
-      - WooCommerce Authorization: connectors/woocommerce/woocommerce-authorization.md
-      - WooCommerce Legacy API: connectors/woocommerce/woocommerce-legacy-api.md
-      - WooCommerce Webhooks: connectors/woocommerce/woocommerce-webhooks.md
-    - Unleashed Software:
-      - Unleashed Authorization: connectors/unleashed/unleashed-authorization.md
-      - Unleashed Warehouse Code: connectors/unleashed/unleashed-warehouse-code.md
-  - Library: library/index.md
+  - Home: index.md
+  - Getting started:
+      - Overview: getting-started/index.md
+      - Create a workflow: getting-started/workflows/create-workflow.md
+      - Add a service: getting-started/workflows/add-service.md
+      - Connect services: getting-started/workflows/connect-services.md
+      - Run workflow: getting-started/workflows/run-workflow.md
+      - Workflow configuration:
+        - Basic info: getting-started/workflows/configuration/basic-info.md
+        - Schedule: getting-started/workflows/configuration/schedule.md
+        - Webhook: getting-started/workflows/configuration/webhook.md
+        - Logs: getting-started/workflows/configuration/logs.md
 
-# Google Analytics
-google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-  - auto
+  - Account setup:
+      - My account:
+          - Change password: setup/account/change-password.md
+          - Reset password: setup/account/reset-password.md
+          - Delete account: setup/account/delete-account.md
+      - Billing:
+          - Change billing: setup/billing/change-billing.md
+          - View invoices: setup/billing/view-invoices.md
+      - Subscription:
+          - Create subscription: setup/subscription/create-subscription.md
+          - Change subscription: setup/subscription/change-subscription.md
+          - Cancel subscription: setup/subscription/cancel-subscription.md
+  - Reference:
+      - reference/index.md
+      - Mapping functions:
+          - reference/mapping/index.md
+          - Array Functions: reference/mapping/functions/array.md
+          - Datetime Functions: reference/mapping/functions/datetime.md
+          - Formula Functions: reference/mapping/functions/formula.md
+          - Math Functions: reference/mapping/functions/math.md
+          - String Functions: reference/mapping/functions/string.md
+      - Services:
+          - reference/services/index.md
+          - Array Service: reference/services/array-service.md
+          - CSV Parser: reference/services/csv-parser.md
+          - Dataset Service: reference/services/dataset.md
+          - DEAR Systems: reference/services/dear-systems-service.md
+          - Delay Service: reference/services/delay-service.md
+          - Deputy: reference/services/deputy-service.md
+          - Document OCR: reference/services/document-ocr.md
+          - FTP Service: reference/services/ftp-service.md
+          - JSON Parser: reference/services/json-parser.md
+          - Mailer: reference/services/mailer.md
+          - Magento 2: reference/services/magento2-service.md
+          - Mapper Service: reference/services/mapper-service.md
+          - Netsuite REST Service: reference/services/netsuite-rest-service.md
+          - Netsuite RESTlet Service: reference/services/netsuite-restlet-service.md
+          - Netsuite SOAP Service: reference/services/netsuite-soap-service.md
+          - REST Service: reference/services/rest-service.md
+          - Revel Systems: reference/services/revel-service.md
+          - SFTP Service: reference/services/sftp-service.md
+          - Shipping Tools: reference/services/shipping-tools.md
+          - ShipStation: reference/services/shipstation-service.md
+          - SmartFreight Service: reference/services/smartfreight-service.md
+          - SMTP Mailer Service: reference/services/smtp-mailer.md
+          - Start Service: reference/services/start-service.md
+          - Unleashed Software: reference/services/unleashed-service.md
+          - WooCommerce: reference/services/woocommerce-service.md
+          - XLSX Service: reference/services/xlsx-service.md
+      - Flow controls:
+          - reference/flow-controls/index.md
+          - Filter: reference/flow-controls/filter.md
+          - Iterator: reference/flow-controls/iterator.md
+          - Parallel Gateway: reference/flow-controls/parallel-gateway.md
+      - Popular integrations:
+          - reference/integrations/index.md
+          - WooCommerce:
+              - WooCommerce Authorization: reference/integrations/woocommerce/woocommerce-authorization.md
+              - WooCommerce Legacy API: reference/integrations/woocommerce/woocommerce-legacy-api.md
+              - WooCommerce Webhooks: reference/integrations/woocommerce/woocommerce-webhooks.md
+          - Unleashed Software:
+              - Unleashed Authorization: reference/integrations/unleashed/unleashed-authorization.md
+              - Unleashed Warehouse Code: reference/integrations/unleashed/unleashed-warehouse-code.md
+  - Contact: https://www.spojit.com/contact" target="_blank
+  - Register: https://app.spojit.com/register" target="_blank
+  - Log in: https://app.spojit.com/login" target="_blank
