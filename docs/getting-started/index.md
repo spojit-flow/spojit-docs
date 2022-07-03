@@ -54,4 +54,4 @@ All templates are essentially ready-made workflows with a well defined set of co
 
 ---
 ## Next steps
-- Create a [workflow](/workflows/create-workflow "Create a workflow")
+- Create a [workflow](/getting-started/workflows/create-workflow "Create a workflow")
