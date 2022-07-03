@@ -1,17 +1,39 @@
+[data-md-color-scheme="spojit"] {
+  --md-primary-fg-color:        #ff6600;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #ff6600;
+  --md-accent-fg-color: #ff6600;
+}
+
 :root {
-    --md-admonition-icon--spojit-example: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/></svg>')
-  }
-  .md-typeset .admonition.spojit-example,
-  .md-typeset details.spojit-example {
-    border-color: rgb(158, 158, 158);
-  }
-  .md-typeset .spojit-example > .admonition-title,
-  .md-typeset .spojit-example > summary {
-    background-color: rgba(158, 158, 158, 0.1);
-  }
-  .md-typeset .spojit-example > .admonition-title::before,
-  .md-typeset .spojit-example > summary::before {
-    background-color: rgb(158, 158, 158);
-    -webkit-mask-image: var(--md-admonition-icon--spojit-example);
-            mask-image: var(--md-admonition-icon--spojit-example);
-  }
+  --md-admonition-icon--spojit-example: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/></svg>')
+}
+.md-typeset .admonition.spojit-example,
+.md-typeset details.spojit-example {
+  border-color: rgb(158, 158, 158);
+}
+.md-typeset .spojit-example > .admonition-title,
+.md-typeset .spojit-example > summary {
+  background-color: rgba(158, 158, 158, 0.1);
+}
+.md-typeset .spojit-example > .admonition-title::before,
+.md-typeset .spojit-example > summary::before {
+  background-color: rgb(158, 158, 158);
+  -webkit-mask-image: var(--md-admonition-icon--spojit-example);
+  mask-image: var(--md-admonition-icon--spojit-example);
+}
+
+.mdx-container {
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,
+    linear-gradient(
+      to bottom,
+      var(--md-primary-fg-color),
+      #ff6600af 99%,
+      var(--md-default-bg-color) 99%
+    ) !important;
+}
+
+.md-button--primary {
+  color: var(--md-default-fg-color) !important;
+}
