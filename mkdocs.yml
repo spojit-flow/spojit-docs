@@ -30,7 +30,7 @@ site_description: >-
 #repo_url: https://github.com/squidfunk/mkdocs-material
 
 # Copyright
-copyright: Copyright &copy; 2022 Spojit Pty Ltd
+copyright: Copyright &copy; 2025 Spojit Pty Ltd
 
 # Configuration
 theme:
@@ -182,6 +182,19 @@ nav:
           - Create subscription: setup/subscription/create-subscription.md
           - Change subscription: setup/subscription/change-subscription.md
           - Cancel subscription: setup/subscription/cancel-subscription.md
+  - AI Development:
+      - Getting started:
+          - Quickstart: ai-development/index.md
+      - Providers:
+          - Anthropic: ai-development/providers/anthropic.md
+          - DeepSeek: ai-development/providers/deepseek.md
+          - Groq: ai-development/providers/groq.md
+          - MistralAI: ai-development/providers/mistralai.md
+          - OpenAI: ai-development/providers/openai.md
+          - VertexAI: ai-development/providers/vertexai.md
+      - Services:
+          - Simple Chat: ai-development/services/simple-chat.md
+          - Agents: ai-development/services/agents.md
   - Reference:
       - reference/index.md
       - Mapping functions:
