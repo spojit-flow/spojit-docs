@@ -2,397 +2,397 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.spojit.com/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/index-off/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers-list/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers/anthropic/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers/deepseek/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers/groq/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers/llm-auth/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers/mistralai/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers/openai/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/providers/vertexai/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/services/agents/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/ai-development/services/simple-chat/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/introduction/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/add-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/connect-services/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/create-workflow/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/run-workflow/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/configuration/basic-info/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/configuration/logs/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/configuration/schedule/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/getting-started/workflows/configuration/webhook/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/flow-controls/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/flow-controls/filter/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/flow-controls/iterator/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/flow-controls/parallel-gateway/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/unleashed-to-woocommerce-stock-updater/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/woocommerce-to-unleashed-order-creator/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/unleashed/unleashed-authorization/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/unleashed/unleashed-warehouse-code/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/woocommerce/woocommerce-authorization/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/woocommerce/woocommerce-legacy-api/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/integrations/woocommerce/woocommerce-webhooks/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/mapping/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/mapping/functions/array/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/mapping/functions/datetime/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/mapping/functions/formula/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/mapping/functions/math/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/mapping/functions/string/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/array-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/csv-parser/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/dataset/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/dear-systems-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/default-connector/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/delay-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/deputy-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/document-ocr/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/file-system/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/ftp-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/json-parser/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/magento2-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/mailer/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/mapper-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/netsuite-rest-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/netsuite-restlet-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/netsuite-soap-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/rest-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/revel-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/sftp-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/shipping-tools/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/shipstation-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/smartfreight-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/smtp-mailer/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/start-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/unleashed-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/woocommerce-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/reference/services/xlsx-service/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/account/change-password/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/account/delete-account/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/account/reset-password/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/billing/change-billing/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/billing/view-invoices/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/subscription/cancel-subscription/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/subscription/change-subscription/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.spojit.com/setup/subscription/create-subscription/</loc>
-         <lastmod>2025-04-09</lastmod>
+         <lastmod>2025-05-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

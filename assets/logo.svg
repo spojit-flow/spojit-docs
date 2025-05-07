@@ -1,1 +1,75 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.65 169.59"><defs><style>.cls-1{fill:#f60;}.cls-2{fill:#fff;}</style></defs><rect class="cls-1" width="180.65" height="169.59" rx="17.23"/><path class="cls-2" d="M103.31,104.35H100.4v5.4h2.89a16.9,16.9,0,0,0,.28-2.78A17.49,17.49,0,0,0,103.31,104.35Z" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M107,104.19a17.31,17.31,0,1,0,0,5.36M89.89,116a9.08,9.08,0,1,1,9.16-9.16A9.13,9.13,0,0,1,89.89,116Z" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M210.49,158.07a17.29,17.29,0,1,0-17.2-17.36A17.31,17.31,0,0,0,210.49,158.07Zm0-26.36a9.08,9.08,0,1,1-9,9A9.14,9.14,0,0,1,210.49,131.71Z" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M139.3,102.86" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M162.14,146.34" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M161.6,146.12" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M163.4,147h32.86a1.34,1.34,0,0,0,1.34-1.34V139.9a1.35,1.35,0,0,0-1.34-1.35H165.51L137.58,102h-32.7a1.49,1.49,0,0,0-1.48,1.48v5.45a1.48,1.48,0,0,0,1.48,1.47h30.85l27.88,36.44" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M103.31,153H100.4v5.4h2.89a16.9,16.9,0,0,0,.28-2.78A17.49,17.49,0,0,0,103.31,153Z" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M107,153.18a17.32,17.32,0,1,0,0,5.37m-17.09,6.39a9.08,9.08,0,1,1,9.16-9.16A9.13,9.13,0,0,1,89.89,164.94Z" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M210.49,207.06a17.28,17.28,0,1,0-17.2-17.36A17.31,17.31,0,0,0,210.49,207.06Zm0-26.36a9.08,9.08,0,1,1-9,9A9.14,9.14,0,0,1,210.49,180.7Z" transform="translate(-59.95 -65.48)"/><path class="cls-2" d="M163.4,196.75h32.86a1.34,1.34,0,0,0,1.34-1.34V189.7a1.35,1.35,0,0,0-1.34-1.35H165.51l-27.93-36.6h-32.7a1.49,1.49,0,0,0-1.48,1.48v5.45a1.48,1.48,0,0,0,1.48,1.47h30.85l27.88,36.44" transform="translate(-59.95 -65.48)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1400"
+   height="1400"
+   viewBox="0 0 1400 1400"
+   fill="none"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="logo2.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.15082527"
+     inkscape:cx="2638.8151"
+     inkscape:cy="699.48491"
+     inkscape:window-width="1678"
+     inkscape:window-height="1011"
+     inkscape:window-x="50"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <g
+     clip-path="url(#clip0_66_731)"
+     id="g9"
+     transform="translate(1.3671969,0.63291056)">
+    <rect
+       x="19.666599"
+       y="20.2293"
+       width="1360.6"
+       height="1360.6"
+       rx="139.82201"
+       fill="#ff8f28"
+       id="rect8" />
+    <rect
+       x="19.666599"
+       y="20.2293"
+       width="1360.6"
+       height="1360.6"
+       rx="139.82201"
+       stroke="#f4f4f4"
+       stroke-width="38.5273"
+       id="rect9" />
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 480.107,255.437 v -0.071 h -224.4 V 1145.72 H 704.493 V 923.025 h 0.078 c 122.953,0 224.32,99.675 224.32,222.625 v 0.07 H 1152.84 V 923.319 h -0.08 c -245.864,0 -448.566,-199.312 -448.566,-445.177 v -0.075 H 1152.84 V 255.366 H 704.495 v 222.696 h -0.068 c -122.952,0 -224.32,-99.672 -224.32,-222.625 z m 224.239,667.881 v -0.077 c 0,-245.864 -202.702,-445.177 -448.567,-445.177 h -0.07 v 445.254 z"
+       fill="#f4f4f4"
+       id="path9" />
+  </g>
+  <defs
+     id="defs10">
+    <clipPath
+       id="clip0_66_731">
+      <rect
+         width="5269.71"
+         height="1399.13"
+         fill="#ffffff"
+         transform="translate(0.4021,0.967773)"
+         id="rect10"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+</svg>

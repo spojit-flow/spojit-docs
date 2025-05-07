@@ -1,8 +1,8 @@
 [data-md-color-scheme="spojit"] {
-  --md-primary-fg-color:        #ff6600;
+  --md-primary-fg-color:        #ff8f28ff;
   --md-primary-fg-color--light: #ECB7B7;
   --md-primary-fg-color--dark:  #ff6600;
-  --md-accent-fg-color: #ff6600;
+  --md-accent-fg-color: #ff8f28aa;
 }
 
 :root {
@@ -29,7 +29,7 @@
     linear-gradient(
       to bottom,
       var(--md-primary-fg-color),
-      #ff6600af 99%,
+      rgba(255, 143, 40, 0.55) 99%,
       var(--md-default-bg-color) 99%
     ) !important;
 }
