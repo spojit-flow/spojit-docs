@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="570"
+   height="400"
+   version="1.1"
+   viewBox="0 0 150.81 105.83"
+   id="svg48"
+   sodipodi:docname="dear-systems.svg"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs52" />
+  <sodipodi:namedview
+     id="namedview50"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.1009789"
+     inkscape:cx="284.74659"
+     inkscape:cy="199.82217"
+     inkscape:window-width="1869"
+     inkscape:window-height="1025"
+     inkscape:window-x="51"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g30" />
+  <g
+     transform="translate(518.53 210.76)"
+     id="g30">
+    <rect
+       x="-518.53"
+       y="-210.76"
+       width="150.81"
+       height="105.83"
+       fill="#fff"
+       fill-opacity=".99842"
+       fill-rule="evenodd"
+       stroke-width=".066416"
+       id="rect2" />
+    <g
+       id="dear-color"
+       stroke="none"
+       stroke-width="1"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(0.10237397,0,0,0.10237397,-502.9944,-170.04361)">
+      <g
+         id="dear"
+         transform="translate(49.9999,49.9999)">
+        <path
+           d="m 169.3174,87.1428 c 10.515,10.515 17.019,25.042 17.019,41.087 0,32.091 -26.015,58.107 -58.106,58.107 v 0 h -58.107 l -23.374,23.374 h 81.481 c 45,0 81.481,-36.48 81.481,-81.481 0,-22.5 -9.121,-42.87 -23.866,-57.615 z"
+           id="Fill-1"
+           fill="#05cbbf" />
+        <path
+           d="m 202.374,54.0862 c 18.975,18.975 30.711,45.189 30.711,74.144 0,57.91 -46.945,104.855 -104.855,104.855 H 23.375 L 0,256.4602 h 128.23 v 0 c 70.819,0 128.23,-57.411 128.23,-128.23 0,-35.41 -14.353,-67.467 -37.558,-90.672 z"
+           id="Fill-3"
+           fill="#05cbbf" />
+        <path
+           d="M 128.23,46.7493 H 0 v 23.375 H 87.166 L 0,157.2903 v 33.056 L 142.353,47.9943 c -4.59,-0.803 -9.304,-1.245 -14.123,-1.245"
+           id="Fill-6"
+           fill="#304953" />
+        <path
+           d="M 200.8475,22.556 C 180.1995,8.34 155.1935,0 128.2305,0 H 5e-4 v 23.375 h 128.23 c 20.489,0 39.59,5.898 55.74,16.058 L 5e-4,223.403 V 256.46 L 218.9025,37.558 c -5.535,-5.535 -11.587,-10.549 -18.055,-15.002"
+           id="Fill-9"
+           fill="#304953" />
+        <path
+           d="m 402.6489,168.0275 c 24.36,0 38.109,-15.678 38.109,-39.797 0,-24.602 -13.749,-40.039 -38.109,-40.039 h -13.266 v 79.836 z m -66.812,-126.387 h 69.707 c 55.957,0 89.001,33.768 89.001,86.59 0,52.821 -33.044,86.589 -89.001,86.589 h -69.707 z"
+           id="Fill-12"
+           fill="#05cbbf" />
+        <polygon
+           id="Fill-14"
+           fill="#05cbbf"
+           points="650.1186,88.1917 573.6596,88.1917 573.6596,104.5927 643.6056,104.5927 643.6056,149.6967 573.6596,149.6967 573.6596,168.0277 650.1186,168.0277 650.1186,214.8197 519.8726,214.8197 519.8726,41.6407 650.1186,41.6407 " />
+        <path
+           d="m 753.3511,145.3556 h 28.943 l -14.471,-39.798 z m 44.862,44.38 h -60.781 l -9.165,25.084 h -53.546 l 65.364,-173.179 h 57.163 l 65.365,173.179 h -55.235 z"
+           id="Fill-16"
+           fill="#05cbbf" />
+        <path
+           d="m 940.6903,122.2003 h 23.154 c 14.231,0 19.537,-6.994 19.537,-17.366 0,-10.854 -5.306,-17.848 -19.537,-17.848 h -23.154 z m -53.787,-80.56 h 84.178 c 38.108,0 65.364,23.156 65.364,63.194 0,24.602 -11.337,42.451 -29.667,52.098 l 35.696,57.887 h -60.057 l -29.185,-49.686 h -12.542 v 49.686 h -53.787 z"
+           id="Fill-18"
+           fill="#05cbbf" />
+      </g>
+    </g>
+  </g>
+  <g
+     transform="translate(518.53 210.76)"
+     id="g44">
+    <text
+       transform="translate(-6.0123 3.5714)"
+       x="26.073866"
+       fill="#00c7ff"
+       font-family="sans-serif"
+       font-size="8.4667px"
+       style="line-height:1.25;shape-inside:url(#rect869);white-space:pre"
+       xml:space="preserve"
+       id="text36"><tspan
+         x="-22.892749"
+         y="0"
+         id="tspan19226"><tspan
+           style="font-family:FontAwesome;text-align:center;text-anchor:middle"
+           id="tspan19224">SCHEDULE</tspan></tspan></text>
+    <path
+       d="m -518.53,-198.86 h 63.42529 c 3.09308,0 5.58328,1.9126 5.58328,4.2884 v 4.6525 c 0,2.3758 -2.4902,4.2884 -5.58328,4.2884 H -518.53 Z"
+       fill="#00a3e0"
+       stroke-width="0.243903"
+       id="path38"
+       style="fill:#05cbbf;fill-opacity:1" />
+    <text
+       x="-514.19659"
+       y="-189.65004"
+       fill="#979797"
+       font-family="sans-serif"
+       font-size="7.0556px"
+       stroke-width="0.26458"
+       style="line-height:1.25"
+       xml:space="preserve"
+       id="text42"><tspan
+         x="-514.19659"
+         y="-189.65004"
+         fill="#ffffff"
+         font-size="7.0556px"
+         stroke-width="0.26458"
+         id="tspan40">DEAR SYSTEMS</tspan></text>
+  </g>
+  <style
+     type="text/css"
+     id="style46">.st0{fill:#00a3e0;}</style>
+</svg>
