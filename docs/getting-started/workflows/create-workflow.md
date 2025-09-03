@@ -6,22 +6,26 @@ template: overrides/main.html
 ---
 
 ## Build a workflow from scratch
-  To create a new workflow from scratch, log in to your account and on the main menu navigate to Integrations. Select 'BLANK WORKFLOW' from the button options at the top right of your screen and click the button.
+  To create a new workflow from scratch, log in to your account and on the main menu navigate to Workflows. Click 'Add Workflow' from the button at the top right of your screen.
 
-  ![Integrations - Create Blank Workflow](/assets/images/workflow/create-blank-workflow.png "Integrations - Create Blank Workflow")
+  ![Workflows - Create Blank Workflow](/assets/images/workflow/create-blank-workflow.png "Integrations - Create Blank Workflow")
 
-  This will open up a workflow designer where you can start by adding and connecting services.
+  This will open a dialog where you can choose the project you want it to be in and clicking 'Create'
+
+  ![Projects - Choose your project](/assets/images/workflow/create-blank-workflow-choose-project.png "Workflow - Choose your project")
+
+  Finally, this will open your newly created blank workflow up in the workflow designer where you can start adding and connecting services.
 
   ![Workflow Designer - Blank Workflow](/assets/images/workflow/created-blank-workflow.png "Workflow Designer - Blank Workflow")
 
 ## Build a workflow from a template
-  Integrations created using our wizard can be converted to a workflow. To convert an integration to a workflow and start editing it in our workflow designer, simply find your integration on the 'Integrations' table and click the orange workflow icon.
+  Workflows can be created using our pre-configured templates. To create workflow based on a template and start editing it in our workflow designer, simply find the integration template you want in the 'Workflows' Library and click the orange 'Create Workflow' button.
 
-  ![Integrations - Convert to Workflow](/assets/images/workflow/convert-to-workflow-icon.png "Integrations - Convert to Workflow")
+  ![Integrations - Create workflow from template](/assets/images/workflow/create-workflow-from-template.png "Integrations - Create workflow from template")
   
-  This will launch our workflow designer with your integration in it. To complete the conversion, simply save the workflow via the button at the top right of your screen.
+  After selecting the project, this will launch our workflow designer with your prebuilt integration from the template in it. To complete, simply add your own authorizations (if required) and save the workflow via the button at the top right of your screen.
 
-  ![Workflow Designer - Converted Integration](/assets/images/workflow/converted-integration-to-workflow.png "Workflow Designer - Converted Integration")
+  ![Workflow Designer - New workflow from template](/assets/images/workflow/created-workflow-from-template.png "Workflow Designer - New workflow from template")
 
 ---
 ## Next steps
