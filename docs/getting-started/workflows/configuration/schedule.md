@@ -24,19 +24,19 @@ template: overrides/main.html
 ## Instructions
 ### 1. Log in to your account
 
-### 2. Access 'My Automations' page
+### 2. Access 'My Workflows' page
 
-  You can access the page via the main menu by expanding  the 'Automations' menu item and selecting 'My Automations'. You should see a table listing all your workflows here.
+  You can access the page via the main menu by expanding  the 'Workflows' menu item and selecting 'My Workflows'. You should see a table listing all your workflows here.
 
-  ![Access My Automations Page](/assets/images/access-library.png"Access My Automations Page")
+  ![Access My Workflows Page](/assets/images/access-library.png"Access My Workflows Page")
 
 ### 3. Enter 'Edit Workflow' page
 
-  Enter the Edit Workflow screen by clicking on the blue ‘workflow’ icon button at the end of a table row. Switch to 'Schedule' tab.
+  Enter the Edit Workflow screen by clicking on the blue ‘workflow’ icon button at the end of a table row. Open the workflow configuration by clicking on 'Workflow' in the top menu of the canvas and switch to the 'Triggers' tab.
 
 ### 4. Activate schedule and set initial date/time
 
-  Tick the checkbox next to Activate on field and set the ‘Activate on’ date and time. The 'Activate On' date and time specifies the starting point of the workflow schedule - from this date/time, the scheduler will be automatically running the workflow as per the schedule specified (periodically, or daily at specified time)
+  Select 'Add Schedule' and then tick the checkbox next to Activate on field and set the ‘Activate on’ date and time. The 'Activate On' date and time specifies the starting point of the workflow schedule - from this date/time, the scheduler will be automatically running the workflow as per the schedule specified (periodically, or daily at specified time)
 
   ![Edit Workflow - Schedule Activate](/assets/images/edit-integration-schedule-activate.gif "Edit Workflow - Schedule Activate")
 

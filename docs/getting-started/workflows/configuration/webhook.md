@@ -22,19 +22,19 @@ template: overrides/main.html
 ## Instructions
 ### 1. Log in to your account
 
-### 2. Access 'My Automations' page
+### 2. Access 'My Workflows' page
 
-  You can access the page via the main menu by expanding  the 'Automations' menu item and selecting 'My Automatons'. You should see a table listing all your workflows here.
+  You can access the page via the main menu by expanding  the 'Workflows' menu item and selecting 'My Workflows'. You should see a table listing all your workflows here.
 
-  ![Access My Automations Page](/assets/images/access-library.png"Access My Automations Page")
+  ![Access My Workflows Page](/assets/images/access-library.png"Access My Workflows Page")
 
 ### 3. Enter 'Edit Workflow' page
 
-  Enter the Edit workflow screen by clicking on the blue ‘workflow’ icon button at the end of a table row. Switch to 'Webhook' tab.
+  Enter the Edit workflow screen by clicking on the blue ‘workflow’ icon button at the end of a table row. Open the workflow configuration by clicking on 'Workflow' in the top menu of the canvas and switch to the 'Triggers' tab.
 
 ### 4. Enable webhook, note URL
 
-  Enable webhook by switching the ‘Enabled’ toggle at the top of the page. This will generate a unique URL for your workflow which you can enter into 3rd party system.
+  Enable webhook by switching the ‘Enabled’ toggle in the webhook section. This will generate a unique URL for your workflow which you can enter into 3rd party system.
 
   ![Edit Workflow - Webhook Activate](/assets/images/edit-integration-webhook.png "Edit Workflow - Webhook Activate")
 

@@ -13,19 +13,19 @@ template: overrides/main.html
 ## Instructions
 ### 1. Log in to your account
 
-### 2. Access 'My Automations' page
+### 2. Access 'My Workflows' page
 
-  You can access the page via the main menu by expanding  the 'Automations' menu item and selecting 'My Automations'. You should see a table listing all your workflows here.
+  You can access the page via the main menu by expanding  the 'Workflows' menu item and selecting 'My Workflows'. You should see a table listing all your workflows here.
 
-  ![Access My Automations Page](/assets/images/access-library.png"Access My Automations Page")
+  ![Access My Workflows Page](/assets/images/access-library.png"Access My Workflows Page")
 
 ### 3. Enter 'Edit Workflow' page
 
-  Enter the Edit workflow screen by clicking on the blue ‘workflow’ icon button at the end of a table row. Switch to 'Logs' tab.
+  Enter the Edit workflow screen by clicking on the blue ‘workflow’ icon button at the end of a table row. Open the workflow configuration by clicking on 'Logs' in the top menu of the canvas.
 
 ### 4. Expand logs table to view detailed request/response logs
 
-  To view individual request logs, expand the log table row and click on the blue ‘eye’ icon button.
+  To view individual request logs, click on the ‘eye’ icon button which will open the logs in a new window.
 
 
 ![Edit Workflow - Logs](/assets/images/edit-integration-logs.gif "Edit Workflow - Logs")

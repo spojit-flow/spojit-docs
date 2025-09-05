@@ -6,11 +6,11 @@ template: overrides/main.html
 ---
   
 ### Run your workflow
-  While in worfklow designer, switch the button option at the top right of your screen to 'Edit Workflow'. Workflow detail page will open with multiple tabs.
+  While in worfklow designer, click on 'Run Now' from the top menu.
 
-  ![Edit Workflow](/assets/images/workflow/run-workflow-edit.png "Edit Workflow")
+  ![Run Workflow](/assets/images/workflow/run-workflow-edit.png "Run Workflow")
 
-  Switch to 'Run Now' tab and press the 'Run Now' button to start the workflow. To see result of the workflow run, switch to 'Logs' tab.
+  You can also run it from the workflow configuration page. Switch to 'Run Now' tab and press the 'Run Now' button to start the workflow. To see result of the workflow run, switch to 'Logs' tab.
 
   ![Run Workflow](/assets/images/workflow/run-now.png "Run Workflow")
 
