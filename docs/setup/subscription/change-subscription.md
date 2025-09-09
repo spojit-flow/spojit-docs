@@ -12,9 +12,9 @@ template: overrides/main.html
 
   From the main navigational menu, expand the ‘Billing’ section and select ‘Pricing’. Alternatively, you can also access the Pricing page from within 'My Account' section > 'Subscription' tab by clicking the 'Change Plan' button.
 
-  ![Access Pricing Page](/assets/images/access-pricing.png "Access Pricing Page")
+  ![Access Pricing Page](/assets/images/access-pricing-upgrade.png "Access Pricing Page")
 
-### 3. Select plan and click 'Upgrade/Downgrade Now' button
+### 3. Select plan and click 'Buy Now' button
 
 ### 4. Complete the change
 
