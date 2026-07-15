@@ -3,6 +3,8 @@
 -#}
 {% extends "base.html" %}
 {% block extrahead %}
+  {#- Legacy docs: keep crawlable so engines see the noindex, but drop from the index -#}
+  <meta name="robots" content="noindex, follow">
   <link rel="stylesheet" href="{{ 'overrides/assets/stylesheets/main.8464ae1a.min.css' | url }}">
 {% endblock %}
 {% block content %}
